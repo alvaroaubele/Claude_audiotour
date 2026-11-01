@@ -1,31 +1,16 @@
 {
-  "status": "fail",
-  "checked_claims": 112,
-  "findings": [
+  "status": "pass",
+  "checked_claims": 118,
+  "findings": [],
+  "script_sha": "4bc5058737a1ce13",
+  "round2_findings": [
     {
-      "claim": "Algunos guías cuentan que lo pagó el piloto de carreras Juan Pablo Montoya. El párroco lo desmintió en 2015: dijo que habían contribuido otros.",
-      "problem": "Omisión que vuelve engañosa la afirmación. El párroco no dijo que Montoya no pusiera dinero: dijo que Montoya pagó una parte y que el resto lo pusieron vecinos y otros donantes. Lo que niega es que Montoya lo pagara entero. Tal como está redactado, el oyente entiende que Montoya no aportó nada.",
-      "evidence": "https://ietoribianos.blogspot.com/2015/12/la-iglesia-santo-toribio-mogrovejo.html (reproduce El Tiempo, 18-12-2015): los cocheros dicen «aquí se casó Montoya que donó el aire a la parroquia, y eso es mentira». El párroco Fernando Álvarez responde: «Montoya dio una parte para el aire acondicionado pero el resto del valor lo dieron vecinos y personas que aportaron».",
-      "fix": "«Los cocheros cuentan que lo regaló Juan Pablo Montoya, el piloto, que se casó aquí. El párroco lo matizó en 2015: Montoya puso una parte, y el resto lo pagaron vecinos y otros donantes.»"
-    },
-    {
-      "claim": "Luego aceptó, con una frase que recoge su biógrafo: «Acepto por la fuerza el destino que el Congreso me confía».",
-      "problem": "Atribución errónea, repetida en «En el fondo, dice su biógrafo, no le perdonaban haber sobrevivido a la derrota». Las dos cosas proceden del artículo de Fernando Serpa-Flórez, un historiador de la medicina que escribió una reseña de tres páginas. No es el biógrafo de Fernández Madrid. El propio Serpa llama «su biógrafo» a Carlos Martínez Silva, autor de la «Biografía de D. José Fernández Madrid» de 1889. Además, Serpa toma la cita de Humberto Roselli, no de Martínez Silva. El oyente atribuirá a la biografía canónica una cita y un juicio que esta fuente no le atribuye.",
-      "evidence": "https://revistacirugia.org/index.php/cirugia/article/download/1649/1278/9244 (Serpa-Flórez, Rev. Col. Cirugía, 1991). Recoge «Acepto por la fuerza el destino que el Congreso me confía....» con la referencia (1) a Roselli. También escribe que bebió «el trago amargo de las insidias de quienes no le perdonaban el haber sobrevivido a la derrota». Más abajo dice: «Carlos Martínez Silva, su biógrafo».",
-      "fix": "«…con una frase que recogen los historiadores de la medicina colombiana: “Acepto por la fuerza el destino que el Congreso me confía”.» Y después: «En el fondo, escribe el médico e historiador Fernando Serpa, no le perdonaban haber sobrevivido a la derrota.»"
-    },
-    {
-      "claim": "Y que fue entonces cuando el personaje, que se llamaba Josefa Cárcamo, pasó a llamarse Fermina Daza, porque sonaba mejor.",
-      "problem": "Ninguna fuente del dossier da ese motivo ni ese momento. Según Página/12, Jaime contó que el nombre Josefa Cárcamo era «un nombre que yo le había dicho que no me gustaba». Según Nexos, Gabo defendió entonces la «sonoridad» de Josefa Cárcamo y cambió el nombre dos meses después. Jaime lo interpretó como que él tenía razón. El cambio no se produjo «entonces» y la razón «porque sonaba mejor» es una inferencia del autor presentada como parte del relato de Jaime.",
-      "evidence": "https://www.pagina12.com.ar/diario/suplementos/turismo/9-693-2005-10-09.html: Jaime dice que el personaje se llamaba «Josefa Carcamo», «un nombre que yo le había dicho que no me gustaba». https://cultura.nexos.com.mx/la-casa-de-fermina-daza-retrato-de-gabo-con-loro-al-fondo/: Gabo responde que lo importante es «la sonoridad del nombre». Dos meses después el nombre es Fermina Daza, y Jaime pregunta: «¿Eso quiere decir que quitaste a Josefa Cárcamo porque yo tenía razón?».",
-      "fix": "«Y que el personaje se llamaba entonces Josefa Cárcamo, un nombre que a Jaime no le gustaba. Gabo lo defendió. Dos meses después, la muchacha ya se llamaba Fermina Daza.»"
-    },
-    {
-      "claim": "Es una vivienda privada, de puertas cerradas, y ninguna de mis fuentes precisa en qué lado de la plaza está. Le doy una pista para cuando rodee la plaza. En 2014 un cronista describió, sobre la aldaba de su portón, un pequeño loro de hierro oxidado que mira hacia aquí.",
-      "problem": "Hay dos inexactitudes en una indicación visual para buscar de noche. Primera: Nexos describe «un loro oxidado» sobre la aldaba, pero no dice que sea pequeño ni de hierro. Segunda: sí hay una fuente del dossier que sitúa la casa. Página/12 la pone en el cruce de las calles de la Moneda y Badillo. Según OpenStreetMap, ese cruce está unos cien metros al sur de la plaza, de modo que la ubicación no es fiable, pero existe. La pista visible más útil que da el cronista ni se menciona: un portón blanco con veintisiete estrellas de bronce.",
-      "evidence": "https://cultura.nexos.com.mx/la-casa-de-fermina-daza-retrato-de-gabo-con-loro-al-fondo/ (2014) habla de «un loro oxidado, desde encima de la aldaba», que mira hacia la plaza Fernández de Madrid, y de «el portón pintado de blanco que permanece cerrado con sus veintisiete estrellas de bronce». https://www.pagina12.com.ar/diario/suplementos/turismo/9-693-2005-10-09.html sitúa la casa «en el cruce de las calles de la Moneda y Badillo». En OSM, la calle de la Moneda (way 25443032) corta la Segunda de Badillo en 10.42522, -75.54870, al sur de la plaza (way 25447605, de 10.4262 a 10.42675).",
-      "fix": "«…y mis fuentes no coinciden en dónde está exactamente. Le doy una pista. En 2014 un cronista describió un portón blanco, siempre cerrado, con veintisiete estrellas de bronce y, sobre la aldaba, un loro oxidado que mira hacia esta plaza.»"
+      "claim": "Está en una de las plazas más pequeñas y más arboladas de la ciudad amurallada.",
+      "problem": "Comparación sin fuente que además es dudosa. El dossier solo respalda «más arboladas» (RC-P, hecho 8). Ninguna fuente del dossier dice que sea de las más pequeñas, y las medidas lo desmienten. Según OpenStreetMap, el parque mide unos 34 por 60 metros, unos 2.000 metros cuadrados. La plaza de Santo Domingo (parada S03) mide unos 24 por 43 metros y la de San Diego (parada S09, la siguiente) unos 43 por 27, es decir, la mitad. El oyente acaba de ver una y va a ver la otra. Hay una guía, Moon, que incluso la llama «grande».",
+      "evidence": "OSM way 25447605 «Parque Fernández de Madrid»: el polígono va de 10.4262 a 10.42675 de latitud y de -75.54843 a -75.54811 de longitud, unos 34 × 60 m. En Nominatim (2026-11-01), la plaza de Santo Domingo da unos 24 × 43 m y la de San Diego unos 43 × 27 m. https://elrinconcolombiano.com/plaza-fernandez-madrid-cartagena/ dice «uno de los lugares mas arborizados del centro histórico» y no comenta su tamaño. Sobre el antiguo hallazgo 4, Página/12 (https://www.pagina12.com.ar/diario/suplementos/turismo/9-693-2005-10-09.html) dice literalmente: «Ese parque por supuesto existe –en el cruce de las calles de la Moneda y Badillo–, y se llama Fernández de Madrid. Y frente a éste está la casa de Fermina Daza, que es conocida como “la casa de Don Benito”». El cruce se refiere al parque, y el guion actual («Las dos crónicas que la describen la sitúan frente a esta plaza, pero ninguna dice en qué lado») es correcto.",
+      "fix": "«Está en una de las plazas más arboladas de la ciudad amurallada.» Si se quiere una nota de tamaño, que sea verificable a la vista, por ejemplo «una plaza recogida, a la sombra de sus árboles», sin compararla con otras."
     }
   ],
-  "script_sha": "5327532ad08e70bf"
+  "resolved_by": "lead",
+  "resolution": "Resolución del líder tras dos rondas de fact-check (SKILL.md, Fase 1): se aplicó literalmente el único hallazgo de la segunda ronda (se quita «más pequeñas»). Los cuatro hallazgos de la primera figuraban como corregidos en la segunda revisión, y el cuarto se resolvió a favor del autor con la cita literal. No se añadió ninguna afirmación nueva."
 }
