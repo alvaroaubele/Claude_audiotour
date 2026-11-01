@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>Cartagena de Indias: la Heroica, de la ciudad amurallada a Getsemaní</name>
+<description><![CDATA[Cartagena de Indias, Colombia · 360.0 min · es-ES]]></description>
+<Style id="start"><IconStyle><color>ff00b300</color><scale>1.3</scale><Icon><href>https://maps.google.com/mapfiles/kml/paddle/go.png</href></Icon></IconStyle></Style>
+<Style id="stop"><IconStyle><color>ff0000ff</color><scale>1.1</scale><Icon><href>https://maps.google.com/mapfiles/kml/paddle/red-circle.png</href></Icon></IconStyle></Style>
+<Style id="route"><LineStyle><color>ffd18802</color><width>5</width></LineStyle></Style>
+<Folder><name>Paradas</name>
+<Placemark><name>00 · Inicio</name><styleUrl>#start</styleUrl>
+<description><![CDATA[La Passion by Masaya, Calle del Estanco del Tabaco 35-81, Centro Histórico, Cartagena de Indias<br>Pista 01 · Introducción]]></description>
+<Point><coordinates>-75.5505,10.4247,0</coordinates></Point></Placemark>
+<Placemark><name>01 · Catedral de Santa Catalina y Plaza de la Proclamación</name><styleUrl>#stop</styleUrl>
+<description><![CDATA[<b>Pista 03</b> · catedral y plaza<br>Catedral iniciada en el siglo XVI, atacada por Drake; la plaza de la independencia de 1811<br>Narración ≈ 17 min<br>Horario: Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)<br><a href="https://es.wikipedia.org/wiki/Catedral_de_Santa_Catalina_de_Alejandr%C3%ADa_(Cartagena_de_Indias)">Wikipedia</a><br><a href="https://www.google.com/maps/dir/?api=1&amp;origin=10.4247%2C-75.5505&amp;destination=10.42347%2C-75.5507&amp;travelmode=walking">Cómo llegar a pie (Google Maps)</a>]]></description>
+<Point><coordinates>-75.5507,10.42347,0</coordinates></Point></Placemark>
+<Placemark><name>02 · Plaza de Bolívar y Palacio de la Inquisición</name><styleUrl>#stop</styleUrl>
+<description><![CDATA[<b>Pista 05</b> · plaza y palacio<br>La antigua Plaza Mayor y el tribunal del Santo Oficio de Cartagena (1610)<br>Narración ≈ 22 min<br>Horario: Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)<br><a href="https://es.wikipedia.org/wiki/Palacio_de_la_Inquisici%C3%B3n_(Cartagena_de_Indias)">Wikipedia</a><br><a href="https://www.google.com/maps/dir/?api=1&amp;origin=10.42347%2C-75.5507&amp;destination=10.4233%2C-75.5514&amp;travelmode=walking">Cómo llegar a pie (Google Maps)</a>]]></description>
+<Point><coordinates>-75.5514,10.4233,0</coordinates></Point></Placemark>
+<Placemark><name>03 · Plaza e iglesia de Santo Domingo</name><styleUrl>#stop</styleUrl>
+<description><![CDATA[<b>Pista 07</b> · iglesia y plaza<br>La iglesia más antigua de la ciudad y la Gertrudis de Botero<br>Narración ≈ 13 min<br>Horario: Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)<br><a href="https://es.wikipedia.org/wiki/Iglesia_de_Santo_Domingo_(Cartagena_de_Indias)">Wikipedia</a><br><a href="https://www.google.com/maps/dir/?api=1&amp;origin=10.4233%2C-75.5514&amp;destination=10.42432%2C-75.552&amp;travelmode=walking">Cómo llegar a pie (Google Maps)</a>]]></description>
+<Point><coordinates>-75.552,10.42432,0</coordinates></Point></Placemark>
+<Placemark><name>04 · Baluarte de Santo Domingo: la muralla al atardecer</name><styleUrl>#stop</styleUrl>
+<description><![CDATA[<b>Pista 09</b> · baluarte<br>El sistema de fortificaciones frente al Caribe, al caer el sol<br>Narración ≈ 17 min<br>Horario: Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)<br><a href="https://www.google.com/maps/dir/?api=1&amp;origin=10.42432%2C-75.552&amp;destination=10.42456%2C-75.55403&amp;travelmode=walking">Cómo llegar a pie (Google Maps)</a>]]></description>
+<Point><coordinates>-75.55403,10.42456,0</coordinates></Point></Placemark>
+<Placemark><name>05 · Iglesia y claustro de San Pedro Claver</name><styleUrl>#stop</styleUrl>
+<description><![CDATA[<b>Pista 11</b> · iglesia y convento<br>El jesuita que atendió a los africanos esclavizados en el puerto negrero<br>Narración ≈ 22 min<br>Horario: Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)<br><a href="https://es.wikipedia.org/wiki/Iglesia_de_San_Pedro_Claver">Wikipedia</a><br><a href="https://www.google.com/maps/dir/?api=1&amp;origin=10.42456%2C-75.55403&amp;destination=10.4219%2C-75.55105&amp;travelmode=walking">Cómo llegar a pie (Google Maps)</a>]]></description>
+<Point><coordinates>-75.55105,10.4219,0</coordinates></Point></Placemark>
+<Placemark><name>06 · Plaza de la Aduana</name><styleUrl>#stop</styleUrl>
+<description><![CDATA[<b>Pista 13</b> · plaza<br>Centro administrativo del puerto: Casa de la Aduana y el Cabildo<br>Narración ≈ 13 min<br>Horario: Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)<br><a href="https://www.google.com/maps/dir/?api=1&amp;origin=10.4219%2C-75.55105&amp;destination=10.42215%2C-75.55028&amp;travelmode=walking">Cómo llegar a pie (Google Maps)</a>]]></description>
+<Point><coordinates>-75.55028,10.42215,0</coordinates></Point></Placemark>
+<Placemark><name>07 · Puerta del Reloj y Plaza de los Coches</name><styleUrl>#stop</styleUrl>
+<description><![CDATA[<b>Pista 15</b> · puerta y plaza<br>La boca del puente: puerta principal de la muralla y antiguo mercado de esclavos<br>Narración ≈ 17 min<br>Horario: Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)<br><a href="https://www.google.com/maps/dir/?api=1&amp;origin=10.42215%2C-75.55028&amp;destination=10.4231%2C-75.54935&amp;travelmode=walking">Cómo llegar a pie (Google Maps)</a>]]></description>
+<Point><coordinates>-75.54935,10.4231,0</coordinates></Point></Placemark>
+<Placemark><name>08 · Plaza Fernández de Madrid e iglesia de Santo Toribio</name><styleUrl>#stop</styleUrl>
+<description><![CDATA[<b>Pista 17</b> · plaza e iglesia<br>El Parque de los Evangelios de García Márquez y la bala de cañón de 1741<br>Narración ≈ 17 min<br>Horario: Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)<br><a href="https://www.google.com/maps/dir/?api=1&amp;origin=10.4231%2C-75.54935&amp;destination=10.42644%2C-75.54827&amp;travelmode=walking">Cómo llegar a pie (Google Maps)</a>]]></description>
+<Point><coordinates>-75.54827,10.42644,0</coordinates></Point></Placemark>
+<Placemark><name>09 · Plaza de San Diego y claustro de Santa Clara</name><styleUrl>#stop</styleUrl>
+<description><![CDATA[<b>Pista 19</b> · plaza y convento<br>Clarisas, Sierva María y la casa de García Márquez<br>Narración ≈ 17 min<br>Horario: Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)<br><a href="https://www.google.com/maps/dir/?api=1&amp;origin=10.42644%2C-75.54827&amp;destination=10.42811%2C-75.54758&amp;travelmode=walking">Cómo llegar a pie (Google Maps)</a>]]></description>
+<Point><coordinates>-75.54758,10.42811,0</coordinates></Point></Placemark>
+<Placemark><name>10 · Las Bóvedas y Baluarte de Santa Catalina</name><styleUrl>#stop</styleUrl>
+<description><![CDATA[<b>Pista 21</b> · fortificación<br>El último gran proyecto militar de la muralla, frente al mar abierto<br>Narración ≈ 13 min<br>Horario: Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)<br><a href="https://www.google.com/maps/dir/?api=1&amp;origin=10.42811%2C-75.54758&amp;destination=10.42948%2C-75.54706&amp;travelmode=walking">Cómo llegar a pie (Google Maps)</a>]]></description>
+<Point><coordinates>-75.54706,10.42948,0</coordinates></Point></Placemark>
+<Placemark><name>11 · Muelle de los Pegasos y Bahía de las Ánimas</name><styleUrl>#stop</styleUrl>
+<description><![CDATA[<b>Pista 23</b> · muelle<br>El puerto de las flotas y las ferias, entre la ciudad y Getsemaní<br>Narración ≈ 13 min<br>Horario: Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)<br><a href="https://www.google.com/maps/dir/?api=1&amp;origin=10.42948%2C-75.54706&amp;destination=10.42216%2C-75.54882&amp;travelmode=walking">Cómo llegar a pie (Google Maps)</a>]]></description>
+<Point><coordinates>-75.54882,10.42216,0</coordinates></Point></Placemark>
+<Placemark><name>12 · Camellón de los Mártires y Parque Centenario</name><styleUrl>#stop</styleUrl>
+<description><![CDATA[<b>Pista 25</b> · paseo y parque<br>Los fusilados de 1816 tras el sitio de Morillo y el centenario de 1911<br>Narración ≈ 17 min<br>Horario: Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)<br><a href="https://www.google.com/maps/dir/?api=1&amp;origin=10.42216%2C-75.54882&amp;destination=10.4225%2C-75.548&amp;travelmode=walking">Cómo llegar a pie (Google Maps)</a>]]></description>
+<Point><coordinates>-75.548,10.4225,0</coordinates></Point></Placemark>
+<Placemark><name>13 · Calle del Guerrero: el Getsemaní popular</name><styleUrl>#stop</styleUrl>
+<description><![CDATA[<b>Pista 27</b> · barrio<br>El arrabal de artesanos y lanceros de la independencia<br>Narración ≈ 13 min<br>Horario: Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)<br><a href="https://www.google.com/maps/dir/?api=1&amp;origin=10.4225%2C-75.548&amp;destination=10.42148%2C-75.54539&amp;travelmode=walking">Cómo llegar a pie (Google Maps)</a>]]></description>
+<Point><coordinates>-75.54539,10.42148,0</coordinates></Point></Placemark>
+<Placemark><name>14 · Callejón Angosto y Calle de San Juan: el arte urbano</name><styleUrl>#stop</styleUrl>
+<description><![CDATA[<b>Pista 29</b> · calle y murales<br>Murales, memoria barrial y gentrificación<br>Narración ≈ 13 min<br>Horario: Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)<br><a href="https://www.google.com/maps/dir/?api=1&amp;origin=10.42148%2C-75.54539&amp;destination=10.41947%2C-75.54512&amp;travelmode=walking">Cómo llegar a pie (Google Maps)</a>]]></description>
+<Point><coordinates>-75.54512,10.41947,0</coordinates></Point></Placemark>
+<Placemark><name>15 · Iglesia y Plaza de la Santísima Trinidad</name><styleUrl>#stop</styleUrl>
+<description><![CDATA[<b>Pista 31</b> · iglesia y plaza<br>El corazón de Getsemaní: Pedro Romero y la noche en la plaza<br>Narración ≈ 22 min<br>Horario: Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)<br><a href="https://www.google.com/maps/dir/?api=1&amp;origin=10.41947%2C-75.54512&amp;destination=10.42061%2C-75.5454&amp;travelmode=walking">Cómo llegar a pie (Google Maps)</a>]]></description>
+<Point><coordinates>-75.5454,10.42061,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Ruta a pie</name>
+<Placemark><name>Tramo 00 · Inicio → Catedral de Santa Catalina y Plaza de la Proclamación</name>
+<styleUrl>#route</styleUrl><description><![CDATA[Pista 02 · 208 m · 3 min a pie]]></description>
+<LineString><tessellate>1</tessellate><coordinates>-75.550507,10.424699,0 -75.55045,10.424262,0 -75.551109,10.424208,0 -75.551016,10.423508,0 -75.551012,10.423458,0 -75.55101,10.423436,0</coordinates></LineString></Placemark>
+<Placemark><name>Tramo 01 · Catedral de Santa Catalina y Plaza de la Proclamación → Plaza de Bolívar y Palacio de la Inquisición</name>
+<styleUrl>#route</styleUrl><description><![CDATA[Pista 04 · 77 m · 1 min a pie]]></description>
+<LineString><tessellate>1</tessellate><coordinates>-75.55101,10.423436,0 -75.551012,10.423458,0 -75.551016,10.423508,0 -75.551465,10.423461,0 -75.551498,10.423451,0 -75.551504,10.423426,0 -75.551512,10.423307,0</coordinates></LineString></Placemark>
+<Placemark><name>Tramo 02 · Plaza de Bolívar y Palacio de la Inquisición → Plaza e iglesia de Santo Domingo</name>
+<styleUrl>#route</styleUrl><description><![CDATA[Pista 06 · 245 m · 4 min a pie]]></description>
+<LineString><tessellate>1</tessellate><coordinates>-75.551512,10.423307,0 -75.551531,10.423026,0 -75.552141,10.4231,0 -75.552248,10.423116,0 -75.552247,10.423148,0 -75.552164,10.423713,0 -75.552136,10.42411,0 -75.552112,10.424332,0</coordinates></LineString></Placemark>
+<Placemark><name>Tramo 03 · Plaza e iglesia de Santo Domingo → Baluarte de Santo Domingo: la muralla al atardecer</name>
+<styleUrl>#route</styleUrl><description><![CDATA[Pista 08 · 279 m · 4 min a pie]]></description>
+<LineString><tessellate>1</tessellate><coordinates>-75.552112,10.424332,0 -75.552136,10.42411,0 -75.552945,10.424063,0 -75.553398,10.424065,0 -75.553418,10.424438,0 -75.553755,10.424458,0 -75.553771,10.424459,0 -75.554015,10.424458,0 -75.554017,10.424533,0 -75.554017,10.424533,0</coordinates></LineString></Placemark>
+<Placemark><name>Tramo 04 · Baluarte de Santo Domingo: la muralla al atardecer → Iglesia y claustro de San Pedro Claver</name>
+<styleUrl>#route</styleUrl><description><![CDATA[Pista 10 · 568 m · 10 min a pie]]></description>
+<LineString><tessellate>1</tessellate><coordinates>-75.554017,10.424533,0 -75.554015,10.424458,0 -75.553771,10.424459,0 -75.553755,10.424458,0 -75.553418,10.424438,0 -75.553398,10.424065,0 -75.553366,10.423527,0 -75.553362,10.423482,0 -75.55336,10.423451,0 -75.553347,10.423294,0 -75.553334,10.423251,0 -75.55304,10.422666,0 -75.552877,10.42217,0 -75.552845,10.422062,0 -75.552783,10.421828,0 -75.552728,10.421814,0 -75.552672,10.421804,0 -75.552573,10.421811,0 -75.552413,10.421825,0 -75.552247,10.421839,0 -75.552153,10.421849,0 -75.551055,10.42195,0</coordinates></LineString></Placemark>
+<Placemark><name>Tramo 05 · Iglesia y claustro de San Pedro Claver → Plaza de la Aduana</name>
+<styleUrl>#route</styleUrl><description><![CDATA[Pista 12 · 152 m · 2 min a pie]]></description>
+<LineString><tessellate>1</tessellate><coordinates>-75.551055,10.42195,0 -75.550936,10.421961,0 -75.550906,10.421648,0 -75.550441,10.421672,0 -75.550406,10.421716,0 -75.550159,10.422068,0</coordinates></LineString></Placemark>
+<Placemark><name>Tramo 06 · Plaza de la Aduana → Puerta del Reloj y Plaza de los Coches</name>
+<styleUrl>#route</styleUrl><description><![CDATA[Pista 14 · 242 m · 4 min a pie]]></description>
+<LineString><tessellate>1</tessellate><coordinates>-75.550159,10.422068,0 -75.55014,10.422095,0 -75.549971,10.422336,0 -75.549956,10.42246,0 -75.549974,10.422605,0 -75.550001,10.422823,0 -75.549975,10.422909,0 -75.549935,10.422999,0 -75.549791,10.423173,0 -75.549727,10.423288,0 -75.549703,10.423447,0 -75.549425,10.423438,0 -75.549287,10.423176,0 -75.549309,10.423144,0 -75.549343,10.423095,0</coordinates></LineString></Placemark>
+<Placemark><name>Tramo 07 · Puerta del Reloj y Plaza de los Coches → Plaza Fernández de Madrid e iglesia de Santo Toribio</name>
+<styleUrl>#route</styleUrl><description><![CDATA[Pista 16 · 538 m · 8 min a pie]]></description>
+<LineString><tessellate>1</tessellate><coordinates>-75.549343,10.423095,0 -75.549309,10.423144,0 -75.549287,10.423176,0 -75.549425,10.423438,0 -75.549703,10.423447,0 -75.549658,10.424331,0 -75.54961,10.424999,0 -75.549592,10.425242,0 -75.548697,10.425223,0 -75.54845,10.42607,0 -75.548437,10.426196,0 -75.548414,10.426507,0 -75.548393,10.426506,0 -75.548316,10.426504,0 -75.54831,10.426437,0</coordinates></LineString></Placemark>
+<Placemark><name>Tramo 08 · Plaza Fernández de Madrid e iglesia de Santo Toribio → Plaza de San Diego y claustro de Santa Clara</name>
+<styleUrl>#route</styleUrl><description><![CDATA[Pista 18 · 250 m · 4 min a pie]]></description>
+<LineString><tessellate>1</tessellate><coordinates>-75.54831,10.426437,0 -75.548316,10.426504,0 -75.548299,10.426557,0 -75.548235,10.426556,0 -75.548216,10.426657,0 -75.548127,10.426733,0 -75.548097,10.426742,0 -75.548091,10.426806,0 -75.548008,10.426812,0 -75.547921,10.42725,0 -75.547802,10.427985,0 -75.547746,10.428265,0 -75.547556,10.428227,0</coordinates></LineString></Placemark>
+<Placemark><name>Tramo 09 · Plaza de San Diego y claustro de Santa Clara → Las Bóvedas y Baluarte de Santa Catalina</name>
+<styleUrl>#route</styleUrl><description><![CDATA[Pista 20 · 169 m · 3 min a pie]]></description>
+<LineString><tessellate>1</tessellate><coordinates>-75.547556,10.428227,0 -75.547353,10.428187,0 -75.547094,10.42945,0 -75.547059,10.429451,0</coordinates></LineString></Placemark>
+<Placemark><name>Tramo 10 · Las Bóvedas y Baluarte de Santa Catalina → Muelle de los Pegasos y Bahía de las Ánimas</name>
+<styleUrl>#route</styleUrl><description><![CDATA[Pista 22 · 1105 m · 18 min a pie]]></description>
+<LineString><tessellate>1</tessellate><coordinates>-75.547059,10.429451,0 -75.547094,10.42945,0 -75.547233,10.429439,0 -75.54752,10.429361,0 -75.547916,10.429215,0 -75.548248,10.429011,0 -75.54828,10.428976,0 -75.548345,10.428899,0 -75.548428,10.428818,0 -75.548728,10.428628,0 -75.549322,10.428236,0 -75.549499,10.428111,0 -75.5495,10.42772,0 -75.549541,10.426678,0 -75.549592,10.425242,0 -75.549658,10.424331,0 -75.549703,10.423447,0 -75.549425,10.423438,0 -75.549287,10.423176,0 -75.549234,10.423141,0 -75.549116,10.423062,0 -75.549046,10.422891,0 -75.548959,10.422814,0 -75.548919,10.422779,0 -75.548892,10.422755,0 -75.548862,10.422729,0 -75.548843,10.422712,0 -75.548795,10.422669,0 -75.548669,10.422474,0 -75.548684,10.422456,0 -75.548694,10.422445,0 -75.54889,10.422577,0 -75.548911,10.422554,0 -75.548961,10.422497,0 -75.548995,10.422502,0 -75.54903,10.4225,0 -75.549063,10.422491,0 -75.549093,10.422475,0 -75.549072,10.422426,0 -75.549052,10.422378,0 -75.549005,10.422328,0 -75.548822,10.422158,0</coordinates></LineString></Placemark>
+<Placemark><name>Tramo 11 · Muelle de los Pegasos y Bahía de las Ánimas → Camellón de los Mártires y Parque Centenario</name>
+<styleUrl>#route</styleUrl><description><![CDATA[Pista 24 · 373 m · 6 min a pie]]></description>
+<LineString><tessellate>1</tessellate><coordinates>-75.548822,10.422158,0 -75.548625,10.421974,0 -75.5486,10.421999,0 -75.548596,10.422004,0 -75.548554,10.422046,0 -75.548495,10.421994,0 -75.548299,10.421829,0 -75.548245,10.421892,0 -75.548186,10.421959,0 -75.548158,10.42199,0 -75.547881,10.421737,0 -75.547784,10.421848,0 -75.547754,10.421823,0 -75.547652,10.421927,0 -75.547719,10.421955,0 -75.547768,10.421996,0 -75.548334,10.422464,0 -75.548385,10.422511,0 -75.548417,10.422546,0 -75.548452,10.422587,0 -75.548472,10.422625,0 -75.548483,10.422663,0 -75.548486,10.422702,0 -75.548484,10.422732,0 -75.548479,10.422753,0 -75.548417,10.422742,0 -75.548398,10.422739,0 -75.548353,10.42273,0 -75.548329,10.422686,0 -75.548059,10.422438,0</coordinates></LineString></Placemark>
+<Placemark><name>Tramo 12 · Camellón de los Mártires y Parque Centenario → Calle del Guerrero: el Getsemaní popular</name>
+<styleUrl>#route</styleUrl><description><![CDATA[Pista 26 · 396 m · 6 min a pie]]></description>
+<LineString><tessellate>1</tessellate><coordinates>-75.548059,10.422438,0 -75.547659,10.422069,0 -75.547575,10.422035,0 -75.547497,10.422038,0 -75.547013,10.422092,0 -75.546994,10.422066,0 -75.546978,10.422044,0 -75.54696,10.421983,0 -75.546399,10.422032,0 -75.545626,10.422185,0 -75.54545,10.42222,0 -75.545447,10.422193,0 -75.545388,10.42148,0</coordinates></LineString></Placemark>
+<Placemark><name>Tramo 13 · Calle del Guerrero: el Getsemaní popular → Callejón Angosto y Calle de San Juan: el arte urbano</name>
+<styleUrl>#route</styleUrl><description><![CDATA[Pista 28 · 266 m · 4 min a pie]]></description>
+<LineString><tessellate>1</tessellate><coordinates>-75.545388,10.42148,0 -75.54537,10.421255,0 -75.54532,10.420735,0 -75.54527,10.420699,0 -75.545244,10.42067,0 -75.545236,10.420623,0 -75.54524,10.420574,0 -75.545425,10.420055,0 -75.545564,10.419653,0 -75.54512,10.419471,0</coordinates></LineString></Placemark>
+<Placemark><name>Tramo 14 · Callejón Angosto y Calle de San Juan: el arte urbano → Iglesia y Plaza de la Santísima Trinidad</name>
+<styleUrl>#route</styleUrl><description><![CDATA[Pista 30 · 212 m · 3 min a pie]]></description>
+<LineString><tessellate>1</tessellate><coordinates>-75.54512,10.419471,0 -75.545564,10.419653,0 -75.545425,10.420055,0 -75.54524,10.420574,0 -75.545236,10.420623,0 -75.545244,10.42067,0 -75.54527,10.420699,0 -75.54532,10.420735,0 -75.545421,10.420744,0 -75.545479,10.420734,0 -75.545482,10.420701,0 -75.545492,10.420648,0 -75.545495,10.420637,0</coordinates></LineString></Placemark>
+</Folder>
+</Document></kml>
