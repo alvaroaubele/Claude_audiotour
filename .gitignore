@@ -1,0 +1,6 @@
+.cache/
+__pycache__/
+tours/*/audio/
+tours/*/dist/
+tours/_*/
+*.part
