@@ -1,13 +1,13 @@
 {
   "status": "fail",
-  "checked_claims": 96,
+  "checked_claims": 97,
   "findings": [
     {
-      "claim": "Germán Espinosa la convirtió en novela en 1991.",
-      "problem": "«Orika de los palenques» no es una novela, sino un cuento o relato breve. Lo recoge el volumen de Cuentos completos de Espinosa. La fuente del dossier, Wikipedia «Benkos Biohó», dice «La novela», pero el estudio académico dedicado a esa obra la trata siempre como cuento.",
-      "evidence": "Camilo Herrera, «“Orika de los palenques” de Germán Espinosa: una mirada a la historia y la leyenda del cimarrón en el siglo xvii», Estudios de Literatura Colombiana 45 (2019), pp. 67-84, https://dialnet.unirioja.es/descarga/articulo/7003377.pdf. El resumen habla de «el cuento del escritor cartagenero» y el texto dice «“Orika”, escrita en 1991». La bibliografía la cita así: «Espinosa, G. (2007). Orika de los palenques. En: Cuentos completos. Bogotá: Alfaguara». Wikipedia, https://es.wikipedia.org/wiki/Benkos_Bioh%C3%B3, la llama «La novela Orika de los palenques (1991)» sin ninguna fuente.",
-      "fix": "«Germán Espinosa la convirtió en cuento en 1991.» También vale «la reescribió en un relato en 1991». Hay que corregir además el hecho 45 del dossier."
+      "claim": "El Museo Histórico de Cartagena lo atribuye a los frailes franciscanos; otros cronistas, a un deán de la catedral. No está resuelto.",
+      "problem": "La versión del deán no se puede rastrear. El hecho 24 del dossier la apoya solo en «otras fuentes (blogs)», sin URL ni título, y la atribuye a un «deán Rodrigo Durán». Dos búsquedas independientes no encuentran ninguna fuente que diga que un deán de la catedral dio nombre a Getsemaní. CLAUDE.md exige que cada atribución sea trazable a una fuente del dossier. Presentarla como versión rival de «cronistas» le da una autoridad que nada documenta. La atribución franciscana sí está sostenida.",
+      "evidence": "MUHCA, Cartapedia, «Historia del barrio Getsemaní», https://www.muhca.gov.co/cartapedia_historia-del-barrio-getsemani-96: «El nombre de esta barrio, se debe a los fundadores del Convento de San Francisco de Asís». Esa página no menciona a ningún deán. La búsqueda web «Getsemaní Cartagena nombre deán Rodrigo Durán origen» no encontró ningún resultado que relacione a un deán con el nombre. Solo apareció don Juan Durán, contador de la Real Hacienda y primer dueño de la isla, que es otra persona y no está ligado al nombre. La búsqueda «\"Rodrigo Durán\" Getsemaní Cartagena» no dio ninguna mención.",
+      "fix": "Quitar la versión del deán, o que el autor añada al dossier una fuente citable con URL y título. Redacción sin ella: «El Museo Histórico de Cartagena atribuye el nombre a los frailes del convento de San Francisco.» Si se quiere mantener la cautela: «Así lo atribuye el Museo Histórico de Cartagena, aunque ningún documento de la época lo confirma.»"
     }
   ],
-  "script_sha": "c21bda976c251888"
+  "script_sha": "e47ab2d034159035"
 }

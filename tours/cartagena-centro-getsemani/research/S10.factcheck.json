@@ -1,37 +1,37 @@
 {
   "status": "fail",
-  "checked_claims": 96,
+  "checked_claims": 104,
   "findings": [
     {
-      "claim": "El cronista Ubaldo José Elles Quintana, en las páginas de El Universal, atribuye la talla a un artista nacido en Cartagena, Hermenegildo Josef Ayala.",
-      "problem": "Atribución equivocada. La atribución a Ayala no es de Elles Quintana: es de Juan Manuel Zapatero en su estudio de 1967, que el blog cita. El blog solo la reproduce. Marco Dorta, también citado allí, menciona el escudo de mármol de 1798 en el tímpano, pero no nombra al escultor.",
-      "evidence": "https://blogs.eluniversal.com.co/patrimonio-siglo-xxi/historias-secretas-de-la-plaza-de-las-bovedas-de-san-diego-2: el escudo de mármol de las armas reales lo atribuye Zapatero, en el pasaje citado, «con bello acierto por el artista Hermenegildo Josef Ayala», 1798, reinando Carlos IV.",
-      "fix": "«Juan Manuel Zapatero, uno de los grandes estudiosos de estas murallas, atribuye la talla a un artista nacido en Cartagena, Hermenegildo Josef Ayala.» Después, en el párrafo de la galería, basta con «Zapatero sostuvo en 1967…»."
+      "claim": "Ahora mire a su derecha: la arcada corre en diagonal hacia el noreste durante unos doscientos metros. Donde termina, la muralla vuelve a quebrarse. Allí está el baluarte de Santa Catalina, la esquina nordeste de la ciudad.",
+      "problem": "La longitud de la arcada está sobrestimada. Lo que está a unos doscientos metros del oyente es el baluarte de Santa Catalina, no el final de la arcada. Según OpenStreetMap, el frente de las Bóvedas empieza a unos diez metros del punto del oyente y mide unos ciento treinta y cinco metros. Cuadra con los cuarenta y siete arcos, que son dos por bóveda más uno. Por eso el centro de la arcada queda a unos setenta metros de la esquina, y del centro al extremo hay también unos setenta metros, no cien. La misma sobrestimación se repite en la pista de marcha: «Ahora camine hacia su derecha, a lo largo de la galería, hasta el final de la arcada. Son unos cien metros.» La señal de llegada sí es correcta.",
+      "evidence": "OSM, way 63525986 «Las Murallas de Cartagena», vía Nominatim reverse: el borde interior del tramo de las Bóvedas es una fila de nodos espaciados regularmente, de (-75.5470794, 10.4295722) a (-75.546048, 10.4302443). Son unos 135 metros en total. Su extremo suroeste está a unos 10 metros del punto 10.42948, -75.54706. El baluarte de Santa Catalina, way 1031619550, está a unos 220 metros del punto, y el de Santa Clara, nodo 2934551225, a unos 100. Blog de Elles Quintana, https://blogs.eluniversal.com.co/patrimonio-siglo-xxi/historias-secretas-de-la-plaza-de-las-bovedas-de-san-diego-2: hay 23 bóvedas y 47 arcos según Zapatero, y 23 bóvedas de 7 varas de ancho según Marco Dorta.",
+      "fix": "«Ahora mire a su derecha: la arcada corre en diagonal hacia el noreste a lo largo de unos ciento cuarenta metros. Algo más allá, a unos doscientos metros de usted, la muralla vuelve a quebrarse. Allí está el baluarte de Santa Catalina…». En la pista de marcha: «Son unos setenta metros.»"
     },
     {
-      "claim": "Luego la volvieron a solar con ladrillo cocido color terracota, en espina de pez.",
-      "problem": "Se presenta como hecho una obra que las fuentes solo describen como prevista. La nota de la ETCAR del 4 de enero de 2022 dice que terminó la primera etapa, que consistió en retirar los 12 centímetros de material. Añade que los ladrillos de espina de pez se colocarían en una segunda etapa de unos cuatro meses, con los trabajos suspendidos de momento. No hay en el dossier ni en las búsquedas ninguna fuente que confirme que esa segunda etapa se terminó. El dossier, en su hecho 9, convierte también en acabado existente lo que la fuente da como futuro.",
-      "evidence": "https://fortificacionescartagena.com.co/es/blog-post/culmina-primera-etapa-de-trabajos-en-la-cubierta-de-las-bovedas/ (04-01-2022): «Culmina primera etapa»; en la segunda etapa «se instalará» una plantilla impermeabilizada con ladrillo de arcilla cocida terracota de 15 por 30 centímetros en espina de pez. https://www.eluniversal.com.co/cartagena/asi-van-las-obras-para-controlar-filtraciones-en-las-bovedas-LM5718629 (15-11-2021): el piso se colocaría en enero de 2022, según el cronograma; no confirma que se terminara.",
-      "fix": "Encontrar una fuente de que la obra se terminó. Si no la hay: «El proyecto preveía volver a solarla con ladrillo cocido color terracota, en espina de pez.» Y cambiar «Mientras tanto, la azotea se ha rehecho» por «Mientras tanto, la azotea empezó a rehacerse»."
+      "claim": "El informe de 1796 lo dice con una frase que sirve de epitafio a toda la ingeniería colonial de la ciudad: «Así en 1796 quedó completamente cerrado el recinto de Cartagena».",
+      "problem": "La cita está atribuida a un documento de 1796, y eso es dudoso. En la transcripción, la frase cierra un bloque de Marco Dorta que mezcla su relato, «Siete años después en 1796, ya existían las bóvedas…», con pasajes del documento de la época. Un informe de 1796 no hablaría de sí mismo con un «Así en 1796 quedó…». Por su forma retrospectiva, es casi con certeza la conclusión del propio Marco Dorta. Ninguna fuente del dossier la presenta como texto de un documento de 1796.",
+      "evidence": "https://blogs.eluniversal.com.co/patrimonio-siglo-xxi/historias-secretas-de-la-plaza-de-las-bovedas-de-san-diego-2: transcribe a Marco Dorta, 1960, pp. 305-308. Dice: «Siete años después en 1796, ya existían las bóvedas, las cuales son capaces…»; «Además, se había hecho una galería subterránea… ejecutada en el año 79… Así en 1796 quedó completamente cerrado el recinto de Cartagena».",
+      "fix": "«Marco Dorta lo resume con una frase que sirve de epitafio a toda la ingeniería colonial de la ciudad: «Así en 1796 quedó completamente cerrado el recinto de Cartagena».»"
     },
     {
-      "claim": "Estuvo allí entre noviembre de 1828 y junio de 1829, tras la conspiración contra Bolívar.",
-      "problem": "La fecha de inicio es imprecisa. Santander salió de Bogotá hacia Bocachica el 15 de noviembre de 1828 y el viaje duró semanas. Escribe todavía desde Cartagena el 13 de diciembre y desde las fortalezas de Bocachica el 18 de diciembre. En noviembre estaba de camino, no en Bocachica. La biografía de la Fundación Empresas Polar, citada en el blog, lo sitúa en San Fernando hasta el 19 de diciembre y después en San José hasta el 16 de junio de 1829.",
-      "evidence": "Blog de Elles Quintana (URL arriba), citando a la Fundación Empresas Polar: «El 15 de noviembre de 1828 salió Santander de Bogotá hacia el castillo san Fernando» de Bocachica; allí hasta el 19 de diciembre; luego en San José hasta el 16 de junio de 1829. Índice de la correspondencia Santander-Bolívar (sidn.ramajudicial.gov.co, 942_Cartas_Santander_Bolivar_1826_1830): cartas del 13-12-1828 desde Cartagena y del 18-12-1828 desde «Fortalezas de Bocachica».",
-      "fix": "«Estuvo allí desde diciembre de 1828 hasta junio de 1829, tras la conspiración contra Bolívar.» También vale «desde finales de 1828»."
+      "claim": "Arévalo murió aquí, en Cartagena, en abril de 1800, menos de dos años después de que se colocara ese escudo.",
+      "problem": "La fuente no respalda el «menos de dos años». El escudo está fechado solo por año, 1798, y ninguna fuente da el mes en que se colocó. Arévalo murió el 9 de abril de 1800. Si el escudo se colocó entre enero y el 9 de abril de 1798, pasaron dos años o más.",
+      "evidence": "Blog de Elles Quintana, URL arriba: Marco Dorta dice que el escudo de mármol «está fechado en ese mismo año», 1798, sin mes. https://fortificacionescartagena.com.co/?p=7533: el escudo «with the date 1798». https://es.wikipedia.org/wiki/Antonio_de_Ar%C3%A9valo: murió en Cartagena el 9 de abril de 1800.",
+      "fix": "«Arévalo murió aquí, en Cartagena, en abril de 1800, apenas dos años después de la fecha de ese escudo.»"
     },
     {
-      "claim": "Duró del veintiséis de agosto al seis de diciembre, y la ciudad se rindió por hambre.",
-      "problem": "Inexacto, y contradice la parada S12. Las autoridades de Cartagena decidieron no capitular y evacuar la plaza por mar la noche del 5 de diciembre. Morillo ocupó la ciudad el 6. S12 narra precisamente la evacuación.",
-      "evidence": "https://es.wikipedia.org/wiki/Asedio_espa%C3%B1ol_de_Cartagena_de_Indias_(1815): el 4 de diciembre el gobernador López de Tagle decidió «no capitular con el general español, sino evacuar la plaza al día siguiente»; el 6 de diciembre «Morillo ocupó Cartagena». scripts/S12.md: «Justo después de la evacuación llegaron de las Antillas…».",
-      "fix": "«Duró del veintiséis de agosto al seis de diciembre, y la ciudad cayó por hambre.» Otra opción: «y el hambre acabó con la defensa»."
+      "claim": "En 1980, la Corporación Nacional de Turismo hizo la restauración más completa.",
+      "problem": "La frase deforma la fuente. Bossa, transcrito por Elles Quintana, dice que la última restauración completa se debe a la Corporación Nacional de Turismo en 1980. Habla de la última restauración integral, no de la más completa de todas. El superlativo no tiene fuente.",
+      "evidence": "Blog de Elles Quintana, URL arriba: «La completa restauración última se debe a la Corporación Nacional de Turismo …en 1980».",
+      "fix": "«En 1980, la Corporación Nacional de Turismo hizo la última restauración integral.»"
     },
     {
-      "claim": "Después, según el historiador Donaldo Bossa, fue cárcel militar y política, también durante las guerras civiles del siglo diecinueve.",
-      "problem": "La frase atribuye a Bossa lo que no dice. Según la transcripción del blog, Bossa afirma que las Bóvedas «fueron utilizadas después de la guerra de independencia como cárceles militares y políticas». El uso en las guerras civiles del siglo diecinueve procede de la Wikipedia inglesa, que no da fuente primaria. El blog no lo atribuye a Bossa.",
-      "evidence": "Blog de Elles Quintana (URL arriba): Bossa, «después de la guerra de independencia como cárceles militares y políticas»; el blog no menciona guerras civiles. https://en.wikipedia.org/wiki/Las_B%C3%B3vedas: «were used as prison cells during the civil wars in the 19th century».",
-      "fix": "«Después, según el historiador Donaldo Bossa, fue cárcel militar y política. Siguió usándose como calabozo durante las guerras civiles del siglo diecinueve.»"
+      "claim": "Si quiere verlo por dentro, vuelva otro día: abre solo de día y cuando hay exposición, así que consulte antes la programación de la Escuela Taller.",
+      "problem": "Se presenta como horario fijo algo que sale de un solo caso. La única fuente de horario es la exposición de septiembre y octubre de 2024: de 8 a 12 y de 14 a 18. La ETCAR no publica un horario permanente del aljibe, la casamata y el Túnel de Escape. El propio dossier, en su lista de cosas buscadas y no confirmadas, dice que no hay fuente oficial vigente.",
+      "evidence": "https://fortificacionescartagena.com.co/es/blog-post/exposicion-las-fortificaciones-de-san-lazaro-abre-en-el-baluarte-de-santa-catalina/ (12-09-2024): la exposición en el aljibe y la casamata estaría abierta «de 8 a.m. a 12 m., y de 2 p.m. a 6 p.m. hasta el 11 de octubre». https://fortificacionescartagena.com.co/es/exposiciones-tunel-de-escape/: no hay horario.",
+      "fix": "«Si quiere verlo por dentro, vuelva otro día: por lo general solo abre de día y cuando hay exposición, así que consulte antes la programación de la Escuela Taller.»"
     }
   ],
-  "script_sha": "f4e55a296466e0ee"
+  "script_sha": "e73f69cab5021ed6"
 }
