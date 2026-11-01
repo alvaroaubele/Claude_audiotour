@@ -1,0 +1,49 @@
+{
+  "status": "fail",
+  "checked_claims": 112,
+  "findings": [
+    {
+      "claim": "Los investigadores proponen como hipótesis al francés Gaston Lelarge, que en esos mismos años rehízo la cúpula de San Pedro Claver y el campanario de la catedral.",
+      "problem": "Omisión que vuelve engañosa la frase. Justo antes, el guion fecha la intervención en la aguja y los frontones «después de 1933», así que «en esos mismos años» sitúa en los años treinta las obras de Lelarge en San Pedro Claver y en la catedral. El artículo solo dice «en el mismo período», sin más precisión. Lelarge murió en Cartagena el 9 de agosto de 1934, y su intervención en la torre y la cúpula de la catedral se suele fechar hacia 1908. Callar su muerte en 1934 da a la hipótesis una verosimilitud que no tiene: una obra posterior a 1933 solo pudo hacerla en su último año de vida.",
+      "evidence": "https://dialnet.unirioja.es/descarga/articulo/9689125.pdf (Mimesis.jsad 4, 2024, p. 21: fase «E) 1933-hasta hoy, renovación del pináculo y de los frontones»; p. 23: Lelarge «trabajó en Cartagena de Indias en el mismo período, redefiniendo la cúpula de la iglesia de San Pedro Claver y el campanario de la catedral»). https://en.wikipedia.org/wiki/Gast%C3%B3n_Lelarge (murió el 9 de agosto de 1934 en Cartagena). Los resultados de búsqueda sobre la Catedral de Cartagena (Wikipedia en inglés) fechan en 1908 la restauración de la torre y la cúpula por Lelarge.",
+      "fix": "«Los investigadores proponen como hipótesis al francés Gaston Lelarge, que trabajó en Cartagena hasta su muerte, allí mismo, en 1934, y había rehecho la cúpula de San Pedro Claver y el campanario de la catedral. Es una hipótesis frágil: Lelarge murió al año siguiente.» Otra opción es quitar «en esos mismos años» y añadir la fecha de su muerte."
+    },
+    {
+      "claim": "Y añade algo más incómodo, que en 2021 recordaba el director de la propia Academia, Alberto Samudio. Según ella, Heredia «pobló lo ya poblado».",
+      "problem": "Cita textual mal atribuida. En el artículo, la frase «Él pobló lo ya poblado» la dice Samudio. Él cita la tesis doctoral de Carmen Gómez para sostener que Heredia no fundó la ciudad, pero el artículo no afirma que Gómez escribiera esas palabras, y el guion las pone entre comillas en boca de ella. Además, el cargo de Samudio choca con la propia parada: El Universal lo llama «director» de la Academia en junio de 2021, y otra nota de El Universal de mayo de 2021, que el guion también usa, llama «presidente» de la Academia a Rafael Ballestas Morales. Así el oyente oye dos jefes distintos de la misma Academia en un mes.",
+      "evidence": "https://www.eluniversal.com.co/cartagena/2021/06/05/el-debate-que-abrio-la-estatua-de-pedro-de-heredia/ (Samudio: «Aquí cito a la historiadora Carmen Gómez, quien en su tesis doctoral ‘Pedro de Heredia y Cartagena de Indias’ asegura que él no fundó la ciudad […] Él pobló lo ya poblado»). https://www.eluniversal.com.co/suplementos/facetas/2021/05/09/el-llamado-a-proteger-a-las-estatuas-de-cartagena/ (Ballestas Morales, «el presidente de la Academia de Historia de Cartagena»).",
+      "fix": "«Su tesis doctoral sostiene algo más incómodo: que Heredia no fundó la ciudad. En 2021, el arquitecto Alberto Samudio, de la Academia de Historia, lo resumió así: Heredia, dijo, pobló lo ya poblado.»"
+    },
+    {
+      "claim": "Unas semanas después, en el aniversario de la fundación, un manifestante disfrazado de ave de mal agüero dio cuatrocientas ochenta y ocho vueltas a su alrededor.",
+      "problem": "La fuente expresa una intención, no un hecho consumado. El artículo dice que «la idea es darle las 488 vueltas al monumento» y no confirma que se dieran.",
+      "evidence": "https://www.eluniversal.com.co/cartagena/2021/06/05/el-debate-que-abrio-la-estatua-de-pedro-de-heredia/ («La idea es darle las 488 vueltas al monumento»).",
+      "fix": "«…un manifestante disfrazado de ave de mal agüero se propuso dar cuatrocientas ochenta y ocho vueltas a su alrededor.»"
+    },
+    {
+      "claim": "En 2020, tras más de seis meses cerrados por la pandemia, las dulceras reabrieron veintitrés puestos.",
+      "problem": "Cifra mal leída. Veintitrés es el número total de puestos del grupo que lidera Evelia Alcalá, no el de los que reabrieron. El mismo despacho de EFE dice que tres vendedoras seguían enfermas y no habían podido abrir sus puestos.",
+      "evidence": "https://www.laestrella.com.pa/mundo/america/agridulce-reapertura-portal-dulces-cartagena-indias-DOLE434986 (EFE, 11/10/2020: Alcalá es «líder del grupo de vendedoras de los 23 puestos»; «actualmente hay tres que siguen enfermas y que no han podido abrir sus puestos»).",
+      "fix": "«En 2020, tras más de seis meses cerrados por la pandemia, las dulceras de los veintitrés puestos del portal volvieron a abrir, salvo tres que seguían enfermas.»"
+    },
+    {
+      "claim": "Donaldo Bossa la identifica con la calle Portocarrero, que sale hacia el norte desde esta plaza.",
+      "problem": "Indicación de dirección incorrecta. En OpenStreetMap, la calle Portocarrero es un tramo de unos treinta metros. Sale hacia el oeste desde la esquina noroeste de la plaza, donde terminan los arcos del Portal de los Dulces. La que sigue hacia el norte es la calle del Colegio, que empieza al final de ese tramo.",
+      "evidence": "Nominatim/OSM: way 25781352 «Calle Portocarrero», de (10.4234381, -75.5494248), extremo norte del way 25442420 «Portal de los Dulces», a (10.4234468, -75.5497029), es decir, hacia el oeste. Way 25442414 «Calle del Colegio», de (10.4234468, -75.5497029) a (10.4243312, -75.5496575), hacia el norte. El comentario de Valhalla en scripts/L07.md coincide: «plaza de los Coches → calle Portocarrero ≈ 40 m → calle del Colegio».",
+      "fix": "«Donaldo Bossa la identifica con la calle Portocarrero, la que sale de la esquina noroeste de esta plaza, donde terminan los arcos del Portal de los Dulces.»"
+    },
+    {
+      "claim": "Ahora salga hacia el norte, por la calle Portocarrero.",
+      "problem": "Mismo error de dirección, ahora como instrucción de marcha. Desde la estatua, si camina hacia el norte, el oyente llega en unos quince metros al lado norte de la plaza. La calle Portocarrero sale a la izquierda, hacia el oeste, y solo después, por la calle del Colegio, el camino gira al norte.",
+      "evidence": "Las mismas geometrías OSM del hallazgo anterior (ways 25781352 y 25442414) y el nodo 797763839 «Estatua de Pedro de Heredia», en (10.4232769, -75.5493674).",
+      "fix": "«Ahora salga por la esquina noroeste de la plaza, al final de los arcos del Portal de los Dulces, y tome la calle Portocarrero. A los pocos metros girará hacia el norte, por la calle del Colegio.»"
+    },
+    {
+      "claim": "Los dos huecos laterales se abrieron mucho después, cuando la ciudad ya no temía a los piratas sino al atasco.",
+      "problem": "Relación causal sin fuente y en parte contradicha. Las fuentes del dossier fechan el primer hueco en 1803, según la prensa, o entre 1804 y 1870, según el estudio de Bari: en plena colonia o en las guerras de independencia, no en una ciudad sin amenazas. Para el de 1905, la fuente da otro motivo: Elles, siguiendo a la Sociedad de Mejoras Públicas, dice que la tercera boca se abrió «para darle simetría al conjunto arquitectónico». Ninguna fuente atribuye las aperturas al tráfico.",
+      "evidence": "https://blogs.eluniversal.com.co/patrimonio-siglo-xxi/historias-secretas-de-la-plaza-de-los-coches-de-cartagena2 (tercera puerta abierta en 1905 «para darle simetría al conjunto arquitectónico»). https://www.eluniversal.com.co/cartagena/2023/08/31/historia-tras-la-torre-del-reloj-por-donde-antes-si-pasaban-carros/ (aperturas «realizadas en 1803 y 1905 respectivamente»). https://dialnet.unirioja.es/descarga/articulo/9689125.pdf (fase C, 1804-1870: apertura de la puerta lateral izquierda).",
+      "fix": "«Los dos huecos laterales se abrieron mucho después.» Y, tras «El otro, en 1905», añadir: «según una fuente de la época, para dar simetría al conjunto». Si se quiere conservar la ironía, preséntela como lectura del narrador, no como causa documentada."
+    }
+  ],
+  "script_sha": "f22f4a8f253dbbdd"
+}

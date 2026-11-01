@@ -1,0 +1,43 @@
+{
+  "status": "fail",
+  "checked_claims": 92,
+  "findings": [
+    {
+      "claim": "Es Adolfo Mejía, compositor cartagenero, nacido en 1905 y muerto en 1973.",
+      "problem": "Adolfo Mejía Navarro no nació en Cartagena. Nació en San Luis de Sincé, hoy departamento de Sucre, el 5 de febrero de 1905, y llegó a Cartagena de niño o adolescente para estudiar música. Las fechas son correctas. Ninguna fuente del dossier lo hace cartagenero de nacimiento.",
+      "evidence": "https://es.wikipedia.org/wiki/Adolfo_Mej%C3%ADa_Navarro: «Adolfo Mejía nació el 5 de febrero de 1905 en el municipio de San Luis de Sincé»; murió en Cartagena el 6 de julio de 1973. El Universal, columna del 16 jul 2026, titulada «Adolfo Mejía, músico universal que nació en Sincé»: https://www.eluniversal.com.co/opinion/columna/2026/07/16/adolfo-mejia-musico-universal-que-nacio-en-since/ . Radio Nacional de Colombia, https://www.radionacional.co/musica/artistas-colombianos/adolfo-mejia-navarro-vida-y-obra-del-artista-colombiano, también da Sincé y su traslado a Cartagena para estudiar música.",
+      "fix": "«Es Adolfo Mejía, compositor nacido en Sincé, en la sabana de Sucre, en 1905. Se formó en Cartagena y murió aquí en 1973.» Añadir al dossier la fuente del lugar de nacimiento."
+    },
+    {
+      "claim": "La frase con que cierra el episodio es esta: La idea de que esa tumba pudiera ser la suya fue mi noticia de aquel día.",
+      "problem": "La cita está truncada aunque se presenta como la frase completa que cierra el episodio. La frase del prólogo sigue: «…fue mi noticia de aquel día, y el origen de este libro». La fuente del propio dossier, Polifemo, reproduce la frase entera.",
+      "evidence": "https://www.polifemo.com/libros/del-amor-y-otros-demonios/249907/: «La idea de que esa tumba pudiera ser la suya fue mi noticia de aquel día, y el origen de este libro.»",
+      "fix": "Citarla entera: «La idea de que esa tumba pudiera ser la suya fue mi noticia de aquel día, y el origen de este libro.» Otra opción: presentarla como «la frase empieza así», sin decir que es la frase completa."
+    },
+    {
+      "claim": "Hacia 1990, según la prensa de la época, el caucho de las Indias se lo estaba comiendo, entre murciélagos y goteras.",
+      "problem": "El dato se atribuye a una fuente que no lo dice así. La única fuente es una crónica de El Tiempo del 8 oct 1995. Esa crónica describe el estado del edificio «hace cinco años», es decir, en retrospectiva. No es prensa de 1990.",
+      "evidence": "Sonia Sierra E., «Las vidas de Santa Clara», El Tiempo, 8 oct 1995, https://www.eltiempo.com/archivo/documento/MAM-417864: la descripción del caucho, los murciélagos y la lluvia se refiere a «hace cinco años».",
+      "fix": "«Según una crónica de El Tiempo de 1995, cinco años antes el caucho de las Indias se lo estaba comiendo, entre murciélagos y goteras.»"
+    },
+    {
+      "claim": "Algunas piezas las había rescatado Lemaitre en los años sesenta, y hoy están en el Palacio de la Inquisición.",
+      "problem": "El «hoy» viene de un artículo de 1995 y se presenta como el presente de 2026 sin verificarlo. Esa fuente ya decía que algunas piezas esperaban restauración. No hay fuente reciente sobre dónde están ahora, y el Palacio de la Inquisición ha cambiado de museografía desde entonces.",
+      "evidence": "El Tiempo, 8 oct 1995, https://www.eltiempo.com/archivo/documento/MAM-417864: la silla de la abadesa, una campana y un púlpito, recuperados en los años sesenta, «hoy» en el Palacio de la Inquisición, «algunas a la espera de restauración». El dossier no aporta ninguna fuente posterior.",
+      "fix": "«Algunas piezas las había rescatado Lemaitre en los años sesenta. En 1995 estaban en el Palacio de la Inquisición.» Otra opción: confirmar con el Museo Histórico de Cartagena que siguen allí."
+    },
+    {
+      "claim": "Sus hijos, Gonzalo y Rodrigo, se la cedieron a la Fundación Gabo, que tiene un proyecto para convertirla en casa museo.",
+      "problem": "La fuente citada no respalda el proyecto de casa museo. La ficha de CoCrea solo dice «Diseños, estudios y puesta en marcha de la Casa Gabo en Cartagena», año 2023, estado «avalado» y presupuesto cero. No nombra a la Fundación Gabo ni identifica el inmueble con esta casa. La donación es verosímil, pero viene de prensa de segunda mano: Rentería (El Tiempo, 2024) la cuenta a partir de un programa de Daniel Samper sin documento, y Las2orillas (2026) añade que la casa «hoy es propiedad privada». Una búsqueda independiente no encontró ningún anuncio de la Fundación Gabo sobre una casa museo en la calle del Curato.",
+      "evidence": "https://colombiacrea.org/proyecto/disenos-estudios-y-puesta-en-marcha-de-la-casa-gabo-en-cartagena/ (no menciona la Fundación Gabo ni la calle del Curato). https://www.eltiempo.com/opinion/columnistas/la-casa-en-cartagena-de-garcia-marquez-3323960: «se la regalaron a la Fundación Nuevo Periodismo», según Samper. https://www.las2orillas.co/adios-a-la-casa-de-gabo-donde-recibio-la-noticia-del-nobel-y-murieron-el-y-mercedes-en-ciudad-de-mexico/: «fue donada por sus hijos Gonzalo y Rodrigo a la Fundación Gabo y hoy es propiedad privada».",
+      "fix": "«Según la prensa, sus hijos, Gonzalo y Rodrigo, se la donaron a la Fundación Gabo. Se ha hablado de convertirla en casa museo, pero a fecha de este recorrido no está abierta al público: cuente con verla solo desde aquí.»"
+    },
+    {
+      "claim": "No tiene horario de visita pública, ni hoy ni otro día: su interior es el de un hotel en funcionamiento.",
+      "problem": "«Ni otro día» es más de lo que permiten las fuentes y resulta engañoso. Es cierto que no hay horario regular. Pero el hotel ha organizado visitas guiadas abiertas al público: en 2021, por el cuarto centenario, las guió su mayordomo. El propio dossier toma el dato de la cripta de 1774 de una de esas visitas.",
+      "evidence": "John Montaño, El Tiempo, 7 oct 2021, https://www.eltiempo.com/colombia/otras-ciudades/claustro-de-las-clarisas-en-cartagena-cumple-cuatro-siglos-623559: «en visitas guiadas, se conocieran los secretos de este monumento». Asistieron familias cartageneras y turistas, guiados por Ernesto Frieri, mayordomo del hotel. La ficha de Accor (https://all.accor.com/hotel/1871/index.en.shtml) no publica horario de visita.",
+      "fix": "«No tiene horario de visita pública: su interior es el de un hotel en funcionamiento. Solo en ocasiones señaladas, como el cuarto centenario en 2021, ha abierto visitas guiadas.»"
+    }
+  ],
+  "script_sha": "25a52fa89fd640b5"
+}

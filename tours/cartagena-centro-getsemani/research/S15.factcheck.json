@@ -1,0 +1,37 @@
+{
+  "status": "fail",
+  "checked_claims": 96,
+  "findings": [
+    {
+      "claim": "Romero fue diputado a la asamblea que redactó la constitución del nuevo Estado, proclamada el 14 de julio de 1812.",
+      "problem": "Fecha errónea. La Constitución del Estado de Cartagena de Indias se sancionó el 14 de junio de 1812, no el 14 de julio. El dossier [V] (El Universal 2020) da «14 de julio», pero es un error aislado frente al propio texto constitucional y los catálogos bibliográficos.",
+      "evidence": "https://es.hispanopedia.com/wiki/Estado_Libre_de_Cartagena: la constitución, «sancionada en 14 de junio de 1812, segundo de su independencia». Varios catálogos devueltos por la búsqueda (Villanova Law Library, Universidad del Rosario, Biblioteca Luis Ángel Arango) dan la misma fecha, y El Universal explica el apodo «Juana Pacha» por su promulgación un 14 de junio. Solo https://www.eluniversal.com.co/especial/independencia-de-cartagena/2020/11/11/asi-nos-liberamos-del-yugo-espanol/ dice «14 de julio de 1812».",
+      "fix": "«…la constitución del nuevo Estado, sancionada el 14 de junio de 1812.» Corregir también el hecho 43 del dossier."
+    },
+    {
+      "claim": "Primero estuvo con los moderados, luego con los radicales de los Piñeres, y al final volvió con García de Toledo. Ese mismo año llegó desde España el ejército de Pablo Morillo, y la ciudad sufrió el sitio que le dio el nombre de Heroica.",
+      "problem": "Omisión que induce a error. El único año dicho en el párrafo es 1812, así que el oyente entenderá que Morillo llegó en 1812. Morillo llegó en 1815, y el sitio duró de agosto a diciembre de ese año. Además, el regreso de Romero con los moderados se extiende de 1813 a 1815: su alianza con García de Toledo y Castillo frente a Bolívar es de 1815.",
+      "evidence": "https://www.eluniversal.com.co/especial/independencia-de-cartagena/2020/11/11/asi-nos-liberamos-del-yugo-espanol/: llegada de Morillo en 1815. https://enciclopedia.banrepcultural.org/index.php/Pedro_Romero: alianza con García de Toledo y Castillo durante el sitio de Bolívar en 1815. https://www.redalyc.org/journal/811/81146454009/ (Solano): alianzas en 1810-1811, 1811-1813 y 1813-1815. El guion S10 del propio tour sitúa el sitio en 1815.",
+      "fix": "«…y al final, en 1815, volvió con García de Toledo. Ese mismo año, 1815, llegó desde España el ejército de Pablo Morillo…»"
+    },
+    {
+      "claim": "Otra versión, minoritaria, lo hace morir en Cartagena mucho más tarde, pobre y olvidado.",
+      "problem": "Sin fuente. El dossier [29] remite solo a un resultado de búsqueda («El Universal 2019») que nunca se leyó, y en ninguna parte recoge «pobre y olvidado». Abrí el artículo de El Universal de 2019 sobre Getsemaní que devuelve la búsqueda y no habla de la muerte de Romero. Ninguna otra fuente consultada recoge una muerte en Cartagena en 1834.",
+      "evidence": "https://www.eluniversal.com.co/suplementos/facetas/2019/10/11/getsemani-cuando-el-dolor-es-de-barrio/: no dice nada de la muerte de Romero. https://es.wikipedia.org/wiki/Pedro_Romero_(artesano) y https://www.eluniversal.com.co/suplementos/facetas/2017/11/12/pedro-romero-el-heroe-sin-rostro/ (según el resumen de la búsqueda): solo dan la muerte en Haití tras la huida de diciembre de 1815.",
+      "fix": "Suprimir la frase. Si se mantiene, localizar y leer la fuente concreta y quitar «pobre y olvidado», salvo que esa fuente lo diga."
+    },
+    {
+      "claim": "El historiador Alfonso Múnera lo daba por uno de los artesanos que el ingeniero militar Antonio de Arévalo trajo de La Habana para las obras de la muralla.",
+      "problem": "Se omite la cautela de la fuente. Múnera lo plantea como probabilidad, no como hecho. En el pasaje que reproduce El Universal dice «Es probable que Romero haya sido uno de los artesanos que el ingeniero Arévalo se trajo de Cuba». En cambio, sí da como hecho el nacimiento en Matanzas. La precisión «de La Habana» sí está en la Enciclopedia Banrepcultural.",
+      "evidence": "https://www.eluniversal.com.co/cartagena/2011/11/11/pedro-romero-un-protagonista-de-la-independencia/: «Es probable que Romero haya sido uno de los artesanos que el ingeniero Arévalo se trajo de Cuba para los trabajos de fortificación». https://enciclopedia.banrepcultural.org/index.php/Pedro_Romero: «trajo de La Habana para las obras».",
+      "fix": "«El historiador Alfonso Múnera lo hacía natural de Matanzas, y probablemente uno de los artesanos que el ingeniero militar Antonio de Arévalo trajo de Cuba para las obras de fortificación.»"
+    },
+    {
+      "claim": "Una de las fuentes dice que fue el propio obispo quien llevó la petición a la Corona. Sus argumentos eran sencillos. En el sector no había otra iglesia, y la de San Francisco quedaba apartada. Los vecinos no tenían un lugar sagrado donde recibir los sacramentos y enterrar a sus muertos.",
+      "problem": "Mezcla de dos fuentes con una atribución que ninguna sostiene. Los tres argumentos proceden del blog de El Universal [A], que cita a Urueta y Piñeres: son los alegatos de los vecinos recogidos en la cédula. La versión del obispo viene de otra fuente [C], que solo le atribuye un argumento: la distancia a la catedral. Con «Sus argumentos» el oyente atribuye al obispo una lista que ninguna fuente le da.",
+      "evidence": "https://blogs.eluniversal.com.co/patrimonio-siglo-xxi/tres-nuevas-plazas-emblematicas-de-getsemani-final: son los vecinos quienes alegan que no había otra iglesia, que San Francisco quedaba lejos y que no tenían lugar sagrado para sacramentos y entierros. https://conociendo-mi-ciudad.wixsite.com/cartagena/iglesia-de-la-santisima-trinidad: el obispo pide el templo porque los vecinos estaban «muy lejos de la catedral».",
+      "fix": "«Una de las fuentes dice que fue el propio obispo quien llevó la petición a la Corona. Según la cédula, los argumentos de los vecinos eran sencillos: en el sector no había otra iglesia…»"
+    }
+  ],
+  "script_sha": "281a0d55bd342b8f"
+}
