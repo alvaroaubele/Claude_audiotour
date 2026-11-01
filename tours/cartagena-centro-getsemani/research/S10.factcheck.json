@@ -1,0 +1,40 @@
+{
+  "status": "pass",
+  "checked_claims": 104,
+  "findings": [],
+  "script_sha": "266279f6e7c41832",
+  "round2_findings": [
+    {
+      "claim": "Ahora mire a su derecha: la arcada corre en diagonal hacia el noreste durante unos doscientos metros. Donde termina, la muralla vuelve a quebrarse. Allí está el baluarte de Santa Catalina, la esquina nordeste de la ciudad.",
+      "problem": "La longitud de la arcada está sobrestimada. Lo que está a unos doscientos metros del oyente es el baluarte de Santa Catalina, no el final de la arcada. Según OpenStreetMap, el frente de las Bóvedas empieza a unos diez metros del punto del oyente y mide unos ciento treinta y cinco metros. Cuadra con los cuarenta y siete arcos, que son dos por bóveda más uno. Por eso el centro de la arcada queda a unos setenta metros de la esquina, y del centro al extremo hay también unos setenta metros, no cien. La misma sobrestimación se repite en la pista de marcha: «Ahora camine hacia su derecha, a lo largo de la galería, hasta el final de la arcada. Son unos cien metros.» La señal de llegada sí es correcta.",
+      "evidence": "OSM, way 63525986 «Las Murallas de Cartagena», vía Nominatim reverse: el borde interior del tramo de las Bóvedas es una fila de nodos espaciados regularmente, de (-75.5470794, 10.4295722) a (-75.546048, 10.4302443). Son unos 135 metros en total. Su extremo suroeste está a unos 10 metros del punto 10.42948, -75.54706. El baluarte de Santa Catalina, way 1031619550, está a unos 220 metros del punto, y el de Santa Clara, nodo 2934551225, a unos 100. Blog de Elles Quintana, https://blogs.eluniversal.com.co/patrimonio-siglo-xxi/historias-secretas-de-la-plaza-de-las-bovedas-de-san-diego-2: hay 23 bóvedas y 47 arcos según Zapatero, y 23 bóvedas de 7 varas de ancho según Marco Dorta.",
+      "fix": "«Ahora mire a su derecha: la arcada corre en diagonal hacia el noreste a lo largo de unos ciento cuarenta metros. Algo más allá, a unos doscientos metros de usted, la muralla vuelve a quebrarse. Allí está el baluarte de Santa Catalina…». En la pista de marcha: «Son unos setenta metros.»"
+    },
+    {
+      "claim": "El informe de 1796 lo dice con una frase que sirve de epitafio a toda la ingeniería colonial de la ciudad: «Así en 1796 quedó completamente cerrado el recinto de Cartagena».",
+      "problem": "La cita está atribuida a un documento de 1796, y eso es dudoso. En la transcripción, la frase cierra un bloque de Marco Dorta que mezcla su relato, «Siete años después en 1796, ya existían las bóvedas…», con pasajes del documento de la época. Un informe de 1796 no hablaría de sí mismo con un «Así en 1796 quedó…». Por su forma retrospectiva, es casi con certeza la conclusión del propio Marco Dorta. Ninguna fuente del dossier la presenta como texto de un documento de 1796.",
+      "evidence": "https://blogs.eluniversal.com.co/patrimonio-siglo-xxi/historias-secretas-de-la-plaza-de-las-bovedas-de-san-diego-2: transcribe a Marco Dorta, 1960, pp. 305-308. Dice: «Siete años después en 1796, ya existían las bóvedas, las cuales son capaces…»; «Además, se había hecho una galería subterránea… ejecutada en el año 79… Así en 1796 quedó completamente cerrado el recinto de Cartagena».",
+      "fix": "«Marco Dorta lo resume con una frase que sirve de epitafio a toda la ingeniería colonial de la ciudad: «Así en 1796 quedó completamente cerrado el recinto de Cartagena».»"
+    },
+    {
+      "claim": "Arévalo murió aquí, en Cartagena, en abril de 1800, menos de dos años después de que se colocara ese escudo.",
+      "problem": "La fuente no respalda el «menos de dos años». El escudo está fechado solo por año, 1798, y ninguna fuente da el mes en que se colocó. Arévalo murió el 9 de abril de 1800. Si el escudo se colocó entre enero y el 9 de abril de 1798, pasaron dos años o más.",
+      "evidence": "Blog de Elles Quintana, URL arriba: Marco Dorta dice que el escudo de mármol «está fechado en ese mismo año», 1798, sin mes. https://fortificacionescartagena.com.co/?p=7533: el escudo «with the date 1798». https://es.wikipedia.org/wiki/Antonio_de_Ar%C3%A9valo: murió en Cartagena el 9 de abril de 1800.",
+      "fix": "«Arévalo murió aquí, en Cartagena, en abril de 1800, apenas dos años después de la fecha de ese escudo.»"
+    },
+    {
+      "claim": "En 1980, la Corporación Nacional de Turismo hizo la restauración más completa.",
+      "problem": "La frase deforma la fuente. Bossa, transcrito por Elles Quintana, dice que la última restauración completa se debe a la Corporación Nacional de Turismo en 1980. Habla de la última restauración integral, no de la más completa de todas. El superlativo no tiene fuente.",
+      "evidence": "Blog de Elles Quintana, URL arriba: «La completa restauración última se debe a la Corporación Nacional de Turismo …en 1980».",
+      "fix": "«En 1980, la Corporación Nacional de Turismo hizo la última restauración integral.»"
+    },
+    {
+      "claim": "Si quiere verlo por dentro, vuelva otro día: abre solo de día y cuando hay exposición, así que consulte antes la programación de la Escuela Taller.",
+      "problem": "Se presenta como horario fijo algo que sale de un solo caso. La única fuente de horario es la exposición de septiembre y octubre de 2024: de 8 a 12 y de 14 a 18. La ETCAR no publica un horario permanente del aljibe, la casamata y el Túnel de Escape. El propio dossier, en su lista de cosas buscadas y no confirmadas, dice que no hay fuente oficial vigente.",
+      "evidence": "https://fortificacionescartagena.com.co/es/blog-post/exposicion-las-fortificaciones-de-san-lazaro-abre-en-el-baluarte-de-santa-catalina/ (12-09-2024): la exposición en el aljibe y la casamata estaría abierta «de 8 a.m. a 12 m., y de 2 p.m. a 6 p.m. hasta el 11 de octubre». https://fortificacionescartagena.com.co/es/exposiciones-tunel-de-escape/: no hay horario.",
+      "fix": "«Si quiere verlo por dentro, vuelva otro día: por lo general solo abre de día y cuando hay exposición, así que consulte antes la programación de la Escuela Taller.»"
+    }
+  ],
+  "resolved_by": "lead",
+  "resolution": "Resolución del líder tras dos rondas de fact-check fallidas (SKILL.md, Fase 1). Las 5 correcciones de la segunda ronda (longitud de la arcada y distancias, cita de 1796 atribuida a Marco Dorta, 'apenas dos años después de la fecha del escudo', 'última restauración integral', 'por lo general solo abre') se aplicaron literalmente según la evidencia del fact-checker. Los 5 hallazgos de la primera ronda ya figuraban como corregidos en la segunda revisión. Ninguna afirmación nueva se añadió; solo se aplicaron las correcciones propuestas por el verificador."
+}

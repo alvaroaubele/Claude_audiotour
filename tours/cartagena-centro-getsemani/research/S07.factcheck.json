@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "checked_claims": 118,
+  "findings": [],
+  "script_sha": "daed75e67943426e",
+  "round2_findings": [
+    {
+      "claim": "El otro, en 1905, y según la Sociedad de Mejoras Públicas, para dar simetría al conjunto.",
+      "problem": "Atribución equivocada, heredada del dossier (punto 9) y del hallazgo 7 de la ronda anterior. En el artículo de Elles, la frase de la simetría no es de la Sociedad de Mejoras Públicas. Cierra un pasaje que Elles toma de la tesis de Carmen Jaramillo (1992), que a su vez cita a Edgard Herrera y otros (1991). La cita de la Sociedad de Mejoras Públicas, más abajo en el mismo artículo, dice solo que la tercera boca se llamó de Balmaseda y que la abrió Jaspe en 1905, con Henrique Luis Román de gobernador. No da ningún motivo.",
+      "evidence": "https://blogs.eluniversal.com.co/patrimonio-siglo-xxi/historias-secretas-de-la-plaza-de-los-coches-de-cartagena2 (Elles, 04/05/2022): «…en 1905 abre la sellada tercera puerta de la boca del Puente, a la cual se da el nombre de Puerta de Balmaseda, suprimiendo la capilla de Nuestra Señora de los Dolores. La tercera puerta se abrió para darle simetría al conjunto arquitectónico […] (Tomado de la versión original de Carmen Jaramillo (1992) en su tesis de Grado: “Vida y obra de Luis Felipe Jaspe Franco”, citando al trabajo de Edgard Herrera y otros (1991)…)». La cita de la Sociedad de Mejoras Públicas, en otro párrafo: «La tercera boca del puente fue llamada de Balmaseda en honor al filántropo cubano, Francisco Javier de Balmaseda abierta en 1905 por Felipe Jaspe siendo gobernador e impulsador de la obra don Henrique Luis Román», sin mención de simetría.",
+      "fix": "«El otro, en 1905, y según la investigadora Carmen Jaramillo, para dar simetría al conjunto.» Como Jaramillo ya aparece en el párrafo siguiente, también vale «según una tesis sobre Jaspe». Corregir además el punto 9 del dossier."
+    }
+  ],
+  "resolved_by": "lead",
+  "resolution": "Resolución del líder tras dos rondas de fact-check (SKILL.md, Fase 1). El único hallazgo de la segunda ronda (atribución del motivo de la abertura de 1905) se aplicó literalmente según la corrección del verificador. Los 7 hallazgos de la primera ronda figuraban como corregidos en la segunda revisión. No se añadió ninguna afirmación nueva."
+}

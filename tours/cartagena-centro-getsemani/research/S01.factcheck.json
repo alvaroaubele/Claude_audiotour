@@ -1,0 +1,46 @@
+{
+  "status": "pass",
+  "checked_claims": 112,
+  "findings": [],
+  "script_sha": "b3c99b3b54149c95",
+  "round2_findings": [
+    {
+      "claim": "Traía veintitrés navíos de guerra y más de tres mil hombres.",
+      "problem": "Las cifras están en disputa y el guion las da como seguras. Vienen de Isaza 2004, y la Wikipedia en inglés de la catedral las copia. La crónica inglesa contemporánea da otras: veinticinco barcos y pinazas, y dos mil trescientos hombres entre soldados y marineros al zarpar. Eso fue antes de las bajas por enfermedad en Cabo Verde. La Wikipedia en inglés de la batalla da treinta barcos y dos mil trescientos hombres.",
+      "evidence": "Bigges y Croftes 1589, Project Gutenberg 3334 (https://www.gutenberg.org/cache/epub/3334/pg3334.txt): «to the number of five and twenty sail of ships and pinnaces, and having assembled of soldiers and mariners to the number of 2,300». Wikipedia en, «Battle of Cartagena de Indias (1586)» (https://en.wikipedia.org/wiki/Battle_of_Cartagena_de_Indias_(1586)): «30 ships», «2,300 soldiers & sailors». Isaza 2004, p. 54 (https://revistas.javeriana.edu.co/index.php/revApuntesArq/article/download/9072/7376): «23 navíos de guerra y más de 3.000 hombres».",
+      "fix": "«Traía entre veintitrés y treinta barcos, según la fuente. Su propia crónica cuenta unos dos mil trescientos hombres, y algunos autores hablan de más de tres mil.»"
+    },
+    {
+      "claim": "Drake se quedó unas seis semanas.",
+      "problem": "La frase omite parte de la ocupación. Las «seis semanas» de la crónica inglesa terminan con una primera salida de la flota a finales de marzo, según el calendario juliano. Esa misma crónica cuenta después que la flota volvió a Cartagena y pasó allí «ocho o diez días más». Según las Wikipedias en inglés y en español, la ciudad cayó el 11 de febrero y Drake no zarpó hasta el 12 de abril, es decir, casi dos meses después.",
+      "evidence": "Bigges 1589, Gutenberg 3334: «After six weeks' abode in this place, we put to sea the last of March» y, a continuación, «made sail directly back again to Carthagena with the whole fleet; where, having staid eight or ten days more». Wikipedia en, «Battle of Cartagena de Indias (1586)», y Wikipedia es, «Batalla de Cartagena de Indias (1586)»: la ciudad, en manos inglesas al amanecer del 11 de febrero; «Drake finalmente zarpó de la ciudad el 12 de abril».",
+      "fix": "«Drake se quedó casi dos meses.»"
+    },
+    {
+      "claim": "De toda la reforma de Brioschi solo sobreviven ella y el viacrucis del interior.",
+      "problem": "El guion se contradice. Más abajo afirma que dos de las tres puertas de la fachada principal «se abrieron en la reforma de Lelarge», y esas puertas siguen abiertas. Zabaleta repite en la página 68 la fórmula de «solo el viacrucis y la torre», pero en la página 69 la corrige: la fachada principal también conserva la reforma de 1924.",
+      "evidence": "Zabaleta 2023, Ucoarte 12 (https://journals.uco.es/ucoarte/article/download/16236/14936), p. 66: en el periodo republicano, «La fachada principal se le abren dos nuevos accesos». P. 69: «solo la torre y la fachada principal conservan las reformas hechas por Lelarge en 1924».",
+      "fix": "«De toda la reforma de Brioschi sobreviven la torre, las dos puertas añadidas a la fachada principal y el viacrucis del interior.»"
+    },
+    {
+      "claim": "Y esos tejados cortan hoy por la mitad los óculos circulares que González había abierto en lo alto de la nave central para darle luz.",
+      "problem": "La única fuente no dice «por la mitad». El guion añade una precisión de cuánto se cortan los óculos, y el oyente que entre en la catedral para buscarla podría no encontrarla.",
+      "evidence": "Isaza 2004, p. 55: «la modificación de las cubiertas de las naves laterales —que, aún hoy, parten las claraboyas circulares que fueron concebidas para iluminar la nave central—».",
+      "fix": "«Y esos tejados todavía hoy cortan los óculos circulares que González había abierto en lo alto de la nave central para darle luz.»"
+    },
+    {
+      "claim": "En 1973, el arzobispo Rubén Isaza Restrepo mandó quitar los estucos y la falsa bóveda.",
+      "problem": "La frase omite su cargo, y eso la vuelve engañosa. En 1973, Isaza Restrepo era arzobispo coadjutor, nombrado en 1967. El arzobispo titular de Cartagena era José Ignacio López Umaña, de 1943 a 1974. Isaza Restrepo no gobernó la archidiócesis hasta el 3 de octubre de 1974. Zabaleta y la Wikipedia en español lo llaman solo «arzobispo».",
+      "evidence": "Catholic-Hierarchy, «Archdiocese of Cartagena» (https://www.catholic-hierarchy.org/diocese/dcart.html): Rubén Isaza Restrepo, «Coadjutor Archbishop 20 Apr 1967», arzobispo «3 Oct 1974 – 15 Mar 1983». José Ignacio López Umaña, arzobispo de 1943 a 1974.",
+      "fix": "«En 1973, el arzobispo coadjutor Rubén Isaza Restrepo mandó quitar los estucos y la falsa bóveda.»"
+    },
+    {
+      "claim": "Ahora entre en la plaza unos treinta pasos, hasta la mitad, y colóquese de espaldas al edificio largo que cierra el lado sur.",
+      "problem": "La indicación de posición no cuadra. El tramo L00 llega al extremo oeste de la plaza, en la calle de los Santos de Piedra, a unos treinta y cuatro metros del punto de escucha. La plaza mide unos sesenta y ocho metros, así que su mitad queda a unos cuarenta y cinco pasos. Con treinta pasos, unos veintidós a veinticinco metros, el oyente se queda en el primer tercio.",
+      "evidence": "OpenStreetMap API 0.6, consultada el 2026-11-01: la vía peatonal «Plaza de la Proclamacion» (way 25447602) va de unos −34 m a +34 m en el eje este-oeste respecto al punto 10.42347, −75.55070. plan.json, L00: destino en 10.423436, −75.55101, unos 34 m al oeste del punto de escucha.",
+      "fix": "«Ahora entre en la plaza unos cuarenta y cinco pasos, hasta la mitad, y colóquese de espaldas al edificio largo que cierra el lado sur.»"
+    }
+  ],
+  "resolved_by": "lead",
+  "resolution": "Resolución del líder tras dos rondas de fact-check (SKILL.md, Fase 1): se aplicaron literalmente las seis correcciones de la segunda ronda, según la evidencia del verificador. Los 11 hallazgos de la primera ronda figuraban como corregidos en la segunda revisión. No se añadió ninguna afirmación nueva."
+}

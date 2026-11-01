@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "checked_claims": 118,
+  "findings": [],
+  "script_sha": "4bc5058737a1ce13",
+  "round2_findings": [
+    {
+      "claim": "Está en una de las plazas más pequeñas y más arboladas de la ciudad amurallada.",
+      "problem": "Comparación sin fuente que además es dudosa. El dossier solo respalda «más arboladas» (RC-P, hecho 8). Ninguna fuente del dossier dice que sea de las más pequeñas, y las medidas lo desmienten. Según OpenStreetMap, el parque mide unos 34 por 60 metros, unos 2.000 metros cuadrados. La plaza de Santo Domingo (parada S03) mide unos 24 por 43 metros y la de San Diego (parada S09, la siguiente) unos 43 por 27, es decir, la mitad. El oyente acaba de ver una y va a ver la otra. Hay una guía, Moon, que incluso la llama «grande».",
+      "evidence": "OSM way 25447605 «Parque Fernández de Madrid»: el polígono va de 10.4262 a 10.42675 de latitud y de -75.54843 a -75.54811 de longitud, unos 34 × 60 m. En Nominatim (2026-11-01), la plaza de Santo Domingo da unos 24 × 43 m y la de San Diego unos 43 × 27 m. https://elrinconcolombiano.com/plaza-fernandez-madrid-cartagena/ dice «uno de los lugares mas arborizados del centro histórico» y no comenta su tamaño. Sobre el antiguo hallazgo 4, Página/12 (https://www.pagina12.com.ar/diario/suplementos/turismo/9-693-2005-10-09.html) dice literalmente: «Ese parque por supuesto existe –en el cruce de las calles de la Moneda y Badillo–, y se llama Fernández de Madrid. Y frente a éste está la casa de Fermina Daza, que es conocida como “la casa de Don Benito”». El cruce se refiere al parque, y el guion actual («Las dos crónicas que la describen la sitúan frente a esta plaza, pero ninguna dice en qué lado») es correcto.",
+      "fix": "«Está en una de las plazas más arboladas de la ciudad amurallada.» Si se quiere una nota de tamaño, que sea verificable a la vista, por ejemplo «una plaza recogida, a la sombra de sus árboles», sin compararla con otras."
+    }
+  ],
+  "resolved_by": "lead",
+  "resolution": "Resolución del líder tras dos rondas de fact-check (SKILL.md, Fase 1): se aplicó literalmente el único hallazgo de la segunda ronda (se quita «más pequeñas»). Los cuatro hallazgos de la primera figuraban como corregidos en la segunda revisión, y el cuarto se resolvió a favor del autor con la cita literal. No se añadió ninguna afirmación nueva."
+}

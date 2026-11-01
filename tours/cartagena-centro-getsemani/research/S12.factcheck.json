@@ -1,0 +1,22 @@
+{
+  "status": "pass",
+  "checked_claims": 124,
+  "findings": [],
+  "script_sha": "63af0d1e574e5b94",
+  "round2_findings": [
+    {
+      "claim": "El censo de 1809 contaba unos diecisiete mil seiscientos habitantes. El siguiente recuento, en 1831, daba once mil novecientos. Segovia advierte que son cifras aproximadas, históricamente incontrolables, dice él. Pero la caída ronda la mitad.",
+      "problem": "Las dos cifras que da el propio guion no cuadran con «ronda la mitad». De 17.600 a 11.900 hay una caída de 5.700 habitantes, un treinta y dos por ciento: un tercio, no la mitad. El oyente lo calcula de oído. El error viene del propio Segovia, que en 1979 escribió «11.900 habitantes, es decir, 50 por ciento menos que en 1809», cuenta que no sale. La mitad solo se acerca si se parte de los 22.000 que su misma tabla da para 1815: 11.900 es un cuarenta y seis por ciento menos. Esta redacción la propuso el veredicto anterior de este mismo archivo, así que el fallo es del fact-check anterior y no del autor. La reseña académica de su libro de 2013 habla de «más de la tercera parte».",
+      "evidence": "https://publicaciones.banrepcultural.org/index.php/boletin_cultural/article/download/3638/3761/7414 (Segovia Salas, Boletín Cultural y Bibliográfico, 1979). P. 80: «según el de 1809, 17.600». P. 81: «la ciudad aparece con 11.900 habitantes, es decir, 50 por ciento menos que en 1809» y «Una ciudad de 20.000 habitantes no puede perder cerca de la mitad de su población». Tabla de la p. 84: 1809, 17.600; 1815, 22.000; 1831, 11.900. https://revistas.utb.edu.co/economiayregion/article/download/72/54/110 (reseña de Sourdis Nájera, p. 258): «La pérdida de más de la tercera parte de la población de la provincia y la ciudad».",
+      "fix": "«El censo de 1809 contaba unos diecisiete mil seiscientos habitantes. El siguiente recuento, en 1831, once mil novecientos: un tercio menos. Y Segovia estimaba que en 1815 la ciudad tenía veintidós mil; contra esa cifra, la caída roza la mitad. Él mismo advierte que son cifras históricamente incontrolables.» La forma corta también vale: sustituir «la caída ronda la mitad» por «la caída supera un tercio»."
+    },
+    {
+      "claim": "Segovia encontró en los archivos españoles una cifra que hasta entonces no se conocía. Morillo perdió tres mil ciento veinticinco hombres entre caídos, desertores y muertos de viruela, paludismo, fiebre amarilla y disentería.",
+      "problem": "Que la cifra no se conociera antes de Segovia es una valoración de su reseñista, no un hecho comprobado, y una fuente independiente la contradice. Según Wikipedia ES, el mismo total de 3.125 muertos ya aparece en Julio Albi, «Banderas olvidadas: el ejército realista en América», de 1990, p. 154. Albi lo desglosa en 1.825 europeos y 1.300 americanos, la mayoría muertos por epidemias. Robert Scheina también lo da en 2003. Ambos son anteriores al libro de Segovia, de 2013. El desglose de Albi no incluye desertores y el de Segovia sí, pero el total coincide. Lo que aportó Segovia fue documentarlo desde el archivo, no descubrir la cifra. No he podido consultar a Albi directamente; la cita procede de la referencia de Wikipedia.",
+      "evidence": "https://revistas.utb.edu.co/economiayregion/article/download/72/54/110 (Sourdis, p. 258): «Constituye un aporte nuevo la noticia sobre el enorme número de bajas del Ejército: 3.125 entre muertos en combate, desertores y fallecidos por las enfermedades del trópico». https://es.wikipedia.org/wiki/Asedio_espa%C3%B1ol_de_Cartagena_de_Indias_(1815) (infobox, wikitexto): «bajas1 = 2732 [Valencia Tovar 1993] -3125 [Scheina 2003][Albi, Julio (1990). Banderas olvidadas… pp. 154] muertos (mayoría por epidemias): [Albi] · 1825 europeos · 1300 americanos».",
+      "fix": "«Segovia documentó en los archivos españoles el balance del propio ejército. Morillo perdió tres mil ciento veinticinco hombres…» Basta con quitar «una cifra que hasta entonces no se conocía». Si se quiere conservar la idea, hay que atribuirla: «su reseñista lo presenta como una novedad»."
+    }
+  ],
+  "resolved_by": "lead",
+  "resolution": "Resolución del líder tras dos rondas de fact-check (SKILL.md, Fase 1): se aplicaron literalmente las correcciones de la segunda ronda, según la evidencia del verificador. Los hallazgos de la primera ronda figuraban como corregidos en la segunda revisión. No se añadió ninguna afirmación nueva."
+}

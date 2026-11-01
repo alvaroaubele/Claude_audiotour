@@ -1,0 +1,2415 @@
+{
+  "meta": {
+    "slug": "cartagena-centro-getsemani",
+    "title": "Cartagena de Indias: la Heroica, de la ciudad amurallada a Getsemaní",
+    "city": "Cartagena de Indias, Colombia",
+    "start_address": "La Passion by Masaya, Calle del Estanco del Tabaco 35-81, Centro Histórico, Cartagena de Indias",
+    "start": {
+      "lat": 10.4247,
+      "lon": -75.5505
+    },
+    "duration_min": 360.0,
+    "language": "es-ES",
+    "focus": "Centro Histórico y Getsemaní",
+    "date": "2026-11-01",
+    "start_time": "16:00",
+    "register": "usted",
+    "labels": {},
+    "walking_speed_kmh": 4.0,
+    "buffer_min_per_stop": 2.0,
+    "tts": {
+      "backend": "piper",
+      "voice": "es_ES-davefx-medium",
+      "length_scale": 1.22
+    },
+    "wpm": 167.2,
+    "intro_min": 5,
+    "intro_words_target": 840,
+    "nav_fill": 0.4
+  },
+  "stops": [
+    {
+      "id": "S01",
+      "name": "Catedral de Santa Catalina y Plaza de la Proclamación",
+      "lat": 10.42347,
+      "lon": -75.5507,
+      "kind": "catedral y plaza",
+      "weight": 4,
+      "summary": "Catedral iniciada en el siglo XVI, atacada por Drake; la plaza de la independencia de 1811",
+      "wikipedia": "https://es.wikipedia.org/wiki/Catedral_de_Santa_Catalina_de_Alejandr%C3%ADa_(Cartagena_de_Indias)",
+      "interior_min": 0,
+      "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
+      "script": "scripts/S01.md",
+      "narration_min": 17.3,
+      "words_target": 2890
+    },
+    {
+      "id": "S02",
+      "name": "Plaza de Bolívar y Palacio de la Inquisición",
+      "lat": 10.4233,
+      "lon": -75.5514,
+      "kind": "plaza y palacio",
+      "weight": 5,
+      "summary": "La antigua Plaza Mayor y el tribunal del Santo Oficio de Cartagena (1610)",
+      "wikipedia": "https://es.wikipedia.org/wiki/Palacio_de_la_Inquisici%C3%B3n_(Cartagena_de_Indias)",
+      "interior_min": 0,
+      "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
+      "script": "scripts/S02.md",
+      "narration_min": 21.7,
+      "words_target": 3630
+    },
+    {
+      "id": "S03",
+      "name": "Plaza e iglesia de Santo Domingo",
+      "lat": 10.42432,
+      "lon": -75.552,
+      "kind": "iglesia y plaza",
+      "weight": 3,
+      "summary": "La iglesia más antigua de la ciudad y la Gertrudis de Botero",
+      "wikipedia": "https://es.wikipedia.org/wiki/Iglesia_de_Santo_Domingo_(Cartagena_de_Indias)",
+      "interior_min": 0,
+      "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
+      "script": "scripts/S03.md",
+      "narration_min": 13.0,
+      "words_target": 2170
+    },
+    {
+      "id": "S04",
+      "name": "Baluarte de Santo Domingo: la muralla al atardecer",
+      "lat": 10.42456,
+      "lon": -75.55403,
+      "kind": "baluarte",
+      "weight": 4,
+      "summary": "El sistema de fortificaciones frente al Caribe, al caer el sol",
+      "wikipedia": "",
+      "interior_min": 0,
+      "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
+      "script": "scripts/S04.md",
+      "narration_min": 17.3,
+      "words_target": 2890
+    },
+    {
+      "id": "S05",
+      "name": "Iglesia y claustro de San Pedro Claver",
+      "lat": 10.4219,
+      "lon": -75.55105,
+      "kind": "iglesia y convento",
+      "weight": 5,
+      "summary": "El jesuita que atendió a los africanos esclavizados en el puerto negrero",
+      "wikipedia": "https://es.wikipedia.org/wiki/Iglesia_de_San_Pedro_Claver",
+      "interior_min": 0,
+      "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
+      "script": "scripts/S05.md",
+      "narration_min": 21.7,
+      "words_target": 3630
+    },
+    {
+      "id": "S06",
+      "name": "Plaza de la Aduana",
+      "lat": 10.42215,
+      "lon": -75.55028,
+      "kind": "plaza",
+      "weight": 3,
+      "summary": "Centro administrativo del puerto: Casa de la Aduana y el Cabildo",
+      "wikipedia": "",
+      "interior_min": 0,
+      "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
+      "script": "scripts/S06.md",
+      "narration_min": 13.0,
+      "words_target": 2170
+    },
+    {
+      "id": "S07",
+      "name": "Puerta del Reloj y Plaza de los Coches",
+      "lat": 10.4231,
+      "lon": -75.54935,
+      "kind": "puerta y plaza",
+      "weight": 4,
+      "summary": "La boca del puente: puerta principal de la muralla y antiguo mercado de esclavos",
+      "wikipedia": "",
+      "interior_min": 0,
+      "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
+      "script": "scripts/S07.md",
+      "narration_min": 17.3,
+      "words_target": 2890,
+      "via": [
+        [
+          10.42262,
+          -75.54985
+        ]
+      ]
+    },
+    {
+      "id": "S08",
+      "name": "Plaza Fernández de Madrid e iglesia de Santo Toribio",
+      "lat": 10.42644,
+      "lon": -75.54827,
+      "kind": "plaza e iglesia",
+      "weight": 4,
+      "summary": "El Parque de los Evangelios de García Márquez y la bala de cañón de 1741",
+      "wikipedia": "",
+      "interior_min": 0,
+      "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
+      "script": "scripts/S08.md",
+      "narration_min": 17.3,
+      "words_target": 2890,
+      "via": [
+        [
+          10.425,
+          -75.54962
+        ]
+      ]
+    },
+    {
+      "id": "S09",
+      "name": "Plaza de San Diego y claustro de Santa Clara",
+      "lat": 10.42811,
+      "lon": -75.54758,
+      "kind": "plaza y convento",
+      "weight": 4,
+      "summary": "Clarisas, Sierva María y la casa de García Márquez",
+      "wikipedia": "",
+      "interior_min": 0,
+      "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
+      "script": "scripts/S09.md",
+      "narration_min": 17.3,
+      "words_target": 2890,
+      "end": [
+        10.42811,
+        -75.54758
+      ]
+    },
+    {
+      "id": "S10",
+      "name": "Las Bóvedas y Baluarte de Santa Catalina",
+      "lat": 10.42948,
+      "lon": -75.54706,
+      "kind": "fortificación",
+      "weight": 3,
+      "summary": "El último gran proyecto militar de la muralla, frente al mar abierto",
+      "wikipedia": "",
+      "interior_min": 0,
+      "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
+      "script": "scripts/S10.md",
+      "narration_min": 13.0,
+      "words_target": 2170
+    },
+    {
+      "id": "S11",
+      "name": "Muelle de los Pegasos y Bahía de las Ánimas",
+      "lat": 10.42216,
+      "lon": -75.54882,
+      "kind": "muelle",
+      "weight": 3,
+      "summary": "El puerto de las flotas y las ferias, entre la ciudad y Getsemaní",
+      "wikipedia": "",
+      "interior_min": 0,
+      "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
+      "script": "scripts/S11.md",
+      "narration_min": 13.0,
+      "words_target": 2170
+    },
+    {
+      "id": "S12",
+      "name": "Camellón de los Mártires y Parque Centenario",
+      "lat": 10.4225,
+      "lon": -75.548,
+      "kind": "paseo y parque",
+      "weight": 4,
+      "summary": "Los fusilados de 1816 tras el sitio de Morillo y el centenario de 1911",
+      "wikipedia": "",
+      "interior_min": 0,
+      "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
+      "script": "scripts/S12.md",
+      "narration_min": 17.3,
+      "words_target": 2890
+    },
+    {
+      "id": "S13",
+      "name": "Calle del Guerrero: el Getsemaní popular",
+      "lat": 10.42148,
+      "lon": -75.54539,
+      "kind": "barrio",
+      "weight": 3,
+      "summary": "El arrabal de artesanos y lanceros de la independencia",
+      "wikipedia": "",
+      "interior_min": 0,
+      "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
+      "script": "scripts/S13.md",
+      "narration_min": 13.0,
+      "words_target": 2170
+    },
+    {
+      "id": "S14",
+      "name": "Callejón Angosto y Calle de San Juan: el arte urbano",
+      "lat": 10.41947,
+      "lon": -75.54512,
+      "kind": "calle y murales",
+      "weight": 3,
+      "summary": "Murales, memoria barrial y gentrificación",
+      "wikipedia": "",
+      "interior_min": 0,
+      "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
+      "script": "scripts/S14.md",
+      "narration_min": 13.0,
+      "words_target": 2170,
+      "end": [
+        10.42086,
+        -75.54582
+      ]
+    },
+    {
+      "id": "S15",
+      "name": "Iglesia y Plaza de la Santísima Trinidad",
+      "lat": 10.42061,
+      "lon": -75.5454,
+      "kind": "iglesia y plaza",
+      "weight": 5,
+      "summary": "El corazón de Getsemaní: Pedro Romero y la noche en la plaza",
+      "wikipedia": "",
+      "interior_min": 0,
+      "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
+      "script": "scripts/S15.md",
+      "narration_min": 21.7,
+      "words_target": 3630
+    }
+  ],
+  "legs": [
+    {
+      "id": "L00",
+      "from": "START",
+      "to": "S01",
+      "distance_m": 208,
+      "time_s": 199,
+      "maneuvers": [
+        {
+          "instruction": "Camine hacia el sur por Calle del Estanco del Tabaco.",
+          "verbal": "Camine hacia el sur por Calle del Estanco del Tabaco. Después Gire a la derecha hacia Calle de Ayos.",
+          "streets": [
+            "Calle del Estanco del Tabaco"
+          ],
+          "length_m": 49,
+          "time_s": 49,
+          "type": 1,
+          "at": [
+            10.424699,
+            -75.550507
+          ]
+        },
+        {
+          "instruction": "Gire a la derecha hacia Calle de Ayos.",
+          "verbal": "Gire a la derecha hacia Calle de Ayos.",
+          "streets": [
+            "Calle de Ayos"
+          ],
+          "length_m": 72,
+          "time_s": 65,
+          "type": 10,
+          "at": [
+            10.424262,
+            -75.55045
+          ]
+        },
+        {
+          "instruction": "Gire a la izquierda hacia Calle de los Santos de Piedra.",
+          "verbal": "Gire a la izquierda hacia Calle de los Santos de Piedra.",
+          "streets": [
+            "Calle de los Santos de Piedra"
+          ],
+          "length_m": 86,
+          "time_s": 85,
+          "type": 15,
+          "at": [
+            10.424208,
+            -75.551109
+          ]
+        },
+        {
+          "instruction": "Su destino está a la izquierda.",
+          "verbal": "Su destino está a la izquierda.",
+          "streets": [],
+          "length_m": 0,
+          "time_s": 0,
+          "type": 6,
+          "at": [
+            10.423436,
+            -75.55101
+          ]
+        }
+      ],
+      "shape": [
+        [
+          10.424699,
+          -75.550507
+        ],
+        [
+          10.424262,
+          -75.55045
+        ],
+        [
+          10.424208,
+          -75.551109
+        ],
+        [
+          10.423508,
+          -75.551016
+        ],
+        [
+          10.423458,
+          -75.551012
+        ],
+        [
+          10.423436,
+          -75.55101
+        ]
+      ],
+      "script": "scripts/L00.md",
+      "words_target": 220
+    },
+    {
+      "id": "L01",
+      "from": "S01",
+      "to": "S02",
+      "distance_m": 77,
+      "time_s": 68,
+      "maneuvers": [
+        {
+          "instruction": "Camine hacia el norte por Calle de los Santos de Piedra.",
+          "verbal": "Camine hacia el norte por Calle de los Santos de Piedra. Después Gire a la izquierda hacia Plaza de Bolívar.",
+          "streets": [
+            "Calle de los Santos de Piedra"
+          ],
+          "length_m": 7,
+          "time_s": 7,
+          "type": 2,
+          "at": [
+            10.423436,
+            -75.55101
+          ]
+        },
+        {
+          "instruction": "Gire a la izquierda hacia Plaza de Bolívar.",
+          "verbal": "Gire a la izquierda hacia Plaza de Bolívar.",
+          "streets": [
+            "Plaza de Bolívar"
+          ],
+          "length_m": 69,
+          "time_s": 61,
+          "type": 15,
+          "at": [
+            10.423508,
+            -75.551016
+          ]
+        },
+        {
+          "instruction": "Su destino está a la izquierda.",
+          "verbal": "Su destino está a la izquierda.",
+          "streets": [],
+          "length_m": 0,
+          "time_s": 0,
+          "type": 6,
+          "at": [
+            10.423307,
+            -75.551512
+          ]
+        }
+      ],
+      "shape": [
+        [
+          10.423436,
+          -75.55101
+        ],
+        [
+          10.423458,
+          -75.551012
+        ],
+        [
+          10.423508,
+          -75.551016
+        ],
+        [
+          10.423461,
+          -75.551465
+        ],
+        [
+          10.423451,
+          -75.551498
+        ],
+        [
+          10.423426,
+          -75.551504
+        ],
+        [
+          10.423307,
+          -75.551512
+        ]
+      ],
+      "script": "scripts/L01.md",
+      "words_target": 80
+    },
+    {
+      "id": "L02",
+      "from": "S02",
+      "to": "S03",
+      "distance_m": 245,
+      "time_s": 217,
+      "maneuvers": [
+        {
+          "instruction": "Camine hacia el sur por Plaza de Bolívar.",
+          "verbal": "Camine hacia el sur por Plaza de Bolívar. Después Gire a la derecha hacia Calle de la Inquisición.",
+          "streets": [
+            "Plaza de Bolívar"
+          ],
+          "length_m": 30,
+          "time_s": 33,
+          "type": 3,
+          "at": [
+            10.423307,
+            -75.551512
+          ]
+        },
+        {
+          "instruction": "Gire a la derecha hacia Calle de la Inquisición.",
+          "verbal": "Gire a la derecha hacia Calle de la Inquisición.",
+          "streets": [
+            "Calle de la Inquisición"
+          ],
+          "length_m": 79,
+          "time_s": 63,
+          "type": 10,
+          "at": [
+            10.423026,
+            -75.551531
+          ]
+        },
+        {
+          "instruction": "Gire a la derecha hacia Calle de Nuestra Señora del Carmen.",
+          "verbal": "Gire a la derecha hacia Calle de Nuestra Señora del Carmen.",
+          "streets": [
+            "Calle de Nuestra Señora del Carmen"
+          ],
+          "length_m": 135,
+          "time_s": 121,
+          "type": 10,
+          "at": [
+            10.423116,
+            -75.552248
+          ]
+        },
+        {
+          "instruction": "Su destino está a la derecha.",
+          "verbal": "Su destino está a la derecha.",
+          "streets": [],
+          "length_m": 0,
+          "time_s": 0,
+          "type": 5,
+          "at": [
+            10.424332,
+            -75.552112
+          ]
+        }
+      ],
+      "shape": [
+        [
+          10.423307,
+          -75.551512
+        ],
+        [
+          10.423026,
+          -75.551531
+        ],
+        [
+          10.4231,
+          -75.552141
+        ],
+        [
+          10.423116,
+          -75.552248
+        ],
+        [
+          10.423148,
+          -75.552247
+        ],
+        [
+          10.423713,
+          -75.552164
+        ],
+        [
+          10.42411,
+          -75.552136
+        ],
+        [
+          10.424332,
+          -75.552112
+        ]
+      ],
+      "script": "scripts/L02.md",
+      "words_target": 240
+    },
+    {
+      "id": "L03",
+      "from": "S03",
+      "to": "S04",
+      "distance_m": 279,
+      "time_s": 233,
+      "maneuvers": [
+        {
+          "instruction": "Camine hacia el sur por Calle de Santo Domingo.",
+          "verbal": "Camine hacia el sur por Calle de Santo Domingo. Después Gire a la derecha hacia Callejón de los Estribos.",
+          "streets": [
+            "Calle de Santo Domingo"
+          ],
+          "length_m": 24,
+          "time_s": 25,
+          "type": 3,
+          "at": [
+            10.424332,
+            -75.552112
+          ]
+        },
+        {
+          "instruction": "Gire a la derecha hacia Callejón de los Estribos.",
+          "verbal": "Gire a la derecha hacia Callejón de los Estribos.",
+          "streets": [
+            "Callejón de los Estribos"
+          ],
+          "length_m": 138,
+          "time_s": 109,
+          "type": 10,
+          "at": [
+            10.42411,
+            -75.552136
+          ]
+        },
+        {
+          "instruction": "Gire a la derecha hacia Playa de la Artillería.",
+          "verbal": "Gire a la derecha hacia Playa de la Artillería.",
+          "streets": [
+            "Playa de la Artillería"
+          ],
+          "length_m": 42,
+          "time_s": 33,
+          "type": 10,
+          "at": [
+            10.424065,
+            -75.553398
+          ]
+        },
+        {
+          "instruction": "Gire a la izquierda hacia la calzada.",
+          "verbal": "Gire a la izquierda hacia la calzada.",
+          "streets": [],
+          "length_m": 39,
+          "time_s": 34,
+          "type": 15,
+          "at": [
+            10.424438,
+            -75.553418
+          ]
+        },
+        {
+          "instruction": "Tome las escaleras.",
+          "verbal": "Tome las escaleras.",
+          "streets": [],
+          "length_m": 27,
+          "time_s": 24,
+          "type": 40,
+          "at": [
+            10.424459,
+            -75.553771
+          ]
+        },
+        {
+          "instruction": "Gire a la derecha hacia la calzada.",
+          "verbal": "Gire a la derecha hacia la calzada. Después Llegará a su destino.",
+          "streets": [],
+          "length_m": 8,
+          "time_s": 8,
+          "type": 10,
+          "at": [
+            10.424458,
+            -75.554015
+          ]
+        },
+        {
+          "instruction": "Ha llegado a su destino.",
+          "verbal": "Ha llegado a su destino.",
+          "streets": [],
+          "length_m": 0,
+          "time_s": 0,
+          "type": 4,
+          "at": [
+            10.424533,
+            -75.554017
+          ]
+        }
+      ],
+      "shape": [
+        [
+          10.424332,
+          -75.552112
+        ],
+        [
+          10.42411,
+          -75.552136
+        ],
+        [
+          10.424063,
+          -75.552945
+        ],
+        [
+          10.424065,
+          -75.553398
+        ],
+        [
+          10.424438,
+          -75.553418
+        ],
+        [
+          10.424458,
+          -75.553755
+        ],
+        [
+          10.424459,
+          -75.553771
+        ],
+        [
+          10.424458,
+          -75.554015
+        ],
+        [
+          10.424533,
+          -75.554017
+        ],
+        [
+          10.424533,
+          -75.554017
+        ]
+      ],
+      "script": "scripts/L03.md",
+      "words_target": 260
+    },
+    {
+      "id": "L04",
+      "from": "S04",
+      "to": "S05",
+      "distance_m": 568,
+      "time_s": 571,
+      "maneuvers": [
+        {
+          "instruction": "Camine hacia el sur por la calzada.",
+          "verbal": "Camine hacia el sur por la calzada. Después Tome las escaleras.",
+          "streets": [],
+          "length_m": 8,
+          "time_s": 8,
+          "type": 1,
+          "at": [
+            10.424533,
+            -75.554017
+          ]
+        },
+        {
+          "instruction": "Tome las escaleras.",
+          "verbal": "Tome las escaleras.",
+          "streets": [],
+          "length_m": 27,
+          "time_s": 24,
+          "type": 40,
+          "at": [
+            10.424458,
+            -75.554015
+          ]
+        },
+        {
+          "instruction": "Continúe en la calzada.",
+          "verbal": "Continúe en la calzada.",
+          "streets": [],
+          "length_m": 39,
+          "time_s": 47,
+          "type": 8,
+          "at": [
+            10.424459,
+            -75.553771
+          ]
+        },
+        {
+          "instruction": "Gire a la derecha hacia Playa de la Artillería.",
+          "verbal": "Gire a la derecha hacia Playa de la Artillería.",
+          "streets": [
+            "Playa de la Artillería"
+          ],
+          "length_m": 304,
+          "time_s": 291,
+          "type": 10,
+          "at": [
+            10.424438,
+            -75.553418
+          ]
+        },
+        {
+          "instruction": "Gire a la izquierda hacia Calle 31A.",
+          "verbal": "Gire a la izquierda hacia Calle 31A.",
+          "streets": [
+            "Calle 31A"
+          ],
+          "length_m": 189,
+          "time_s": 201,
+          "type": 15,
+          "at": [
+            10.421828,
+            -75.552783
+          ]
+        },
+        {
+          "instruction": "Su destino está a la derecha.",
+          "verbal": "Su destino está a la derecha.",
+          "streets": [],
+          "length_m": 0,
+          "time_s": 0,
+          "type": 5,
+          "at": [
+            10.42195,
+            -75.551055
+          ]
+        }
+      ],
+      "shape": [
+        [
+          10.424533,
+          -75.554017
+        ],
+        [
+          10.424458,
+          -75.554015
+        ],
+        [
+          10.424459,
+          -75.553771
+        ],
+        [
+          10.424458,
+          -75.553755
+        ],
+        [
+          10.424438,
+          -75.553418
+        ],
+        [
+          10.424065,
+          -75.553398
+        ],
+        [
+          10.423527,
+          -75.553366
+        ],
+        [
+          10.423482,
+          -75.553362
+        ],
+        [
+          10.423451,
+          -75.55336
+        ],
+        [
+          10.423294,
+          -75.553347
+        ],
+        [
+          10.423251,
+          -75.553334
+        ],
+        [
+          10.422666,
+          -75.55304
+        ],
+        [
+          10.42217,
+          -75.552877
+        ],
+        [
+          10.422062,
+          -75.552845
+        ],
+        [
+          10.421828,
+          -75.552783
+        ],
+        [
+          10.421814,
+          -75.552728
+        ],
+        [
+          10.421804,
+          -75.552672
+        ],
+        [
+          10.421811,
+          -75.552573
+        ],
+        [
+          10.421825,
+          -75.552413
+        ],
+        [
+          10.421839,
+          -75.552247
+        ],
+        [
+          10.421849,
+          -75.552153
+        ],
+        [
+          10.42195,
+          -75.551055
+        ]
+      ],
+      "script": "scripts/L04.md",
+      "words_target": 640
+    },
+    {
+      "id": "L05",
+      "from": "S05",
+      "to": "S06",
+      "distance_m": 152,
+      "time_s": 144,
+      "maneuvers": [
+        {
+          "instruction": "Camine hacia el este por Calle San Juan de Dios.",
+          "verbal": "Camine hacia el este por Calle San Juan de Dios. Después Gire a la derecha hacia la calzada.",
+          "streets": [
+            "Calle San Juan de Dios"
+          ],
+          "length_m": 13,
+          "time_s": 14,
+          "type": 2,
+          "at": [
+            10.42195,
+            -75.551055
+          ]
+        },
+        {
+          "instruction": "Gire a la derecha hacia la calzada.",
+          "verbal": "Gire a la derecha hacia la calzada.",
+          "streets": [],
+          "length_m": 35,
+          "time_s": 28,
+          "type": 10,
+          "at": [
+            10.421961,
+            -75.550936
+          ]
+        },
+        {
+          "instruction": "Gire a la izquierda hacia la calzada.",
+          "verbal": "Gire a la izquierda hacia la calzada.",
+          "streets": [],
+          "length_m": 104,
+          "time_s": 102,
+          "type": 15,
+          "at": [
+            10.421648,
+            -75.550906
+          ]
+        },
+        {
+          "instruction": "Su destino está a la izquierda.",
+          "verbal": "Su destino está a la izquierda.",
+          "streets": [],
+          "length_m": 0,
+          "time_s": 0,
+          "type": 6,
+          "at": [
+            10.422068,
+            -75.550159
+          ]
+        }
+      ],
+      "shape": [
+        [
+          10.42195,
+          -75.551055
+        ],
+        [
+          10.421961,
+          -75.550936
+        ],
+        [
+          10.421648,
+          -75.550906
+        ],
+        [
+          10.421672,
+          -75.550441
+        ],
+        [
+          10.421716,
+          -75.550406
+        ],
+        [
+          10.422068,
+          -75.550159
+        ]
+      ],
+      "script": "scripts/L05.md",
+      "words_target": 160
+    },
+    {
+      "id": "L06",
+      "from": "S06",
+      "to": "S07",
+      "distance_m": 242,
+      "time_s": 239,
+      "maneuvers": [
+        {
+          "instruction": "Camine hacia el noreste por la calzada.",
+          "verbal": "Camine hacia el noreste por la calzada. Después Continúe en Calle Cabal.",
+          "streets": [],
+          "length_m": 49,
+          "time_s": 54,
+          "type": 3,
+          "at": [
+            10.422068,
+            -75.550159
+          ]
+        },
+        {
+          "instruction": "Continúe en Calle Cabal.",
+          "verbal": "Continúe en Calle Cabal.",
+          "streets": [
+            "Calle Cabal"
+          ],
+          "length_m": 41,
+          "time_s": 55,
+          "type": 8,
+          "at": [
+            10.42246,
+            -75.549956
+          ]
+        },
+        {
+          "instruction": "Siga por la derecha en dirección a Calle del Candilejo.",
+          "verbal": "Siga por la derecha en dirección a Calle del Candilejo.",
+          "streets": [
+            "Calle del Candilejo"
+          ],
+          "length_m": 78,
+          "time_s": 65,
+          "type": 9,
+          "at": [
+            10.422823,
+            -75.550001
+          ]
+        },
+        {
+          "instruction": "Gire completamente a la derecha hacia la calzada.",
+          "verbal": "Gire completamente a la derecha hacia la calzada.",
+          "streets": [],
+          "length_m": 63,
+          "time_s": 55,
+          "type": 11,
+          "at": [
+            10.423447,
+            -75.549703
+          ]
+        },
+        {
+          "instruction": "Gire a la derecha hacia la calzada.",
+          "verbal": "Gire a la derecha hacia la calzada. Después Manténgase a la derecha para tomar la calzada.",
+          "streets": [],
+          "length_m": 4,
+          "time_s": 4,
+          "type": 10,
+          "at": [
+            10.423176,
+            -75.549287
+          ]
+        },
+        {
+          "instruction": "Manténgase a la derecha para tomar la calzada.",
+          "verbal": "Manténgase a la derecha para tomar la calzada. Después Llegará a su destino.",
+          "streets": [],
+          "length_m": 6,
+          "time_s": 7,
+          "type": 23,
+          "at": [
+            10.423144,
+            -75.549309
+          ]
+        },
+        {
+          "instruction": "Ha llegado a su destino.",
+          "verbal": "Ha llegado a su destino.",
+          "streets": [],
+          "length_m": 0,
+          "time_s": 0,
+          "type": 4,
+          "at": [
+            10.423095,
+            -75.549343
+          ]
+        }
+      ],
+      "shape": [
+        [
+          10.422068,
+          -75.550159
+        ],
+        [
+          10.422095,
+          -75.55014
+        ],
+        [
+          10.422336,
+          -75.549971
+        ],
+        [
+          10.42246,
+          -75.549956
+        ],
+        [
+          10.422605,
+          -75.549974
+        ],
+        [
+          10.422823,
+          -75.550001
+        ],
+        [
+          10.422909,
+          -75.549975
+        ],
+        [
+          10.422999,
+          -75.549935
+        ],
+        [
+          10.423173,
+          -75.549791
+        ],
+        [
+          10.423288,
+          -75.549727
+        ],
+        [
+          10.423447,
+          -75.549703
+        ],
+        [
+          10.423438,
+          -75.549425
+        ],
+        [
+          10.423176,
+          -75.549287
+        ],
+        [
+          10.423144,
+          -75.549309
+        ],
+        [
+          10.423095,
+          -75.549343
+        ]
+      ],
+      "script": "scripts/L06.md",
+      "words_target": 270
+    },
+    {
+      "id": "L07",
+      "from": "S07",
+      "to": "S08",
+      "distance_m": 538,
+      "time_s": 471,
+      "maneuvers": [
+        {
+          "instruction": "Camine hacia el noreste por la calzada.",
+          "verbal": "Camine hacia el noreste por la calzada. Después Gire a la izquierda hacia la calzada.",
+          "streets": [],
+          "length_m": 10,
+          "time_s": 9,
+          "type": 1,
+          "at": [
+            10.423095,
+            -75.549343
+          ]
+        },
+        {
+          "instruction": "Gire a la izquierda hacia la calzada.",
+          "verbal": "Gire a la izquierda hacia la calzada.",
+          "streets": [],
+          "length_m": 32,
+          "time_s": 36,
+          "type": 15,
+          "at": [
+            10.423176,
+            -75.549287
+          ]
+        },
+        {
+          "instruction": "Continúe en Calle del Colegio.",
+          "verbal": "Continúe en Calle del Colegio.",
+          "streets": [
+            "Calle del Colegio"
+          ],
+          "length_m": 231,
+          "time_s": 204,
+          "type": 8,
+          "at": [
+            10.423438,
+            -75.549425
+          ]
+        },
+        {
+          "instruction": "Gire a la derecha hacia Calle de San Agustín Chiquita.",
+          "verbal": "Gire a la derecha hacia Calle de San Agustín Chiquita.",
+          "streets": [
+            "Calle de San Agustín Chiquita"
+          ],
+          "length_m": 98,
+          "time_s": 88,
+          "type": 10,
+          "at": [
+            10.425242,
+            -75.549592
+          ]
+        },
+        {
+          "instruction": "Gire a la izquierda hacia Calle Segunda de Badillo.",
+          "verbal": "Gire a la izquierda hacia Calle Segunda de Badillo.",
+          "streets": [
+            "Calle Segunda de Badillo"
+          ],
+          "length_m": 146,
+          "time_s": 118,
+          "type": 15,
+          "at": [
+            10.425223,
+            -75.548697
+          ]
+        },
+        {
+          "instruction": "Gire a la derecha hacia la calzada.",
+          "verbal": "Gire a la derecha hacia la calzada. Después Gire a la derecha hacia la calzada.",
+          "streets": [],
+          "length_m": 11,
+          "time_s": 10,
+          "type": 10,
+          "at": [
+            10.426507,
+            -75.548414
+          ]
+        },
+        {
+          "instruction": "Gire a la derecha hacia la calzada.",
+          "verbal": "Gire a la derecha hacia la calzada. Después Llegará a su destino.",
+          "streets": [],
+          "length_m": 7,
+          "time_s": 7,
+          "type": 10,
+          "at": [
+            10.426504,
+            -75.548316
+          ]
+        },
+        {
+          "instruction": "Ha llegado a su destino.",
+          "verbal": "Ha llegado a su destino.",
+          "streets": [],
+          "length_m": 0,
+          "time_s": 0,
+          "type": 4,
+          "at": [
+            10.426437,
+            -75.54831
+          ]
+        }
+      ],
+      "shape": [
+        [
+          10.423095,
+          -75.549343
+        ],
+        [
+          10.423144,
+          -75.549309
+        ],
+        [
+          10.423176,
+          -75.549287
+        ],
+        [
+          10.423438,
+          -75.549425
+        ],
+        [
+          10.423447,
+          -75.549703
+        ],
+        [
+          10.424331,
+          -75.549658
+        ],
+        [
+          10.424999,
+          -75.54961
+        ],
+        [
+          10.425242,
+          -75.549592
+        ],
+        [
+          10.425223,
+          -75.548697
+        ],
+        [
+          10.42607,
+          -75.54845
+        ],
+        [
+          10.426196,
+          -75.548437
+        ],
+        [
+          10.426507,
+          -75.548414
+        ],
+        [
+          10.426506,
+          -75.548393
+        ],
+        [
+          10.426504,
+          -75.548316
+        ],
+        [
+          10.426437,
+          -75.54831
+        ]
+      ],
+      "script": "scripts/L07.md",
+      "words_target": 530
+    },
+    {
+      "id": "L08",
+      "from": "S08",
+      "to": "S09",
+      "distance_m": 250,
+      "time_s": 237,
+      "maneuvers": [
+        {
+          "instruction": "Camine hacia el norte por la calzada.",
+          "verbal": "Camine hacia el norte por la calzada. Después Gire a la derecha hacia la calzada.",
+          "streets": [],
+          "length_m": 13,
+          "time_s": 12,
+          "type": 1,
+          "at": [
+            10.426437,
+            -75.54831
+          ]
+        },
+        {
+          "instruction": "Gire a la derecha hacia la calzada.",
+          "verbal": "Gire a la derecha hacia la calzada. Después Gire a la izquierda hacia la calzada.",
+          "streets": [],
+          "length_m": 7,
+          "time_s": 6,
+          "type": 10,
+          "at": [
+            10.426557,
+            -75.548299
+          ]
+        },
+        {
+          "instruction": "Gire a la izquierda hacia la calzada.",
+          "verbal": "Gire a la izquierda hacia la calzada.",
+          "streets": [],
+          "length_m": 28,
+          "time_s": 28,
+          "type": 15,
+          "at": [
+            10.426556,
+            -75.548235
+          ]
+        },
+        {
+          "instruction": "Gire a la izquierda hacia Plaza Fernández de Madrid.",
+          "verbal": "Gire a la izquierda hacia Plaza Fernández de Madrid. Después Gire a la derecha hacia Calle del Santiísimo.",
+          "streets": [
+            "Plaza Fernández de Madrid"
+          ],
+          "length_m": 7,
+          "time_s": 6,
+          "type": 15,
+          "at": [
+            10.426742,
+            -75.548097
+          ]
+        },
+        {
+          "instruction": "Gire a la derecha hacia Calle del Santiísimo.",
+          "verbal": "Gire a la derecha hacia Calle del Santiísimo. Después Gire a la izquierda hacia Calle de la Cochera del Hobo.",
+          "streets": [
+            "Calle del Santiísimo"
+          ],
+          "length_m": 9,
+          "time_s": 8,
+          "type": 10,
+          "at": [
+            10.426806,
+            -75.548091
+          ]
+        },
+        {
+          "instruction": "Gire a la izquierda hacia Calle de la Cochera del Hobo.",
+          "verbal": "Gire a la izquierda hacia Calle de la Cochera del Hobo.",
+          "streets": [
+            "Calle de la Cochera del Hobo"
+          ],
+          "length_m": 165,
+          "time_s": 159,
+          "type": 15,
+          "at": [
+            10.426812,
+            -75.548008
+          ]
+        },
+        {
+          "instruction": "Gire a la derecha hacia la calzada.",
+          "verbal": "Gire a la derecha hacia la calzada.",
+          "streets": [],
+          "length_m": 21,
+          "time_s": 18,
+          "type": 10,
+          "at": [
+            10.428265,
+            -75.547746
+          ]
+        },
+        {
+          "instruction": "Su destino está a la derecha.",
+          "verbal": "Su destino está a la derecha.",
+          "streets": [],
+          "length_m": 0,
+          "time_s": 0,
+          "type": 5,
+          "at": [
+            10.428227,
+            -75.547556
+          ]
+        }
+      ],
+      "shape": [
+        [
+          10.426437,
+          -75.54831
+        ],
+        [
+          10.426504,
+          -75.548316
+        ],
+        [
+          10.426557,
+          -75.548299
+        ],
+        [
+          10.426556,
+          -75.548235
+        ],
+        [
+          10.426657,
+          -75.548216
+        ],
+        [
+          10.426733,
+          -75.548127
+        ],
+        [
+          10.426742,
+          -75.548097
+        ],
+        [
+          10.426806,
+          -75.548091
+        ],
+        [
+          10.426812,
+          -75.548008
+        ],
+        [
+          10.42725,
+          -75.547921
+        ],
+        [
+          10.427985,
+          -75.547802
+        ],
+        [
+          10.428265,
+          -75.547746
+        ],
+        [
+          10.428227,
+          -75.547556
+        ]
+      ],
+      "script": "scripts/L08.md",
+      "words_target": 260
+    },
+    {
+      "id": "L09",
+      "from": "S09",
+      "to": "S10",
+      "distance_m": 169,
+      "time_s": 151,
+      "maneuvers": [
+        {
+          "instruction": "Camine hacia el este por la calzada.",
+          "verbal": "Camine hacia el este por la calzada. Después Gire a la izquierda hacia Calle de las Bóvedas.",
+          "streets": [],
+          "length_m": 22,
+          "time_s": 19,
+          "type": 2,
+          "at": [
+            10.428227,
+            -75.547556
+          ]
+        },
+        {
+          "instruction": "Gire a la izquierda hacia Calle de las Bóvedas.",
+          "verbal": "Gire a la izquierda hacia Calle de las Bóvedas.",
+          "streets": [
+            "Calle de las Bóvedas"
+          ],
+          "length_m": 143,
+          "time_s": 129,
+          "type": 15,
+          "at": [
+            10.428187,
+            -75.547353
+          ]
+        },
+        {
+          "instruction": "Gire a la derecha hacia Carrera 2.",
+          "verbal": "Gire a la derecha hacia Carrera 2. Después Llegará a su destino.",
+          "streets": [
+            "Carrera 2"
+          ],
+          "length_m": 3,
+          "time_s": 4,
+          "type": 10,
+          "at": [
+            10.42945,
+            -75.547094
+          ]
+        },
+        {
+          "instruction": "Ha llegado a su destino.",
+          "verbal": "Ha llegado a su destino.",
+          "streets": [],
+          "length_m": 0,
+          "time_s": 0,
+          "type": 4,
+          "at": [
+            10.429451,
+            -75.547059
+          ]
+        }
+      ],
+      "shape": [
+        [
+          10.428227,
+          -75.547556
+        ],
+        [
+          10.428187,
+          -75.547353
+        ],
+        [
+          10.42945,
+          -75.547094
+        ],
+        [
+          10.429451,
+          -75.547059
+        ]
+      ],
+      "script": "scripts/L09.md",
+      "words_target": 170
+    },
+    {
+      "id": "L10",
+      "from": "S10",
+      "to": "S11",
+      "distance_m": 1105,
+      "time_s": 1095,
+      "maneuvers": [
+        {
+          "instruction": "Camine hacia el oeste por Carrera 2.",
+          "verbal": "Camine hacia el oeste por Carrera 2.",
+          "streets": [
+            "Carrera 2"
+          ],
+          "length_m": 310,
+          "time_s": 298,
+          "type": 1,
+          "at": [
+            10.429451,
+            -75.547059
+          ]
+        },
+        {
+          "instruction": "Gire a la izquierda hacia Calle del Tejadillo.",
+          "verbal": "Gire a la izquierda hacia Calle del Tejadillo.",
+          "streets": [
+            "Calle del Tejadillo"
+          ],
+          "length_m": 521,
+          "time_s": 552,
+          "type": 15,
+          "at": [
+            10.428111,
+            -75.549499
+          ]
+        },
+        {
+          "instruction": "Siga por la izquierda en dirección a la calzada.",
+          "verbal": "Siga por la izquierda en dirección a la calzada.",
+          "streets": [],
+          "length_m": 86,
+          "time_s": 75,
+          "type": 16,
+          "at": [
+            10.423447,
+            -75.549703
+          ]
+        },
+        {
+          "instruction": "Manténgase a la derecha para tomar la calzada.",
+          "verbal": "Manténgase a la derecha para tomar la calzada.",
+          "streets": [],
+          "length_m": 51,
+          "time_s": 44,
+          "type": 23,
+          "at": [
+            10.423062,
+            -75.549116
+          ]
+        },
+        {
+          "instruction": "Manténgase a la izquierda para tomar the crosswalk.",
+          "verbal": "Manténgase a la izquierda para tomar the crosswalk.",
+          "streets": [],
+          "length_m": 35,
+          "time_s": 28,
+          "type": 24,
+          "at": [
+            10.422712,
+            -75.548843
+          ]
+        },
+        {
+          "instruction": "Gire completamente a la derecha hacia the crosswalk.",
+          "verbal": "Gire completamente a la derecha hacia the crosswalk.",
+          "streets": [],
+          "length_m": 31,
+          "time_s": 26,
+          "type": 11,
+          "at": [
+            10.422456,
+            -75.548684
+          ]
+        },
+        {
+          "instruction": "Gire a la izquierda hacia the crosswalk.",
+          "verbal": "Gire a la izquierda hacia the crosswalk.",
+          "streets": [],
+          "length_m": 35,
+          "time_s": 40,
+          "type": 15,
+          "at": [
+            10.422554,
+            -75.548911
+          ]
+        },
+        {
+          "instruction": "Tome las escaleras.",
+          "verbal": "Tome las escaleras. Después Continúe en la calzada.",
+          "streets": [],
+          "length_m": 8,
+          "time_s": 7,
+          "type": 40,
+          "at": [
+            10.422378,
+            -75.549052
+          ]
+        },
+        {
+          "instruction": "Continúe en la calzada.",
+          "verbal": "Continúe en la calzada.",
+          "streets": [],
+          "length_m": 27,
+          "time_s": 25,
+          "type": 8,
+          "at": [
+            10.422328,
+            -75.549005
+          ]
+        },
+        {
+          "instruction": "Ha llegado a su destino.",
+          "verbal": "Ha llegado a su destino.",
+          "streets": [],
+          "length_m": 0,
+          "time_s": 0,
+          "type": 4,
+          "at": [
+            10.422158,
+            -75.548822
+          ]
+        }
+      ],
+      "shape": [
+        [
+          10.429451,
+          -75.547059
+        ],
+        [
+          10.42945,
+          -75.547094
+        ],
+        [
+          10.429439,
+          -75.547233
+        ],
+        [
+          10.429361,
+          -75.54752
+        ],
+        [
+          10.429215,
+          -75.547916
+        ],
+        [
+          10.429011,
+          -75.548248
+        ],
+        [
+          10.428976,
+          -75.54828
+        ],
+        [
+          10.428899,
+          -75.548345
+        ],
+        [
+          10.428818,
+          -75.548428
+        ],
+        [
+          10.428628,
+          -75.548728
+        ],
+        [
+          10.428236,
+          -75.549322
+        ],
+        [
+          10.428111,
+          -75.549499
+        ],
+        [
+          10.42772,
+          -75.5495
+        ],
+        [
+          10.426678,
+          -75.549541
+        ],
+        [
+          10.425242,
+          -75.549592
+        ],
+        [
+          10.424331,
+          -75.549658
+        ],
+        [
+          10.423447,
+          -75.549703
+        ],
+        [
+          10.423438,
+          -75.549425
+        ],
+        [
+          10.423176,
+          -75.549287
+        ],
+        [
+          10.423141,
+          -75.549234
+        ],
+        [
+          10.423062,
+          -75.549116
+        ],
+        [
+          10.422891,
+          -75.549046
+        ],
+        [
+          10.422814,
+          -75.548959
+        ],
+        [
+          10.422779,
+          -75.548919
+        ],
+        [
+          10.422755,
+          -75.548892
+        ],
+        [
+          10.422729,
+          -75.548862
+        ],
+        [
+          10.422712,
+          -75.548843
+        ],
+        [
+          10.422669,
+          -75.548795
+        ],
+        [
+          10.422474,
+          -75.548669
+        ],
+        [
+          10.422456,
+          -75.548684
+        ],
+        [
+          10.422445,
+          -75.548694
+        ],
+        [
+          10.422577,
+          -75.54889
+        ],
+        [
+          10.422554,
+          -75.548911
+        ],
+        [
+          10.422497,
+          -75.548961
+        ],
+        [
+          10.422502,
+          -75.548995
+        ],
+        [
+          10.4225,
+          -75.54903
+        ],
+        [
+          10.422491,
+          -75.549063
+        ],
+        [
+          10.422475,
+          -75.549093
+        ],
+        [
+          10.422426,
+          -75.549072
+        ],
+        [
+          10.422378,
+          -75.549052
+        ],
+        [
+          10.422328,
+          -75.549005
+        ],
+        [
+          10.422158,
+          -75.548822
+        ]
+      ],
+      "script": "scripts/L10.md",
+      "nav_fill": 0.35,
+      "words_target": 1070
+    },
+    {
+      "id": "L11",
+      "from": "S11",
+      "to": "S12",
+      "distance_m": 373,
+      "time_s": 389,
+      "maneuvers": [
+        {
+          "instruction": "Camine hacia el sureste por la calzada.",
+          "verbal": "Camine hacia el sureste por la calzada. Después Tome las escaleras.",
+          "streets": [],
+          "length_m": 33,
+          "time_s": 30,
+          "type": 1,
+          "at": [
+            10.422158,
+            -75.548822
+          ]
+        },
+        {
+          "instruction": "Tome las escaleras.",
+          "verbal": "Tome las escaleras. Después Gire a la derecha hacia la calzada.",
+          "streets": [],
+          "length_m": 7,
+          "time_s": 6,
+          "type": 40,
+          "at": [
+            10.421999,
+            -75.5486
+          ]
+        },
+        {
+          "instruction": "Gire a la derecha hacia la calzada.",
+          "verbal": "Gire a la derecha hacia la calzada.",
+          "streets": [],
+          "length_m": 37,
+          "time_s": 38,
+          "type": 10,
+          "at": [
+            10.422046,
+            -75.548554
+          ]
+        },
+        {
+          "instruction": "Gire a la izquierda hacia the crosswalk.",
+          "verbal": "Gire a la izquierda hacia the crosswalk.",
+          "streets": [],
+          "length_m": 86,
+          "time_s": 89,
+          "type": 15,
+          "at": [
+            10.421829,
+            -75.548299
+          ]
+        },
+        {
+          "instruction": "Gire a la izquierda hacia Calle 24.",
+          "verbal": "Gire a la izquierda hacia Calle 24. Después Gire a la izquierda hacia Calle de la Media Luna.",
+          "streets": [
+            "Calle 24"
+          ],
+          "length_m": 16,
+          "time_s": 14,
+          "type": 15,
+          "at": [
+            10.421823,
+            -75.547754
+          ]
+        },
+        {
+          "instruction": "Gire a la izquierda hacia Calle de la Media Luna.",
+          "verbal": "Gire a la izquierda hacia Calle de la Media Luna.",
+          "streets": [
+            "Calle de la Media Luna"
+          ],
+          "length_m": 134,
+          "time_s": 160,
+          "type": 15,
+          "at": [
+            10.421927,
+            -75.547652
+          ]
+        },
+        {
+          "instruction": "Gire a la derecha hacia la calzada.",
+          "verbal": "Gire a la derecha hacia la calzada. Después, en 10 metros, Gire a la derecha hacia la calzada.",
+          "streets": [],
+          "length_m": 14,
+          "time_s": 13,
+          "type": 10,
+          "at": [
+            10.422753,
+            -75.548479
+          ]
+        },
+        {
+          "instruction": "Gire a la derecha hacia la calzada.",
+          "verbal": "Gire a la derecha hacia la calzada.",
+          "streets": [],
+          "length_m": 46,
+          "time_s": 38,
+          "type": 10,
+          "at": [
+            10.42273,
+            -75.548353
+          ]
+        },
+        {
+          "instruction": "Su destino está a la izquierda.",
+          "verbal": "Su destino está a la izquierda.",
+          "streets": [],
+          "length_m": 0,
+          "time_s": 0,
+          "type": 6,
+          "at": [
+            10.422438,
+            -75.548059
+          ]
+        }
+      ],
+      "shape": [
+        [
+          10.422158,
+          -75.548822
+        ],
+        [
+          10.421974,
+          -75.548625
+        ],
+        [
+          10.421999,
+          -75.5486
+        ],
+        [
+          10.422004,
+          -75.548596
+        ],
+        [
+          10.422046,
+          -75.548554
+        ],
+        [
+          10.421994,
+          -75.548495
+        ],
+        [
+          10.421829,
+          -75.548299
+        ],
+        [
+          10.421892,
+          -75.548245
+        ],
+        [
+          10.421959,
+          -75.548186
+        ],
+        [
+          10.42199,
+          -75.548158
+        ],
+        [
+          10.421737,
+          -75.547881
+        ],
+        [
+          10.421848,
+          -75.547784
+        ],
+        [
+          10.421823,
+          -75.547754
+        ],
+        [
+          10.421927,
+          -75.547652
+        ],
+        [
+          10.421955,
+          -75.547719
+        ],
+        [
+          10.421996,
+          -75.547768
+        ],
+        [
+          10.422464,
+          -75.548334
+        ],
+        [
+          10.422511,
+          -75.548385
+        ],
+        [
+          10.422546,
+          -75.548417
+        ],
+        [
+          10.422587,
+          -75.548452
+        ],
+        [
+          10.422625,
+          -75.548472
+        ],
+        [
+          10.422663,
+          -75.548483
+        ],
+        [
+          10.422702,
+          -75.548486
+        ],
+        [
+          10.422732,
+          -75.548484
+        ],
+        [
+          10.422753,
+          -75.548479
+        ],
+        [
+          10.422742,
+          -75.548417
+        ],
+        [
+          10.422739,
+          -75.548398
+        ],
+        [
+          10.42273,
+          -75.548353
+        ],
+        [
+          10.422686,
+          -75.548329
+        ],
+        [
+          10.422438,
+          -75.548059
+        ]
+      ],
+      "script": "scripts/L11.md",
+      "words_target": 430
+    },
+    {
+      "id": "L12",
+      "from": "S12",
+      "to": "S13",
+      "distance_m": 396,
+      "time_s": 372,
+      "maneuvers": [
+        {
+          "instruction": "Camine hacia el sureste por la calzada.",
+          "verbal": "Camine hacia el sureste por la calzada.",
+          "streets": [],
+          "length_m": 131,
+          "time_s": 109,
+          "type": 3,
+          "at": [
+            10.422438,
+            -75.548059
+          ]
+        },
+        {
+          "instruction": "Gire a la derecha hacia la calzada.",
+          "verbal": "Gire a la derecha hacia la calzada. Después, en 10 metros, Gire a la izquierda hacia Calle de la Media Luna.",
+          "streets": [],
+          "length_m": 14,
+          "time_s": 43,
+          "type": 10,
+          "at": [
+            10.422092,
+            -75.547013
+          ]
+        },
+        {
+          "instruction": "Gire a la izquierda hacia Calle de la Media Luna.",
+          "verbal": "Gire a la izquierda hacia Calle de la Media Luna.",
+          "streets": [
+            "Calle de la Media Luna"
+          ],
+          "length_m": 168,
+          "time_s": 151,
+          "type": 15,
+          "at": [
+            10.421983,
+            -75.54696
+          ]
+        },
+        {
+          "instruction": "Gire a la derecha hacia Calle del Guerrero.",
+          "verbal": "Gire a la derecha hacia Calle del Guerrero.",
+          "streets": [
+            "Calle del Guerrero"
+          ],
+          "length_m": 82,
+          "time_s": 69,
+          "type": 10,
+          "at": [
+            10.42222,
+            -75.54545
+          ]
+        },
+        {
+          "instruction": "Ha llegado a su destino.",
+          "verbal": "Ha llegado a su destino.",
+          "streets": [],
+          "length_m": 0,
+          "time_s": 0,
+          "type": 4,
+          "at": [
+            10.42148,
+            -75.545388
+          ]
+        }
+      ],
+      "shape": [
+        [
+          10.422438,
+          -75.548059
+        ],
+        [
+          10.422069,
+          -75.547659
+        ],
+        [
+          10.422035,
+          -75.547575
+        ],
+        [
+          10.422038,
+          -75.547497
+        ],
+        [
+          10.422092,
+          -75.547013
+        ],
+        [
+          10.422066,
+          -75.546994
+        ],
+        [
+          10.422044,
+          -75.546978
+        ],
+        [
+          10.421983,
+          -75.54696
+        ],
+        [
+          10.422032,
+          -75.546399
+        ],
+        [
+          10.422185,
+          -75.545626
+        ],
+        [
+          10.42222,
+          -75.54545
+        ],
+        [
+          10.422193,
+          -75.545447
+        ],
+        [
+          10.42148,
+          -75.545388
+        ]
+      ],
+      "script": "scripts/L12.md",
+      "words_target": 410
+    },
+    {
+      "id": "L13",
+      "from": "S13",
+      "to": "S14",
+      "distance_m": 266,
+      "time_s": 239,
+      "maneuvers": [
+        {
+          "instruction": "Camine hacia el sur por Calle del Guerrero.",
+          "verbal": "Camine hacia el sur por Calle del Guerrero.",
+          "streets": [
+            "Calle del Guerrero"
+          ],
+          "length_m": 83,
+          "time_s": 78,
+          "type": 1,
+          "at": [
+            10.42148,
+            -75.545388
+          ]
+        },
+        {
+          "instruction": "Siga por la izquierda en dirección a Calle del Carretero.",
+          "verbal": "Siga por la izquierda en dirección a Calle del Carretero.",
+          "streets": [
+            "Calle del Carretero"
+          ],
+          "length_m": 22,
+          "time_s": 22,
+          "type": 16,
+          "at": [
+            10.420735,
+            -75.54532
+          ]
+        },
+        {
+          "instruction": "Siga por la derecha en dirección a Calle del Pozo.",
+          "verbal": "Siga por la derecha en dirección a Calle del Pozo.",
+          "streets": [
+            "Calle del Pozo"
+          ],
+          "length_m": 108,
+          "time_s": 97,
+          "type": 9,
+          "at": [
+            10.420574,
+            -75.54524
+          ]
+        },
+        {
+          "instruction": "Gire a la izquierda hacia Callejón Angosto.",
+          "verbal": "Gire a la izquierda hacia Callejón Angosto.",
+          "streets": [
+            "Callejón Angosto"
+          ],
+          "length_m": 52,
+          "time_s": 42,
+          "type": 15,
+          "at": [
+            10.419653,
+            -75.545564
+          ]
+        },
+        {
+          "instruction": "Ha llegado a su destino.",
+          "verbal": "Ha llegado a su destino.",
+          "streets": [],
+          "length_m": 0,
+          "time_s": 0,
+          "type": 4,
+          "at": [
+            10.419471,
+            -75.54512
+          ]
+        }
+      ],
+      "shape": [
+        [
+          10.42148,
+          -75.545388
+        ],
+        [
+          10.421255,
+          -75.54537
+        ],
+        [
+          10.420735,
+          -75.54532
+        ],
+        [
+          10.420699,
+          -75.54527
+        ],
+        [
+          10.42067,
+          -75.545244
+        ],
+        [
+          10.420623,
+          -75.545236
+        ],
+        [
+          10.420574,
+          -75.54524
+        ],
+        [
+          10.420055,
+          -75.545425
+        ],
+        [
+          10.419653,
+          -75.545564
+        ],
+        [
+          10.419471,
+          -75.54512
+        ]
+      ],
+      "script": "scripts/L13.md",
+      "words_target": 270
+    },
+    {
+      "id": "L14",
+      "from": "S14",
+      "to": "S15",
+      "distance_m": 51,
+      "time_s": 47,
+      "maneuvers": [
+        {
+          "instruction": "Camine hacia el este por Calle de la Sierpe.",
+          "verbal": "Camine hacia el este por Calle de la Sierpe. Después Gire a la derecha hacia Carrera 10.",
+          "streets": [
+            "Calle de la Sierpe"
+          ],
+          "length_m": 40,
+          "time_s": 36,
+          "type": 1,
+          "at": [
+            10.420862,
+            -75.545822
+          ]
+        },
+        {
+          "instruction": "Gire a la derecha hacia Carrera 10.",
+          "verbal": "Gire a la derecha hacia Carrera 10. Después Su destino estará a la izquierda.",
+          "streets": [
+            "Carrera 10"
+          ],
+          "length_m": 11,
+          "time_s": 11,
+          "type": 10,
+          "at": [
+            10.420734,
+            -75.545479
+          ]
+        },
+        {
+          "instruction": "Su destino está a la izquierda.",
+          "verbal": "Su destino está a la izquierda.",
+          "streets": [],
+          "length_m": 0,
+          "time_s": 0,
+          "type": 6,
+          "at": [
+            10.420637,
+            -75.545495
+          ]
+        }
+      ],
+      "shape": [
+        [
+          10.420862,
+          -75.545822
+        ],
+        [
+          10.420734,
+          -75.545479
+        ],
+        [
+          10.420701,
+          -75.545482
+        ],
+        [
+          10.420648,
+          -75.545492
+        ],
+        [
+          10.420637,
+          -75.545495
+        ]
+      ],
+      "script": "scripts/L14.md",
+      "words_target": 60
+    }
+  ]
+}

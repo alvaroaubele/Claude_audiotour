@@ -1,0 +1,28 @@
+{
+  "status": "pass",
+  "checked_claims": 104,
+  "findings": [],
+  "script_sha": "51dbb70938149d10",
+  "round2_findings": [
+    {
+      "claim": "Según la cédula, los argumentos de los vecinos eran sencillos. En el sector no había otra iglesia, y la de San Francisco quedaba apartada. No tenían un lugar sagrado donde recibir los sacramentos y enterrar a sus muertos.",
+      "problem": "El segundo argumento no está en la fuente. Según el blog que cita la cédula reproducida por Urueta y Piñeres, lo que quedaba apartado era la catedral, no San Francisco. San Francisco aparece por su puente, el que había que cruzar con calor para llegar a la catedral. El autor del blog además subraya la ironía: los vecinos alegaron que no había otra iglesia a pesar de que la de San Francisco ya existía desde 1596. El hecho 8 del dossier recoge mal la fuente.",
+      "evidence": "https://blogs.eluniversal.com.co/patrimonio-siglo-xxi/tres-nuevas-plazas-emblematicas-de-getsemani-final: «A pesar de la existencia de la iglesia de san Francisco en 1596 […] los habitantes de Getsemaní alegaron […] no existir otra iglesia en ese lugar, estar este desviado de la catedral, y tener que pasar por el puente de san Francisco bajo los fuertes calores para llegar a esta, y no tener un lugar sagrado para recibir los sacramentos y enterrar a los muertos, según consta en la cédula real, reproducida por Urueta y Piñeres (2011)».",
+      "fix": "«Según la cédula, los argumentos de los vecinos eran sencillos. En el sector no había otra iglesia. La catedral quedaba apartada, y para llegar a ella había que cruzar el puente de San Francisco bajo el calor. Y no tenían un lugar sagrado donde recibir los sacramentos y enterrar a sus muertos.» Si se quiere, puede añadirse la ironía documentada: la iglesia de San Francisco ya existía. Corregir también el hecho 8 del dossier."
+    },
+    {
+      "claim": "Alfonso Múnera lo considera el primer hombre no blanco con un mando militar de importancia en la historia de la ciudad.",
+      "problem": "Atribución a quien la fuente no se la atribuye. En el artículo de El Universal, el pasaje atribuido a Múnera, de «El fracaso de la Nación», termina antes de la cita de Gustavo Tatis. La frase «Por primera vez en nuestra historia una persona no blanca tenía mando militar de importancia» está después, en otro bloque que el periódico introduce con «En las reseñas históricas sobre hechos anteriores al 11 de noviembre…». Ese bloque no se atribuye a Múnera. No encontré otra fuente que ponga esa afirmación en boca de Múnera.",
+      "evidence": "https://www.eluniversal.com.co/cartagena/2011/11/11/pedro-romero-un-protagonista-de-la-independencia/: el pasaje de Múnera («Sobre este protagonista del 11 de noviembre, dice Alfonso Múnera: …») acaba en «…poseían al menos una esclava en 1835. En 1810 Romero se desempeñaba como herrajero del arsenal…». Luego vienen la cita de Tatis, Bossa, Ballestas, la nota sobre la estatua y, al final, el párrafo sin firma: «En agosto de ese mismo año […] al mando del nuevo coronel Pedro Romero. Por primera vez en nuestra historia una persona no blanca tenía mando militar de importancia.»",
+      "fix": "«Según El Universal, era la primera vez en la historia de la ciudad que un hombre no blanco tenía un mando militar de importancia.» La otra opción es quitar la atribución a Múnera."
+    },
+    {
+      "claim": "Las fuentes que he podido leer dicen que llegó a Los Cayos y murió allí en enero de 1816, agotado por el hambre del sitio y por el viaje.",
+      "problem": "Las fuentes del dossier no coinciden, como da a entender «las fuentes … dicen». Solo El Universal, en 2010, da enero de 1816. La versión de Ballestas, recogida por Wikipedia, dice que la embarcación llegó a Los Cayos dos meses después de salir de Cartagena y que Romero murió allí «a comienzos de 1816». La evacuación fue a principios de diciembre de 1815, así que esa cronología no cuadra con una muerte en enero. Además, Ballestas habla de «penalidades padecidas en el sitio y durante el viaje», no de «hambre» ni de «agotamiento».",
+      "evidence": "https://www.eluniversal.com.co/suplementos/dominical/2010/05/16/pedro-romero-y-porras-en-getsemani/: «emigrar a los Cayos Haití donde muere en enero de 1816». https://es.wikipedia.org/wiki/Pedro_Romero_(artesano), citando a Rafael Ballestas (Academia de la Historia de Cartagena): «Dos meses después de haber partido Cartagena, la embarcación que los trasportaba arribó a Los Cayos (Haití). Allí falleció Romero, a comienzos de 1816, como consecuencia de las penalidades padecidas en el sitio y durante el viaje».",
+      "fix": "«Las fuentes que he podido leer dicen que llegó a Los Cayos y murió allí a comienzos de 1816, por las penalidades del sitio y del viaje.»"
+    }
+  ],
+  "resolved_by": "lead",
+  "resolution": "Resolución del líder tras dos rondas de fact-check (SKILL.md, Fase 1): los hallazgos de la segunda ronda se aplicaron literalmente según la corrección propuesta por el verificador; los de la primera figuraban como corregidos en la segunda revisión. No se añadió ninguna afirmación nueva."
+}

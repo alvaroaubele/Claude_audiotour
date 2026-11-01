@@ -1,0 +1,2 @@
+{"raw": "ciudad: \"Cartagena, Colombia\" inicio=\"La Passion by Massaya\" duracion=\"6h\" idioma=\"es-ES\" [foco=\"Centro Histórico y Getsemani\"] [fecha=\"2026-11-01\"] [hora=\"16:00\"] [tts=piper] [auto]",
+ "normalized": {"city": "Cartagena de Indias, Colombia", "start": "La Passion by Masaya (hotel), Calle del Estanco del Tabaco 35-81, Centro Histórico", "duration_min": 360, "language": "es-ES", "focus": "Centro Histórico y Getsemaní", "date": "2026-11-01", "start_time": "16:00", "tts": "piper", "auto": true}}

@@ -1,0 +1,28 @@
+{
+  "status": "pass",
+  "checked_claims": 152,
+  "findings": [],
+  "script_sha": "c513cd11f44de19e",
+  "round2_findings": [
+    {
+      "claim": "Se llamaba pieza de Indias: un hombre o una mujer de entre dieciocho y treinta años y al menos siete palmos de altura.",
+      "problem": "Falta la fecha, y sin ella la afirmación engaña. La sección cuenta el puerto de 1595 a 1654, la época de Sandoval y Claver. Pero la definición exacta, con la edad de dieciocho a treinta años y los siete palmos, quedó fijada oficialmente en 1663, en el asiento de Grillo y Lomelín. Fue nueve años después de la muerte de Claver. Antes, según la misma fuente, se usaban formas de cálculo arbitrarias. El ejemplo de El Defensor, de 1700, sí va fechado, pero la definición se oye como la regla de la época de Claver. El dossier, en el hecho 30, recoge la fecha de 1663 y el guion la omite.",
+      "evidence": "Gutiérrez Azopardo, Quinto Centenario 12, 1987, p. 198, https://revistas.ucm.es/index.php/QUCE/article/download/QUCE8787120187A/1778/0: «paulatinamente, se fueron introduciendo formas arbitrarias de cálculo, hasta que en el año 1663, en el Asiento de Grillo y Lomelin se estableció por primera vez de forma oficial […] La “pieza de Indias” equivalía a un hombre o mujer de entre dieciocho y treinta años de edad y por lo menos siete palmos de altura.»",
+      "fix": "Añadir la fecha tras la definición: «Esa definición se fijó por escrito en 1663, nueve años después de la muerte de Claver. Antes, cada recuento se hacía con criterios más arbitrarios.»"
+    },
+    {
+      "claim": "En una sola compañía negrera, la portuguesa de Cacheu, murieron cuatrocientas veinticinco personas en sus depósitos de Cartagena en apenas tres meses.",
+      "problem": "Es un anacronismo implícito. El oyente acaba de oír que los asientos portugueses fueron de 1595 a 1640. Así que «la portuguesa de Cacheu» le sitúa el dato en esos años, en vida de Claver. Pero la Compañía de Cacheu tuvo el asiento a finales del siglo diecisiete: la fuente fecha su periodo en Cartagena entre 1698 y 1702, medio siglo después de la muerte de Claver. La cifra es correcta, pero sin la fecha engaña sobre la época.",
+      "evidence": "Gutiérrez Azopardo, 1987, https://revistas.ucm.es/index.php/QUCE/article/download/QUCE8787120187A/1778/0. En la tabla de la p. 192 aparece «1698-1702 — 57 navíos — 9.853 — Cía. de Cacheu». En la p. 201 dice: «Durante el periodo de la Compañía de Cacheu en el término de tres meses murieron 425 esclavos en sus depósitos de Cartagena».",
+      "fix": "«Mucho después, hacia 1700, en una sola compañía negrera, la portuguesa de Cacheu, murieron cuatrocientas veinticinco personas en sus depósitos de Cartagena en apenas tres meses.»"
+    },
+    {
+      "claim": "Con esta luz no lo distinguirá. Si vuelve de día, busque esas costuras en el paramento.",
+      "problem": "La indicación visual no tiene fuente. Los arquitectos de la Javeriana leyeron las dos épocas a nivel de cimientos y en las trabas de los ladrillos. Fue durante el estudio y las excavaciones de 1997 a 2002. Los cimientos no se ven. Ninguna fuente del dossier dice que las juntas de ladrillo queden hoy a la vista en la fachada del claustro sobre la plaza. Desde 2002 esa fachada puede haber cambiado, y el dossier admite que no ha comprobado su estado actual. Decir «con esta luz no lo distinguirá» da a entender que de día sí se ve, y eso no está comprobado.",
+      "evidence": "Instituto Carlos Arbeláez Camacho, Apuntes 6 (22), 2002, p. 142, https://revistas.javeriana.edu.co/index.php/revApuntesArq/article/download/9095/7398/34337: «La separación evidente a nivel de cimientos y trabas de ladrillos en la actual fachada sobre la Plaza de San Pedro, confirman la existencia de dos épocas diferentes». El proyecto y las excavaciones fueron de 1997 a 1999 y de 1997 a 2002 (pp. 140 y 183). El dossier, en el hecho 9, dice: «No se ha comprobado el estado actual».",
+      "fix": "«Lo leyeron en los cimientos y en las trabas de los ladrillos, durante las obras y las excavaciones. No sé si hoy se aprecia a simple vista, y con esta luz, desde luego, no.» Otra opción es suprimir la invitación a volver de día."
+    }
+  ],
+  "resolved_by": "lead",
+  "resolution": "Resolución del líder tras dos rondas de fact-check (SKILL.md, Fase 1): se aplicaron literalmente las correcciones de la segunda ronda, según la evidencia del verificador. Los hallazgos de la primera ronda figuraban como corregidos en la segunda revisión. No se añadió ninguna afirmación nueva."
+}

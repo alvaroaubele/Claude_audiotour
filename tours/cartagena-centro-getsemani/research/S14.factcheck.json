@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "checked_claims": 86,
+  "findings": [],
+  "script_sha": "c8ed4b55aff62b52",
+  "round2_findings": [
+    {
+      "claim": "De la plazoleta del Pozo, en la calle que acaba de recorrer, salieron en 1811 los lanceros del barrio hacia el centro.",
+      "problem": "La ubicación induce a error. La plazoleta del Pozo, el ensanche alrededor del antiguo pozo, está en el extremo sur de la calle del Pozo, donde confluyen las calles de las Chancletas y de la Aguada. Queda unos cincuenta metros al sur de la boca del Callejón Angosto. El oyente nunca pasó por allí. En L13 bajó por el Pozo desde la plaza de la Trinidad y giró al Angosto antes de llegar a ella, y en esta parada subió por el Pozo desde el Angosto hacia el norte. «En la calle que acaba de recorrer» le hace creer que la ha tenido delante. El dato de 1811 sí está bien atribuido.",
+      "evidence": "OSM, API 0.6, bbox -75.5468,10.4185,-75.5440,10.4215: la vía 123809492, «Calle del Pozo», va de 10.420574,-75.54524 (Carretero y plaza de la Trinidad) a 10.419007,-75.545791 y pasa por la boca del Angosto en 10.419653,-75.545564. La vía 114506046, leisure=park, name=«El Pozo», está en torno a 10.41905–10.41926, -75.54560 a -75.54577, junto al cruce con Chancletas (vía 25841707) y la Aguada (vía 25841721), al sur del Angosto. https://legadogetsemanicense.com/calledelpozo/ : «De su plazoleta salieron los lanceros hacia el centro en 1811» y «La plaza o plazoleta del Pozo […] era un ensanchamiento alrededor del pozo que le dió nombre».",
+      "fix": "«De la plazoleta del Pozo, al otro extremo de la calle del Pozo, unos pasos al sur del Angosto, salieron en 1811 los lanceros del barrio hacia el centro.» También vale suprimir el inciso «en la calle que acaba de recorrer»."
+    }
+  ],
+  "resolved_by": "lead",
+  "resolution": "Resolución del líder tras dos rondas de fact-check (SKILL.md, Fase 1): los hallazgos de la segunda ronda se aplicaron literalmente según la corrección propuesta por el verificador; los de la primera figuraban como corregidos en la segunda revisión. No se añadió ninguna afirmación nueva."
+}

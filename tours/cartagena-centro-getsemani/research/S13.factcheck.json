@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "checked_claims": 97,
+  "findings": [],
+  "script_sha": "d9fb30529b532f28",
+  "round2_findings": [
+    {
+      "claim": "El Museo Histórico de Cartagena lo atribuye a los frailes franciscanos; otros cronistas, a un deán de la catedral. No está resuelto.",
+      "problem": "La versión del deán no se puede rastrear. El hecho 24 del dossier la apoya solo en «otras fuentes (blogs)», sin URL ni título, y la atribuye a un «deán Rodrigo Durán». Dos búsquedas independientes no encuentran ninguna fuente que diga que un deán de la catedral dio nombre a Getsemaní. CLAUDE.md exige que cada atribución sea trazable a una fuente del dossier. Presentarla como versión rival de «cronistas» le da una autoridad que nada documenta. La atribución franciscana sí está sostenida.",
+      "evidence": "MUHCA, Cartapedia, «Historia del barrio Getsemaní», https://www.muhca.gov.co/cartapedia_historia-del-barrio-getsemani-96: «El nombre de esta barrio, se debe a los fundadores del Convento de San Francisco de Asís». Esa página no menciona a ningún deán. La búsqueda web «Getsemaní Cartagena nombre deán Rodrigo Durán origen» no encontró ningún resultado que relacione a un deán con el nombre. Solo apareció don Juan Durán, contador de la Real Hacienda y primer dueño de la isla, que es otra persona y no está ligado al nombre. La búsqueda «\"Rodrigo Durán\" Getsemaní Cartagena» no dio ninguna mención.",
+      "fix": "Quitar la versión del deán, o que el autor añada al dossier una fuente citable con URL y título. Redacción sin ella: «El Museo Histórico de Cartagena atribuye el nombre a los frailes del convento de San Francisco.» Si se quiere mantener la cautela: «Así lo atribuye el Museo Histórico de Cartagena, aunque ningún documento de la época lo confirma.»"
+    }
+  ],
+  "resolved_by": "lead",
+  "resolution": "Resolución del líder tras dos rondas de fact-check fallidas (SKILL.md, Fase 1). El único hallazgo de la segunda ronda (atribución del nombre al deán Rodrigo Durán sin fuente citable) se resolvió retirando esa versión del guion y del dossier; queda la atribución del MUHCA. El hallazgo de la primera ronda ('cuento', no 'novela') figuraba como corregido en la segunda revisión. Ninguna afirmación nueva se añadió; solo se aplicaron las correcciones propuestas por el verificador."
+}

@@ -1,0 +1,40 @@
+{
+  "status": "pass",
+  "checked_claims": 124,
+  "findings": [],
+  "script_sha": "db78f9ec92a68e45",
+  "round2_findings": [
+    {
+      "claim": "A un acusado que había muerto antes del auto le desenterraron los huesos para quemarlos.",
+      "problem": "Cronología equivocada. El guion sitúa la quema de huesos en el auto de los portugueses de 1638. El dossier, hecho 51, se apoya en una nota de Medina en la p. 417, que lo dice así, pero el propio Medina se contradice en su relato detallado y documentado. Allí Manuel Álvarez Prieto aparece preso el 12 de agosto de 1642 y sometido a tormento en 1646. La Suprema sentenció en 1651 que saliera en estatua, y el auto donde se quemaron su estatua y sus huesos fue el del 25 de abril de 1653. No pudo morir antes del auto de 1638 si lo detuvieron en 1642. Tampoco formaba parte de los veintiún presos de la complicidad de 1636. En el auto de 1638 sí salió la estatua de un muerto, Blas de Paz Pinto, pero como reconciliado: no hubo quema.",
+      "evidence": "https://archive.org/download/historiadeltrib00medigoog/historiadeltrib00medigoog_djvu.txt, Medina 1899. pp. 271-274: «En auto particular de fe que se celebró en la Catedral el 25 de abril de 1653, salió […] Manuel Alvarez Prieto, portugués, judío también, cuya estatua fué mandada quemar junto con sus huesos, que hicieron desenterrar para ese efecto […] Preso en 12 de agosto de 1642 por judaizante»; la Suprema, «por sentencia de 25 de agosto de 1651, ordenaron que por muerte del reo debía sacarse su estatua con insignias de relajado». pp. 224-225, auto de 1638: Blas de Paz Pinto, muerto en la cárcel el 19 de febrero de 1637, «salió al auto en estatua con insignias de reconciliado». La nota de la p. 417, que fecha el caso en 1638, contradice estas páginas.",
+      "fix": "Suprimir la frase del párrafo de 1638, o fecharla bien: «Años después, en 1653, a otro portugués muerto en prisión le desenterraron los huesos para quemarlos junto a su efigie.» Corregir también el hecho 51 del dossier."
+    },
+    {
+      "claim": "Más arriba, una inscripción da la fecha de la portada: 1770.",
+      "problem": "Indicación visual equivocada. En la portada, la banda con letras está en el friso, entre el arco de la puerta y el frontón, y por tanto debajo del escudo. Por encima del escudo solo hay la corona, volutas y remates; no hay inscripción. El oyente que busque la fecha encima del escudo no la encontrará. El «más arriba» de Bayón se refiere a otra secuencia descriptiva, no a la que construye el guion: puerta, frontón con escudo y después la inscripción.",
+      "evidence": "Wikimedia Commons, «Casa Inquisicion CTG 11 2019 1674.jpg», imagen principal del artículo https://en.wikipedia.org/wiki/Palace_of_the_Inquisition_(Cartagena,_Colombia): la línea de letras ocupa el friso inmediatamente encima del arco y debajo del frontón con el escudo coronado. Bayón, citado en https://artecolonial.wordpress.com/2011/04/09/palacio-de-la-inquisicion-cartagena-colombia/: «Más arriba una inscripción menciona 1770 como fecha de ejecución de esa portada».",
+      "fix": "«Entre el arco de la puerta y el frontón, en la banda de piedra del friso, una inscripción da la fecha de la portada: 1770.»"
+    },
+    {
+      "claim": "Por encima de la puerta, un frontón de perfil quebrado, con los lados en rampa, enmarca un escudo de la monarquía española.",
+      "problem": "La fuente no dice «quebrado». Bayón habla de un frontis «mixtilíneo», es decir, que combina tramos rectos y curvos. En la portada se ven, en efecto, lados curvos rematados en volutas. «Perfil quebrado» sugiere una línea angulosa o un frontón partido, y el oyente buscará una forma que no está.",
+      "evidence": "Bayón, citado en https://artecolonial.wordpress.com/2011/04/09/palacio-de-la-inquisicion-cartagena-colombia/: «Un frontis mixtilíneo de lados rampantes ostenta en su interior un escudo de España». La foto de Commons citada en el hallazgo anterior muestra el perfil curvo con volutas.",
+      "fix": "«Por encima de la puerta, un frontón de perfil mixtilíneo, con curvas y volutas que suben en rampa, enmarca un escudo de la monarquía española.»"
+    },
+    {
+      "claim": "Allí corre una larga fachada blanca de dos plantas, con balcones y una portada de piedra en el centro.",
+      "problem": "Indicación visual inexacta. La portada no está en el centro de la fachada. Está en su tramo sur, a la izquierda del oyente que mira el palacio. Entre ella y la esquina de la calle de la Inquisición hay solo un tramo con un balcón corrido. Hacia el norte, la fachada sigue a lo largo de varios vanos más con balcones. El frente del palacio a la plaza mide unos cuarenta y nueve metros según OpenStreetMap, y la portada queda en su tercio sur.",
+      "evidence": "Wikimedia Commons, «Palacio Inquisicion CTG 11 2019 1645.jpg», tomada desde la esquina sureste del parque: esquina con la calle de la Inquisición, un tramo con balcón corrido y la portada; la fachada continúa a la derecha. «Casa Inquisicion CTG 11 2019 1674.jpg»: a la derecha de la portada se suceden al menos cinco vanos con balcones. OSM, vía Nominatim, polígono «Palacio de la Inquisión»: fachada entre las latitudes 10.42305 y 10.42349.",
+      "fix": "«…con balcones y, hacia su extremo izquierdo, cerca de la esquina de la calle de la Inquisición, una portada de piedra labrada.»"
+    },
+    {
+      "claim": "Filtrada por los escribanos del tribunal, es una de las pocas voces de una mujer africana del Caribe del siglo diecisiete que nos han llegado con tanto detalle.",
+      "problem": "Paula de Eguiluz no era africana. Nació en Santo Domingo, de madre esclava cazanga y padre bañón liberto, como el propio guion dice antes al hacerla nacer esclava en Santo Domingo. Las fuentes la describen como afrodescendiente.",
+      "evidence": "https://spanport.unm.edu/news-events/news/2016/09/k-mcknight-article16.pdf, McKnight 2016. p. 154: «the African-descent woman Paula de Eguiluz». p. 158: «She was born on the island of Santo Domingo to an enslaved Cazanga woman named Guiomar and a freed Bañón man named Cristóbal».",
+      "fix": "«…es una de las pocas voces de una mujer afrodescendiente del Caribe del siglo diecisiete que nos han llegado con tanto detalle.»"
+    }
+  ],
+  "resolved_by": "lead",
+  "resolution": "Resolución del líder tras dos rondas de fact-check (SKILL.md, Fase 1): se aplicaron las cinco correcciones de la segunda ronda según la evidencia del verificador (en el hallazgo 1, suprimiendo la frase). Los 9 hallazgos de la primera ronda figuraban como corregidos en la segunda revisión. No se añadió ninguna afirmación nueva."
+}

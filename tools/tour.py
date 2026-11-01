@@ -247,8 +247,10 @@ def cmd_pois(a):
 
 
 def _valhalla_route(points, lang, speed_kmh):
+    """points: origin, optional pass-through vias, destination → one leg."""
     body = {
-        "locations": [{"lat": p[0], "lon": p[1], "type": "break"} for p in points],
+        "locations": [{"lat": p[0], "lon": p[1], "type": "break" if i in (0, len(points) - 1) else "through"}
+                      for i, p in enumerate(points)],
         "costing": "pedestrian",
         "costing_options": {"pedestrian": {"walking_speed": speed_kmh}},
         "language": lang, "units": "kilometers",
@@ -288,7 +290,8 @@ def cmd_route(a):
     legs, prev_id, prev = [], "START", start
     for i, s in enumerate(stops):
         cur = (s["lat"], s["lon"])
-        res = _valhalla_route([prev, cur], lang, speed)
+        # optional stop["via"]: [[lat, lon], …] pass-through points that force the leg's path
+        res = _valhalla_route([prev, *[tuple(v) for v in s.get("via", [])], cur], lang, speed)
         leg = res["trip"]["legs"][0]
         shape = decode_polyline6(leg["shape"])
         mans = [{
@@ -307,9 +310,11 @@ def cmd_route(a):
             "time_s": round(leg["summary"]["time"]),
             "maneuvers": mans, "shape": shape,
             "script": old.get("script", f"scripts/L{i:02d}.md"),
+            **({"nav_fill": old["nav_fill"]} if "nav_fill" in old else {}),
             "words_target": old.get("words_target"),
         })
-        prev_id, prev = s["id"], cur
+        # optional stop["end"]: [lat, lon] where a walking stop finishes; the next leg starts there
+        prev_id, prev = s["id"], tuple(s["end"]) if s.get("end") else cur
     plan["legs"] = legs
     save_json(d / "plan.json", plan)
     tot_m = sum(l["distance_m"] for l in legs)
@@ -356,7 +361,9 @@ def cmd_budget(a):
         if s.get("narration_min"):
             s["words_target"] = int(round(float(s["narration_min"]) * wpm, -1))
     for l in legs:
-        l["words_target"] = int(round(max(60, a.nav_fill * l["time_s"] / 60 * wpm), -1))
+        # precedence: per-leg override > meta.nav_fill > --nav-fill (default 0.6)
+        fill = float(l.get("nav_fill", meta.get("nav_fill", a.nav_fill)))
+        l["words_target"] = int(round(max(60, fill * l["time_s"] / 60 * wpm), -1))
     meta["intro_words_target"] = int(round(intro_min * wpm, -1))
     save_json(d / "plan.json", plan)
     narr = sum(float(s.get("narration_min", 0)) for s in stops)
