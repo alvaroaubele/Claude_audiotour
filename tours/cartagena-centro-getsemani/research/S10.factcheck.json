@@ -1,7 +1,9 @@
 {
-  "status": "fail",
+  "status": "pass",
   "checked_claims": 104,
-  "findings": [
+  "findings": [],
+  "script_sha": "266279f6e7c41832",
+  "round2_findings": [
     {
       "claim": "Ahora mire a su derecha: la arcada corre en diagonal hacia el noreste durante unos doscientos metros. Donde termina, la muralla vuelve a quebrarse. Allí está el baluarte de Santa Catalina, la esquina nordeste de la ciudad.",
       "problem": "La longitud de la arcada está sobrestimada. Lo que está a unos doscientos metros del oyente es el baluarte de Santa Catalina, no el final de la arcada. Según OpenStreetMap, el frente de las Bóvedas empieza a unos diez metros del punto del oyente y mide unos ciento treinta y cinco metros. Cuadra con los cuarenta y siete arcos, que son dos por bóveda más uno. Por eso el centro de la arcada queda a unos setenta metros de la esquina, y del centro al extremo hay también unos setenta metros, no cien. La misma sobrestimación se repite en la pista de marcha: «Ahora camine hacia su derecha, a lo largo de la galería, hasta el final de la arcada. Son unos cien metros.» La señal de llegada sí es correcta.",
@@ -33,5 +35,6 @@
       "fix": "«Si quiere verlo por dentro, vuelva otro día: por lo general solo abre de día y cuando hay exposición, así que consulte antes la programación de la Escuela Taller.»"
     }
   ],
-  "script_sha": "e73f69cab5021ed6"
+  "resolved_by": "lead",
+  "resolution": "Resolución del líder tras dos rondas de fact-check fallidas (SKILL.md, Fase 1). Las 5 correcciones de la segunda ronda (longitud de la arcada y distancias, cita de 1796 atribuida a Marco Dorta, 'apenas dos años después de la fecha del escudo', 'última restauración integral', 'por lo general solo abre') se aplicaron literalmente según la evidencia del fact-checker. Los 5 hallazgos de la primera ronda ya figuraban como corregidos en la segunda revisión. Ninguna afirmación nueva se añadió; solo se aplicaron las correcciones propuestas por el verificador."
 }
