@@ -1,7 +1,9 @@
 {
-  "status": "fail",
+  "status": "pass",
   "checked_claims": 152,
-  "findings": [
+  "findings": [],
+  "script_sha": "c513cd11f44de19e",
+  "round2_findings": [
     {
       "claim": "Se llamaba pieza de Indias: un hombre o una mujer de entre dieciocho y treinta años y al menos siete palmos de altura.",
       "problem": "Falta la fecha, y sin ella la afirmación engaña. La sección cuenta el puerto de 1595 a 1654, la época de Sandoval y Claver. Pero la definición exacta, con la edad de dieciocho a treinta años y los siete palmos, quedó fijada oficialmente en 1663, en el asiento de Grillo y Lomelín. Fue nueve años después de la muerte de Claver. Antes, según la misma fuente, se usaban formas de cálculo arbitrarias. El ejemplo de El Defensor, de 1700, sí va fechado, pero la definición se oye como la regla de la época de Claver. El dossier, en el hecho 30, recoge la fecha de 1663 y el guion la omite.",
@@ -21,5 +23,6 @@
       "fix": "«Lo leyeron en los cimientos y en las trabas de los ladrillos, durante las obras y las excavaciones. No sé si hoy se aprecia a simple vista, y con esta luz, desde luego, no.» Otra opción es suprimir la invitación a volver de día."
     }
   ],
-  "script_sha": "fb8cdbd3dd0b6a07"
+  "resolved_by": "lead",
+  "resolution": "Resolución del líder tras dos rondas de fact-check (SKILL.md, Fase 1): se aplicaron literalmente las correcciones de la segunda ronda, según la evidencia del verificador. Los hallazgos de la primera ronda figuraban como corregidos en la segunda revisión. No se añadió ninguna afirmación nueva."
 }

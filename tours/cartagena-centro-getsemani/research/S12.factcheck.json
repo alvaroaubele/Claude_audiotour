@@ -1,7 +1,9 @@
 {
-  "status": "fail",
+  "status": "pass",
   "checked_claims": 124,
-  "findings": [
+  "findings": [],
+  "script_sha": "63af0d1e574e5b94",
+  "round2_findings": [
     {
       "claim": "El censo de 1809 contaba unos diecisiete mil seiscientos habitantes. El siguiente recuento, en 1831, daba once mil novecientos. Segovia advierte que son cifras aproximadas, históricamente incontrolables, dice él. Pero la caída ronda la mitad.",
       "problem": "Las dos cifras que da el propio guion no cuadran con «ronda la mitad». De 17.600 a 11.900 hay una caída de 5.700 habitantes, un treinta y dos por ciento: un tercio, no la mitad. El oyente lo calcula de oído. El error viene del propio Segovia, que en 1979 escribió «11.900 habitantes, es decir, 50 por ciento menos que en 1809», cuenta que no sale. La mitad solo se acerca si se parte de los 22.000 que su misma tabla da para 1815: 11.900 es un cuarenta y seis por ciento menos. Esta redacción la propuso el veredicto anterior de este mismo archivo, así que el fallo es del fact-check anterior y no del autor. La reseña académica de su libro de 2013 habla de «más de la tercera parte».",
@@ -15,5 +17,6 @@
       "fix": "«Segovia documentó en los archivos españoles el balance del propio ejército. Morillo perdió tres mil ciento veinticinco hombres…» Basta con quitar «una cifra que hasta entonces no se conocía». Si se quiere conservar la idea, hay que atribuirla: «su reseñista lo presenta como una novedad»."
     }
   ],
-  "script_sha": "d3a1dee5323a2c83"
+  "resolved_by": "lead",
+  "resolution": "Resolución del líder tras dos rondas de fact-check (SKILL.md, Fase 1): se aplicaron literalmente las correcciones de la segunda ronda, según la evidencia del verificador. Los hallazgos de la primera ronda figuraban como corregidos en la segunda revisión. No se añadió ninguna afirmación nueva."
 }
