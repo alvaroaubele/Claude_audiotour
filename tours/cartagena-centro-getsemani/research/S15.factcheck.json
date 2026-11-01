@@ -1,37 +1,28 @@
 {
-  "status": "fail",
-  "checked_claims": 96,
-  "findings": [
+  "status": "pass",
+  "checked_claims": 104,
+  "findings": [],
+  "script_sha": "51dbb70938149d10",
+  "round2_findings": [
     {
-      "claim": "Romero fue diputado a la asamblea que redactó la constitución del nuevo Estado, proclamada el 14 de julio de 1812.",
-      "problem": "Fecha errónea. La Constitución del Estado de Cartagena de Indias se sancionó el 14 de junio de 1812, no el 14 de julio. El dossier [V] (El Universal 2020) da «14 de julio», pero es un error aislado frente al propio texto constitucional y los catálogos bibliográficos.",
-      "evidence": "https://es.hispanopedia.com/wiki/Estado_Libre_de_Cartagena: la constitución, «sancionada en 14 de junio de 1812, segundo de su independencia». Varios catálogos devueltos por la búsqueda (Villanova Law Library, Universidad del Rosario, Biblioteca Luis Ángel Arango) dan la misma fecha, y El Universal explica el apodo «Juana Pacha» por su promulgación un 14 de junio. Solo https://www.eluniversal.com.co/especial/independencia-de-cartagena/2020/11/11/asi-nos-liberamos-del-yugo-espanol/ dice «14 de julio de 1812».",
-      "fix": "«…la constitución del nuevo Estado, sancionada el 14 de junio de 1812.» Corregir también el hecho 43 del dossier."
+      "claim": "Según la cédula, los argumentos de los vecinos eran sencillos. En el sector no había otra iglesia, y la de San Francisco quedaba apartada. No tenían un lugar sagrado donde recibir los sacramentos y enterrar a sus muertos.",
+      "problem": "El segundo argumento no está en la fuente. Según el blog que cita la cédula reproducida por Urueta y Piñeres, lo que quedaba apartado era la catedral, no San Francisco. San Francisco aparece por su puente, el que había que cruzar con calor para llegar a la catedral. El autor del blog además subraya la ironía: los vecinos alegaron que no había otra iglesia a pesar de que la de San Francisco ya existía desde 1596. El hecho 8 del dossier recoge mal la fuente.",
+      "evidence": "https://blogs.eluniversal.com.co/patrimonio-siglo-xxi/tres-nuevas-plazas-emblematicas-de-getsemani-final: «A pesar de la existencia de la iglesia de san Francisco en 1596 […] los habitantes de Getsemaní alegaron […] no existir otra iglesia en ese lugar, estar este desviado de la catedral, y tener que pasar por el puente de san Francisco bajo los fuertes calores para llegar a esta, y no tener un lugar sagrado para recibir los sacramentos y enterrar a los muertos, según consta en la cédula real, reproducida por Urueta y Piñeres (2011)».",
+      "fix": "«Según la cédula, los argumentos de los vecinos eran sencillos. En el sector no había otra iglesia. La catedral quedaba apartada, y para llegar a ella había que cruzar el puente de San Francisco bajo el calor. Y no tenían un lugar sagrado donde recibir los sacramentos y enterrar a sus muertos.» Si se quiere, puede añadirse la ironía documentada: la iglesia de San Francisco ya existía. Corregir también el hecho 8 del dossier."
     },
     {
-      "claim": "Primero estuvo con los moderados, luego con los radicales de los Piñeres, y al final volvió con García de Toledo. Ese mismo año llegó desde España el ejército de Pablo Morillo, y la ciudad sufrió el sitio que le dio el nombre de Heroica.",
-      "problem": "Omisión que induce a error. El único año dicho en el párrafo es 1812, así que el oyente entenderá que Morillo llegó en 1812. Morillo llegó en 1815, y el sitio duró de agosto a diciembre de ese año. Además, el regreso de Romero con los moderados se extiende de 1813 a 1815: su alianza con García de Toledo y Castillo frente a Bolívar es de 1815.",
-      "evidence": "https://www.eluniversal.com.co/especial/independencia-de-cartagena/2020/11/11/asi-nos-liberamos-del-yugo-espanol/: llegada de Morillo en 1815. https://enciclopedia.banrepcultural.org/index.php/Pedro_Romero: alianza con García de Toledo y Castillo durante el sitio de Bolívar en 1815. https://www.redalyc.org/journal/811/81146454009/ (Solano): alianzas en 1810-1811, 1811-1813 y 1813-1815. El guion S10 del propio tour sitúa el sitio en 1815.",
-      "fix": "«…y al final, en 1815, volvió con García de Toledo. Ese mismo año, 1815, llegó desde España el ejército de Pablo Morillo…»"
+      "claim": "Alfonso Múnera lo considera el primer hombre no blanco con un mando militar de importancia en la historia de la ciudad.",
+      "problem": "Atribución a quien la fuente no se la atribuye. En el artículo de El Universal, el pasaje atribuido a Múnera, de «El fracaso de la Nación», termina antes de la cita de Gustavo Tatis. La frase «Por primera vez en nuestra historia una persona no blanca tenía mando militar de importancia» está después, en otro bloque que el periódico introduce con «En las reseñas históricas sobre hechos anteriores al 11 de noviembre…». Ese bloque no se atribuye a Múnera. No encontré otra fuente que ponga esa afirmación en boca de Múnera.",
+      "evidence": "https://www.eluniversal.com.co/cartagena/2011/11/11/pedro-romero-un-protagonista-de-la-independencia/: el pasaje de Múnera («Sobre este protagonista del 11 de noviembre, dice Alfonso Múnera: …») acaba en «…poseían al menos una esclava en 1835. En 1810 Romero se desempeñaba como herrajero del arsenal…». Luego vienen la cita de Tatis, Bossa, Ballestas, la nota sobre la estatua y, al final, el párrafo sin firma: «En agosto de ese mismo año […] al mando del nuevo coronel Pedro Romero. Por primera vez en nuestra historia una persona no blanca tenía mando militar de importancia.»",
+      "fix": "«Según El Universal, era la primera vez en la historia de la ciudad que un hombre no blanco tenía un mando militar de importancia.» La otra opción es quitar la atribución a Múnera."
     },
     {
-      "claim": "Otra versión, minoritaria, lo hace morir en Cartagena mucho más tarde, pobre y olvidado.",
-      "problem": "Sin fuente. El dossier [29] remite solo a un resultado de búsqueda («El Universal 2019») que nunca se leyó, y en ninguna parte recoge «pobre y olvidado». Abrí el artículo de El Universal de 2019 sobre Getsemaní que devuelve la búsqueda y no habla de la muerte de Romero. Ninguna otra fuente consultada recoge una muerte en Cartagena en 1834.",
-      "evidence": "https://www.eluniversal.com.co/suplementos/facetas/2019/10/11/getsemani-cuando-el-dolor-es-de-barrio/: no dice nada de la muerte de Romero. https://es.wikipedia.org/wiki/Pedro_Romero_(artesano) y https://www.eluniversal.com.co/suplementos/facetas/2017/11/12/pedro-romero-el-heroe-sin-rostro/ (según el resumen de la búsqueda): solo dan la muerte en Haití tras la huida de diciembre de 1815.",
-      "fix": "Suprimir la frase. Si se mantiene, localizar y leer la fuente concreta y quitar «pobre y olvidado», salvo que esa fuente lo diga."
-    },
-    {
-      "claim": "El historiador Alfonso Múnera lo daba por uno de los artesanos que el ingeniero militar Antonio de Arévalo trajo de La Habana para las obras de la muralla.",
-      "problem": "Se omite la cautela de la fuente. Múnera lo plantea como probabilidad, no como hecho. En el pasaje que reproduce El Universal dice «Es probable que Romero haya sido uno de los artesanos que el ingeniero Arévalo se trajo de Cuba». En cambio, sí da como hecho el nacimiento en Matanzas. La precisión «de La Habana» sí está en la Enciclopedia Banrepcultural.",
-      "evidence": "https://www.eluniversal.com.co/cartagena/2011/11/11/pedro-romero-un-protagonista-de-la-independencia/: «Es probable que Romero haya sido uno de los artesanos que el ingeniero Arévalo se trajo de Cuba para los trabajos de fortificación». https://enciclopedia.banrepcultural.org/index.php/Pedro_Romero: «trajo de La Habana para las obras».",
-      "fix": "«El historiador Alfonso Múnera lo hacía natural de Matanzas, y probablemente uno de los artesanos que el ingeniero militar Antonio de Arévalo trajo de Cuba para las obras de fortificación.»"
-    },
-    {
-      "claim": "Una de las fuentes dice que fue el propio obispo quien llevó la petición a la Corona. Sus argumentos eran sencillos. En el sector no había otra iglesia, y la de San Francisco quedaba apartada. Los vecinos no tenían un lugar sagrado donde recibir los sacramentos y enterrar a sus muertos.",
-      "problem": "Mezcla de dos fuentes con una atribución que ninguna sostiene. Los tres argumentos proceden del blog de El Universal [A], que cita a Urueta y Piñeres: son los alegatos de los vecinos recogidos en la cédula. La versión del obispo viene de otra fuente [C], que solo le atribuye un argumento: la distancia a la catedral. Con «Sus argumentos» el oyente atribuye al obispo una lista que ninguna fuente le da.",
-      "evidence": "https://blogs.eluniversal.com.co/patrimonio-siglo-xxi/tres-nuevas-plazas-emblematicas-de-getsemani-final: son los vecinos quienes alegan que no había otra iglesia, que San Francisco quedaba lejos y que no tenían lugar sagrado para sacramentos y entierros. https://conociendo-mi-ciudad.wixsite.com/cartagena/iglesia-de-la-santisima-trinidad: el obispo pide el templo porque los vecinos estaban «muy lejos de la catedral».",
-      "fix": "«Una de las fuentes dice que fue el propio obispo quien llevó la petición a la Corona. Según la cédula, los argumentos de los vecinos eran sencillos: en el sector no había otra iglesia…»"
+      "claim": "Las fuentes que he podido leer dicen que llegó a Los Cayos y murió allí en enero de 1816, agotado por el hambre del sitio y por el viaje.",
+      "problem": "Las fuentes del dossier no coinciden, como da a entender «las fuentes … dicen». Solo El Universal, en 2010, da enero de 1816. La versión de Ballestas, recogida por Wikipedia, dice que la embarcación llegó a Los Cayos dos meses después de salir de Cartagena y que Romero murió allí «a comienzos de 1816». La evacuación fue a principios de diciembre de 1815, así que esa cronología no cuadra con una muerte en enero. Además, Ballestas habla de «penalidades padecidas en el sitio y durante el viaje», no de «hambre» ni de «agotamiento».",
+      "evidence": "https://www.eluniversal.com.co/suplementos/dominical/2010/05/16/pedro-romero-y-porras-en-getsemani/: «emigrar a los Cayos Haití donde muere en enero de 1816». https://es.wikipedia.org/wiki/Pedro_Romero_(artesano), citando a Rafael Ballestas (Academia de la Historia de Cartagena): «Dos meses después de haber partido Cartagena, la embarcación que los trasportaba arribó a Los Cayos (Haití). Allí falleció Romero, a comienzos de 1816, como consecuencia de las penalidades padecidas en el sitio y durante el viaje».",
+      "fix": "«Las fuentes que he podido leer dicen que llegó a Los Cayos y murió allí a comienzos de 1816, por las penalidades del sitio y del viaje.»"
     }
   ],
-  "script_sha": "281a0d55bd342b8f"
+  "resolved_by": "lead",
+  "resolution": "Resolución del líder tras dos rondas de fact-check (SKILL.md, Fase 1): los hallazgos de la segunda ronda se aplicaron literalmente según la corrección propuesta por el verificador; los de la primera figuraban como corregidos en la segunda revisión. No se añadió ninguna afirmación nueva."
 }

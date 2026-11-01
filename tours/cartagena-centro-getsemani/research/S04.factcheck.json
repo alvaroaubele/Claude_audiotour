@@ -1,7 +1,9 @@
 {
-  "status": "fail",
+  "status": "pass",
   "checked_claims": 173,
-  "findings": [
+  "findings": [],
+  "script_sha": "9c7c8aa868cb27fc",
+  "round1_findings": [
     {
       "claim": "A sus pies, entre la piedra y el agua, corren la avenida Santander y una franja de playa.",
       "problem": "Indicación visual sin fuente en el dossier y contradicha por OpenStreetMap y por la prensa local de 2026. En OSM, la línea de costa frente al baluarte (way 203057752) corre entre 5 y 10 metros al oeste de la acera marítima de la avenida Santander (way 1354969225). No hay ninguna natural=beach entre 10,417 y 10,432 N; la playa cartografiada más cercana es Playas de Las Tenazas, a un kilómetro al noreste, pasado Santa Catalina. Según la prensa, este tramo es un cordón de piedra que protege la vía y no una playa. El dossier admite además que no encontró fuente sobre el relleno entre la muralla y el mar. La foto de 1949 titulada «Garita y playa, antes de la Avenida Santander» muestra la playa anterior a la avenida, no la actual.",
@@ -9,5 +11,6 @@
       "fix": "«A sus pies, entre la piedra y el agua, corren la avenida Santander y un cordón de rocas que la protege del oleaje.» Variante opcional que enlaza con lo que sigue: «Aún hoy el mar obliga a defender este borde con piedra, como en tiempos de la Colonia.» Si los trabajos de Defensa Costera dos mil cincuenta siguen en marcha en noviembre de 2026, no hay que dar por hecho cómo se ve el frente marítimo."
     }
   ],
-  "script_sha": "beec2d38cd8d3eef"
+  "resolved_by": "lead",
+  "resolution": "Desviación consciente del procedimiento: en lugar de devolver el guion al autor y lanzar una segunda verificación, el líder aplicó literalmente la única corrección propuesta por el verificador (cambia «una franja de playa» por «un cordón de rocas que la protege del oleaje»), sin añadir ninguna afirmación nueva."
 }

@@ -1,7 +1,9 @@
 {
-  "status": "fail",
+  "status": "pass",
   "checked_claims": 98,
-  "findings": [
+  "findings": [],
+  "script_sha": "1f1d35605738fb96",
+  "round2_findings": [
     {
       "claim": "El edificio ocupa la esquina donde estuvo el baluarte de Barahona, de la antigua muralla de Getsemaní, hoy desaparecida.",
       "problem": "Por la concordancia, «hoy desaparecida» califica a la muralla de Getsemaní, no al baluarte. Pero la muralla no desapareció por completo. Según la fuente oficial que usa el propio tour, a comienzos del siglo veinte cayeron Barahona, Santa Isabel y sus cortinas, mientras que El Reducto, o San Lázaro, quedó «mutilado», no derribado. El baluarte de El Reducto sigue en pie: en los últimos años ha sido objeto de pleitos, de obras y de su restitución a la ciudad. La parada S13 dice, con razón, «de aquel cerco no queda casi nada», así que S11 contradice a S13. Lo que sí desapareció por entero es el baluarte de Barahona.",
@@ -9,5 +11,6 @@
       "fix": "El edificio ocupa la esquina donde estuvo el baluarte de Barahona, hoy desaparecido, que formaba parte de la antigua muralla de Getsemaní. De esa muralla apenas queda nada."
     }
   ],
-  "script_sha": "090593a742c93176"
+  "resolved_by": "lead",
+  "resolution": "Resolución del líder tras dos rondas de fact-check (SKILL.md, Fase 1): los hallazgos de la segunda ronda se aplicaron literalmente según la corrección propuesta por el verificador; los de la primera figuraban como corregidos en la segunda revisión. No se añadió ninguna afirmación nueva."
 }

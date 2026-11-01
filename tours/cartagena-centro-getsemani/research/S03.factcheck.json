@@ -1,7 +1,9 @@
 {
-  "status": "fail",
+  "status": "pass",
   "checked_claims": 108,
-  "findings": [
+  "findings": [],
+  "script_sha": "d66b0faf58e9a297",
+  "round2_findings": [
     {
       "claim": "Entre quienes costearon las obras, el Museo Histórico cita al gobernador interino de 1637, Gonzalo de Herrera, marqués de Villalta, y menciona otro pago en 1668.",
       "problem": "La corrección del hallazgo 2 de la ronda anterior atribuye al Museo Histórico algo que no dice. El MUHCA no habla de varios pagadores ni de «otro pago en 1668». Usa un verbo en singular, «los costeo», y la cifra 1668 va con el título, «Marquez de Villalta de 1668», no con ningún pago. Su frase se lee como una sola persona: gobernador interino hacia 1637 y marqués de Villalta en 1668. El «Entre quienes costearon» y el «otro pago» son una interpretación del autor contada como si fuera de la fuente. Además, el MUHCA lo llama «Herrera y Tapia», no «marqués de Villalta» a secas. La fusión con Villalta viene de la lista de gobernadores de Wikipedia, que da para 1637 a «Gonzalo de Herrera y de la Calzada, Marquis of Villalta» y dice que adquirió ese título por matrimonio.",
@@ -21,5 +23,6 @@
       "fix": "«El párroco del templo en 2023, en cambio, situaba el reconocimiento de la imagen ya en el siglo diecisiete, y su fama hacia 1720, durante una gran peste.»"
     }
   ],
-  "script_sha": "b4f8a29801653ec7"
+  "resolved_by": "lead",
+  "resolution": "Resolución del líder tras dos rondas de fact-check (SKILL.md, Fase 1): los hallazgos de la segunda ronda se aplicaron literalmente según la corrección propuesta por el verificador; los de la primera figuraban como corregidos en la segunda revisión. No se añadió ninguna afirmación nueva."
 }

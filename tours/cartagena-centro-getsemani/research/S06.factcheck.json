@@ -1,7 +1,9 @@
 {
-  "status": "fail",
+  "status": "pass",
   "checked_claims": 104,
-  "findings": [
+  "findings": [],
+  "script_sha": "13a9c05285a3252d",
+  "round2_findings": [
     {
       "claim": "El nombre de la plaza viene de la Administración de la Aduana instalada aquí. Unas fuentes dicen que se impuso hacia 1790; otras, en los años 1970. Son las mismas cifras en otro orden, y no sabría decirle cuál es la buena.",
       "problem": "El guion presenta como indecidible una cuestión que las propias fuentes del dossier resuelven, y además se contradice. Bossa, citado por Elles y usado en el guion para el dato de 1971, dice que la plaza «fue conocida desde el siglo XVIII» como plaza de la Aduana. CartagenaCaribe, la fuente de «los años 1970», da su propia cronología: Contaduría, luego Aduana, después Colón en 1894 y Núñez a comienzos del siglo veinte. Ese orden solo tiene sentido si la fecha es 1790; «1970» es una errata de esa página. El propio guion dice más abajo que, tras el cambio de nombre de comienzos del siglo veinte, «los cartageneros siguieron diciendo plaza de la Aduana». Eso es imposible si el nombre hubiera nacido en los años setenta. Dejarlo como «no sabría decirle» induce a error al oyente.",
@@ -21,5 +23,6 @@
       "fix": "«Si la fecha buena es 1894, como dice la mayoría de las fuentes, Rafael Núñez […] había muerto en esta ciudad el 18 de septiembre, pocas semanas antes.» Otra opción: «Fíjese en el momento. La ciudad de mediados de los noventa…» y «había muerto en esta ciudad en septiembre de 1894»."
     }
   ],
-  "script_sha": "22b7064d5e51e345"
+  "resolved_by": "lead",
+  "resolution": "Resolución del líder tras dos rondas de fact-check (SKILL.md, Fase 1): los hallazgos de la segunda ronda se aplicaron literalmente según la corrección propuesta por el verificador; los de la primera figuraban como corregidos en la segunda revisión. No se añadió ninguna afirmación nueva."
 }
