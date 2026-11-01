@@ -1,0 +1,37 @@
+{
+  "status": "fail",
+  "checked_claims": 146,
+  "findings": [
+    {
+      "claim": "El resultado fue un tratado que se imprimió en Sevilla en 1627 y otra vez en Madrid en 1647, con título latino: De instauranda Aethiopum salute, es decir, sobre cómo procurar la salvación de los africanos.",
+      "problem": "Al oído, el título latino parece el del tratado en sus dos ediciones. En realidad, solo la segunda edición, la de Madrid en 1647, lleva título latino. La primera, Sevilla 1627, se publicó con un largo título en castellano. El propio dossier, en el hecho 36, recoge los dos títulos por separado.",
+      "evidence": "https://es.wikipedia.org/wiki/Alonso_de_Sandoval: la edición original apareció en Sevilla en 1627 con un largo título que empieza «Naturaleza, policía sagrada y profana…», y la de 1647 se imprimió en Madrid (Alonso de Paredes). https://en.wikipedia.org/wiki/Alonso_de_Sandoval: impreso en Sevilla en 1627; la segunda edición, de 1647, lleva el título latino De Instauranda Æthiopum Salute.",
+      "fix": "«El resultado fue un tratado que se imprimió en Sevilla en 1627, con un largo título en castellano. La segunda edición, impresa en Madrid en 1647, llevó un título latino: De instauranda Aethiopum salute, es decir, sobre cómo procurar la salvación de los africanos.»"
+    },
+    {
+      "claim": "Más o menos la mitad venía de la Alta Guinea, el extremo occidental de África. La otra mitad, de Angola.",
+      "problem": "Así contado, toda la trata se reparte entre la Alta Guinea y Angola, y eso no es lo que dice Wheat. Según él, las dos regiones aportaron partes más o menos iguales, pero llegó además una ola menor desde la Baja Guinea. Hablar de dos mitades deja fuera ese tercer origen. El dossier, en el hecho 24, también lo omite.",
+      "evidence": "Resumen de Wheat, Journal of African History 52 (1), 2011: https://www.cambridge.org/core/journals/journal-of-african-history/article/abs/first-great-waves-african-provenance-zones-for-the-transatlantic-slave-trade-to-cartagena-de-indias-15701640/A4E5B026671F9E8F81AD5895D4543B3F: «Upper Guinea and Angola furnished roughly equal shares of forced migrants to Cartagena between 1570 and 1640, with a smaller wave of captives from Lower Guinea.»",
+      "fix": "«La Alta Guinea, el extremo occidental de África, y Angola aportaron partes más o menos iguales. Una ola menor llegó de la Baja Guinea, en torno al golfo de Benín.»"
+    },
+    {
+      "claim": "Si las puertas están abiertas para la misa, desde el umbral verá ese altar iluminado al fondo. A través del cristal se distinguen los huesos del santo.",
+      "problem": "Es una indicación visual imposible desde donde está el oyente. La segunda frase, pegada a «desde el umbral», le hace esperar ver los huesos desde la puerta. Pero la urna está bajo el altar mayor, al otro extremo de una nave de unos 57 metros: polígono OSM 955128421, que va de -75.55147 a -75.55095 de longitud, y dossier, hecho 1. Además, hacia las 18:00 habrá misa, con fieles de pie entre la puerta y el altar. Desde el umbral se puede ver el altar, no distinguir unos huesos a cincuenta metros. El dossier, en el hecho 72, ya califica de débil la única fuente sobre la visibilidad de los huesos, que es un pie de foto de Wikipedia.",
+      "evidence": "Geometría OSM vía Nominatim, way 955128421, Iglesia de San Pedro Claver: unos 57 por 28 metros, con la fachada en el extremo este. https://www.semana.com/nacion/articulo/papa-francisco-en-colombia-visita-a-san-pedro-claver-en-cartagena/539439 sitúa los restos «en su urna de cristal y bronce en el altar mayor».",
+      "fix": "«Si las puertas están abiertas para la misa, desde el umbral verá el altar mayor al fondo, a unos cincuenta metros. Bajo él está la urna. De cerca, a través del cristal, se distinguen los huesos del santo, pero eso queda para otro día, fuera de la hora de culto.»"
+    },
+    {
+      "claim": "Según la tradición de la casa, la urna fue un regalo del papa León Trece.",
+      "problem": "El guion atribuye el dato a una fuente que no lo dice. «La tradición de la casa» lo pone en boca del santuario o de la Compañía. Pero la única fuente es un portal turístico, turismoreligioso.travel. El sitio oficial del santuario no menciona ninguna urna regalada por León Trece, y el dossier admite en sus pendientes que el dato no tiene fuente académica.",
+      "evidence": "https://turismoreligioso.travel/santuarios-de-america/san-pedro-claver/: «una urna de bronce dorado y vidrio, un regalo del Papa León XIII». https://sanpedroclaver.co/: la página oficial no menciona la urna ni su relación con León Trece, comprobado el 2026-11-01.",
+      "fix": "«Algunas guías cuentan que la urna fue un regalo del papa León Trece, pero no he encontrado documento que lo confirme.» Otra opción es suprimir la frase."
+    },
+    {
+      "claim": "Uno de ellos recuerda, entre los indignados, al castellano don Antonio de Subiza, caballero de Santiago.",
+      "problem": "Aquí «castellano» es un cargo: el alcaide o comandante de una fortaleza. No indica el origen del personaje. En el proceso, y en Bueno García, aparece como título, con mayúscula. Dicho en voz alta y sin glosa, el oyente entenderá que Subiza era de Castilla, y ninguna fuente lo dice. Es una omisión que vuelve engañosa la frase.",
+      "evidence": "Bueno García, Mutatis Mutandis 8 (1), 2015, p. 189, https://www.redalyc.org/pdf/4992/499267768011.pdf, cita el Proceso, p. 115, por boca de Francisco Yolofo: «el Castellano Don Antonio de Subiza, Caballero del hábito de Santiago».",
+      "fix": "«Uno de ellos recuerda, entre los indignados, a don Antonio de Subiza, caballero de Santiago y castellano, es decir, comandante de una fortaleza.»"
+    }
+  ],
+  "script_sha": "41cf41e2ea4a348e"
+}
