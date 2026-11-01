@@ -1,0 +1,61 @@
+{
+  "status": "fail",
+  "checked_claims": 118,
+  "findings": [
+    {
+      "claim": "En 1630 compraron las casas y las derribaron para construir una sede a su medida.",
+      "problem": "Fecha disputada presentada como segura. El año 1630 de la compra procede solo del museo. Medina, fuente principal del propio guion, documenta que el tribunal compró las casas alquiladas mucho antes. Usó para ello ocho mil ducados de la merced real, y además labró trece cárceles, con cartas de 1611 y del 16 de julio de 1612. El derribo de 1630 es dato de una sola fuente; la compra en 1630 contradice a Medina.",
+      "evidence": "https://archive.org/download/historiadeltrib00medigoog/historiadeltrib00medigoog_djvu.txt, Medina 1899, pp. 76-77: «con ocho mil ducados que el Rey les había concedido […] compraron las casas en que estaba establecido el Tribunal, dando la mitad del precio al contado; y labraron trece cárceles», nota: «Carta de 16 de Julio de 1612». https://www.muhca.gov.co/conocenos: en 1630 la Inquisición compró esas casas y las derribó.",
+      "fix": "«Muy pronto compraron aquellas casas. Según el museo, en 1630 las derribaron para levantar una sede a su medida.» Otra opción es no fechar la compra y atribuir el derribo de 1630 al museo."
+    },
+    {
+      "claim": "Se apuntaló en 1704.",
+      "problem": "La fuente no dice «apuntalar». Medina dice que el edificio, que se caía, «hubo necesidad de repararlo en 1704». El dossier, hecho 17, también dice «se reparó».",
+      "evidence": "Medina 1899, p. 369 (djvu.txt citado): «El edificio del Tribunal que estaba cayéndose, hubo necesidad de repararlo en 1704».",
+      "fix": "«Hubo que repararlo en 1704.»"
+    },
+    {
+      "claim": "Y en 1741, durante el ataque del almirante Vernon, una bomba inglesa desmanteló también esa casa provisional, y hubo que tirarla.",
+      "problem": "Medina no dice que en 1741 el tribunal siguiera en la casa del inquisidor más antiguo, ni que la casa destruida fuera «provisional». Entre 1715 y 1741 pasaron veintiséis años. Además, Medina describe una casa con departamento del alcaide y pasillo a las cárceles secretas, lo que apunta a la sede del tribunal. «Esa casa provisional» es una inferencia del autor que se cuenta como hecho.",
+      "evidence": "Medina 1899, pp. 369-370: «en el primer ataque sólo cayó una bomba enemiga en el departamento del alcaide en un pasillo que tenía a las cárceles secretas, en un segundo estalló otra que desmanteló toda la casa y hubo que derribarla».",
+      "fix": "«Y en 1741, durante el ataque del almirante Vernon, una bomba inglesa desmanteló la casa del tribunal, y hubo que derribarla.»"
+    },
+    {
+      "claim": "El Museo Histórico la considera el mejor ejemplo de arquitectura civil del siglo dieciocho en Cartagena.",
+      "problem": "Atribución equivocada. El guion acaba de hablar de la portada, así que «la» remite a ella. El museo aplica ese juicio al palacio entero. De la portada, en el párrafo siguiente, solo dice que es su rasgo más destacado.",
+      "evidence": "https://www.muhca.gov.co/conocenos, sección «El Edificio»: el primer párrafo abre con «Considerado como el mejor ejemplo de la arquitectura civil en Cartagena del siglo XVIII», referido al Palacio de la Inquisición. El segundo dice que su «característica más destacada es su hermosa portada barroca labrada en piedra caliza».",
+      "fix": "«El Museo Histórico considera este palacio el mejor ejemplo de arquitectura civil del siglo dieciocho en Cartagena, y la portada, su rasgo más destacado.»"
+    },
+    {
+      "claim": "¿Y los quemados? Medina llegó a cinco. Los recuentos posteriores oscilan entre tres y cinco.",
+      "problem": "El dato está disputado, pero el guion lo presenta mal en dos puntos. Primero, tres de los cinco de Medina son los relajados de 1688, y Medina solo dice que es «casi seguro» que salieran en ese auto. Segundo, el recuento posterior que recoge el propio dossier, el de Álvarez Alonso, baja de tres. Para el siglo diecisiete, 1688 incluido, cuenta cuatro relajados, y dos de ellos fueron quemados en efigie. Quedan dos quemados en persona. La horquilla «entre tres y cinco» sale solo de Wikipedia en inglés y esconde el recuento más bajo.",
+      "evidence": "Medina 1899, p. 417 nota 2: Edón, Juan Vicente y «José Jiménez, Juan de Frías y Francisco del Valle que sufrieron igual pena el 30 de mayo de 1688». p. 335 nota: «Es casi seguro que en este auto se presentaron los tres condenados á relajar». https://www.dhial.org/diccionario/index.php?title=INQUISICI%C3%93N._El_Tribunal_de_Cartagena_de_Indias: solo cuatro reos condenados a relajación, dos de ellos muertos en la cárcel y quemados en estatua.",
+      "fix": "«Medina contó al menos cinco, aunque de tres no tenía constancia segura. Álvarez Alonso solo encuentra dos quemados en persona en el siglo diecisiete. La cifra exacta está en disputa, entre dos y cinco, pero el orden de magnitud no.»"
+    },
+    {
+      "claim": "Salieron veintidós penitentes: hechiceras, bígamos, un calvinista de Amberes, una esclava amordazada por blasfema. Y un relajado, es decir, un reo entregado al brazo secular para que lo ejecutara: Juan Vicente, condenado por volver al judaísmo.",
+      "problem": "Error de cuenta. En la relación que transcribe Medina, los veintidós penitentes incluyen al relajado: la lista numerada termina con «22. — Juan Vicente», y el texto dice «hasta el relajado, que fué el último». El guion da a entender que salieron veintitrés reos. El número 21 era además la estatua de un reo muerto en la cárcel.",
+      "evidence": "Medina 1899, pp. 183 y 193: «seguíanle los penitentes, que fueron veintidós […] hasta el relajado, que fué el último». Lista: «22. — Juan Vicente, cristiano nuevo […] fué relajado».",
+      "fix": "«Salieron veintidós reos: hechiceras, bígamos, un calvinista de Amberes, una esclava amordazada por blasfema. El último era un relajado, es decir…»"
+    },
+    {
+      "claim": "Los inquisidores de Cartagena votaron, cinco contra tres, entregarla al brazo secular, es decir, a la muerte. Madrid anuló la sentencia y ordenó un tercer proceso.",
+      "problem": "Cronología confundida. Según McKnight, la Suprema ordenó el tercer proceso porque cuestionaba la condena a relajación del segundo. La votación de cinco contra tres se produjo en el tercer proceso, y Madrid volvió a anularla: Paula fue reconciliada y condenada a cárcel perpetua. Además, ocho votos no son solo de inquisidores, porque el tribunal tenía tres. McKnight habla del voto del tribunal de Cartagena.",
+      "evidence": "https://spanport.unm.edu/news-events/news/2016/09/k-mcknight-article16.pdf, McKnight 2016. p. 154: «The Supreme Council of the Inquisition had mandated the third trial, questioning the Cartagena inquisitor's decision to sentence Paula to be relaxed». p. 168: «their five-to-three vote sentenced her to death […] (Tercer proceso 155r/v). Again, the Madrid Suprema overturned this sentence, and Paula would be reconciled and sentenced to perpetual prison (157r)».",
+      "fix": "«Cartagena la condenó a muerte; Madrid lo cuestionó y ordenó un tercer proceso. En él, el tribunal votó otra vez, cinco contra tres, entregarla al brazo secular. Madrid volvió a anular la sentencia.»"
+    },
+    {
+      "claim": "Tuvo verja de hierro forjado y cuatro fuentes; la verja desapareció en 1925",
+      "problem": "La única fuente, El Universal, habla de hierro colado, es decir, fundido, no forjado. El dossier, hecho 68, transcribió mal el material.",
+      "evidence": "https://eluniversal.com.co/cultural/la-entranable-historia-del-parque-donde-cabalga-bolivar-LB5614278: «una verja perimetral en hierro colado»; hacia 1925 se retiró la reja metálica perimetral.",
+      "fix": "«Tuvo verja de hierro fundido y cuatro fuentes» o, sin precisar el material, «Tuvo verja de hierro y cuatro fuentes»."
+    },
+    {
+      "claim": "Los métodos documentados son el cordel y el potro.",
+      "problem": "La fuente dice que fueron los más usuales, no los únicos documentados. La redacción del guion excluye otros métodos sin respaldo. Medina documenta además la toca con jarros de agua en la jurisdicción episcopal anterior al tribunal.",
+      "evidence": "https://www.dhial.org/diccionario/index.php?title=INQUISICI%C3%93N._El_Tribunal_de_Cartagena_de_Indias: «las torturas más usuales fueron el cordel y el potro».",
+      "fix": "«Los métodos más usuales fueron el cordel y el potro.»"
+    }
+  ],
+  "script_sha": "e27585ca84c58864"
+}
