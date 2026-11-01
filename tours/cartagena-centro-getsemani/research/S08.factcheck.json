@@ -1,0 +1,31 @@
+{
+  "status": "fail",
+  "checked_claims": 112,
+  "findings": [
+    {
+      "claim": "Algunos guías cuentan que lo pagó el piloto de carreras Juan Pablo Montoya. El párroco lo desmintió en 2015: dijo que habían contribuido otros.",
+      "problem": "Omisión que vuelve engañosa la afirmación. El párroco no dijo que Montoya no pusiera dinero: dijo que Montoya pagó una parte y que el resto lo pusieron vecinos y otros donantes. Lo que niega es que Montoya lo pagara entero. Tal como está redactado, el oyente entiende que Montoya no aportó nada.",
+      "evidence": "https://ietoribianos.blogspot.com/2015/12/la-iglesia-santo-toribio-mogrovejo.html (reproduce El Tiempo, 18-12-2015): los cocheros dicen «aquí se casó Montoya que donó el aire a la parroquia, y eso es mentira». El párroco Fernando Álvarez responde: «Montoya dio una parte para el aire acondicionado pero el resto del valor lo dieron vecinos y personas que aportaron».",
+      "fix": "«Los cocheros cuentan que lo regaló Juan Pablo Montoya, el piloto, que se casó aquí. El párroco lo matizó en 2015: Montoya puso una parte, y el resto lo pagaron vecinos y otros donantes.»"
+    },
+    {
+      "claim": "Luego aceptó, con una frase que recoge su biógrafo: «Acepto por la fuerza el destino que el Congreso me confía».",
+      "problem": "Atribución errónea, repetida en «En el fondo, dice su biógrafo, no le perdonaban haber sobrevivido a la derrota». Las dos cosas proceden del artículo de Fernando Serpa-Flórez, un historiador de la medicina que escribió una reseña de tres páginas. No es el biógrafo de Fernández Madrid. El propio Serpa llama «su biógrafo» a Carlos Martínez Silva, autor de la «Biografía de D. José Fernández Madrid» de 1889. Además, Serpa toma la cita de Humberto Roselli, no de Martínez Silva. El oyente atribuirá a la biografía canónica una cita y un juicio que esta fuente no le atribuye.",
+      "evidence": "https://revistacirugia.org/index.php/cirugia/article/download/1649/1278/9244 (Serpa-Flórez, Rev. Col. Cirugía, 1991). Recoge «Acepto por la fuerza el destino que el Congreso me confía....» con la referencia (1) a Roselli. También escribe que bebió «el trago amargo de las insidias de quienes no le perdonaban el haber sobrevivido a la derrota». Más abajo dice: «Carlos Martínez Silva, su biógrafo».",
+      "fix": "«…con una frase que recogen los historiadores de la medicina colombiana: “Acepto por la fuerza el destino que el Congreso me confía”.» Y después: «En el fondo, escribe el médico e historiador Fernando Serpa, no le perdonaban haber sobrevivido a la derrota.»"
+    },
+    {
+      "claim": "Y que fue entonces cuando el personaje, que se llamaba Josefa Cárcamo, pasó a llamarse Fermina Daza, porque sonaba mejor.",
+      "problem": "Ninguna fuente del dossier da ese motivo ni ese momento. Según Página/12, Jaime contó que el nombre Josefa Cárcamo era «un nombre que yo le había dicho que no me gustaba». Según Nexos, Gabo defendió entonces la «sonoridad» de Josefa Cárcamo y cambió el nombre dos meses después. Jaime lo interpretó como que él tenía razón. El cambio no se produjo «entonces» y la razón «porque sonaba mejor» es una inferencia del autor presentada como parte del relato de Jaime.",
+      "evidence": "https://www.pagina12.com.ar/diario/suplementos/turismo/9-693-2005-10-09.html: Jaime dice que el personaje se llamaba «Josefa Carcamo», «un nombre que yo le había dicho que no me gustaba». https://cultura.nexos.com.mx/la-casa-de-fermina-daza-retrato-de-gabo-con-loro-al-fondo/: Gabo responde que lo importante es «la sonoridad del nombre». Dos meses después el nombre es Fermina Daza, y Jaime pregunta: «¿Eso quiere decir que quitaste a Josefa Cárcamo porque yo tenía razón?».",
+      "fix": "«Y que el personaje se llamaba entonces Josefa Cárcamo, un nombre que a Jaime no le gustaba. Gabo lo defendió. Dos meses después, la muchacha ya se llamaba Fermina Daza.»"
+    },
+    {
+      "claim": "Es una vivienda privada, de puertas cerradas, y ninguna de mis fuentes precisa en qué lado de la plaza está. Le doy una pista para cuando rodee la plaza. En 2014 un cronista describió, sobre la aldaba de su portón, un pequeño loro de hierro oxidado que mira hacia aquí.",
+      "problem": "Hay dos inexactitudes en una indicación visual para buscar de noche. Primera: Nexos describe «un loro oxidado» sobre la aldaba, pero no dice que sea pequeño ni de hierro. Segunda: sí hay una fuente del dossier que sitúa la casa. Página/12 la pone en el cruce de las calles de la Moneda y Badillo. Según OpenStreetMap, ese cruce está unos cien metros al sur de la plaza, de modo que la ubicación no es fiable, pero existe. La pista visible más útil que da el cronista ni se menciona: un portón blanco con veintisiete estrellas de bronce.",
+      "evidence": "https://cultura.nexos.com.mx/la-casa-de-fermina-daza-retrato-de-gabo-con-loro-al-fondo/ (2014) habla de «un loro oxidado, desde encima de la aldaba», que mira hacia la plaza Fernández de Madrid, y de «el portón pintado de blanco que permanece cerrado con sus veintisiete estrellas de bronce». https://www.pagina12.com.ar/diario/suplementos/turismo/9-693-2005-10-09.html sitúa la casa «en el cruce de las calles de la Moneda y Badillo». En OSM, la calle de la Moneda (way 25443032) corta la Segunda de Badillo en 10.42522, -75.54870, al sur de la plaza (way 25447605, de 10.4262 a 10.42675).",
+      "fix": "«…y mis fuentes no coinciden en dónde está exactamente. Le doy una pista. En 2014 un cronista describió un portón blanco, siempre cerrado, con veintisiete estrellas de bronce y, sobre la aldaba, un loro oxidado que mira hacia esta plaza.»"
+    }
+  ],
+  "script_sha": "5327532ad08e70bf"
+}
