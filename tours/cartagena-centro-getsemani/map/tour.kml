@@ -98,7 +98,7 @@
 <styleUrl>#route</styleUrl><description><![CDATA[Pista 28 · 266 m · 4 min a pie]]></description>
 <LineString><tessellate>1</tessellate><coordinates>-75.545388,10.42148,0 -75.54537,10.421255,0 -75.54532,10.420735,0 -75.54527,10.420699,0 -75.545244,10.42067,0 -75.545236,10.420623,0 -75.54524,10.420574,0 -75.545425,10.420055,0 -75.545564,10.419653,0 -75.54512,10.419471,0</coordinates></LineString></Placemark>
 <Placemark><name>Tramo 14 · Callejón Angosto y Calle de San Juan: el arte urbano → Iglesia y Plaza de la Santísima Trinidad</name>
-<styleUrl>#route</styleUrl><description><![CDATA[Pista 30 · 212 m · 3 min a pie]]></description>
-<LineString><tessellate>1</tessellate><coordinates>-75.54512,10.419471,0 -75.545564,10.419653,0 -75.545425,10.420055,0 -75.54524,10.420574,0 -75.545236,10.420623,0 -75.545244,10.42067,0 -75.54527,10.420699,0 -75.54532,10.420735,0 -75.545421,10.420744,0 -75.545479,10.420734,0 -75.545482,10.420701,0 -75.545492,10.420648,0 -75.545495,10.420637,0</coordinates></LineString></Placemark>
+<styleUrl>#route</styleUrl><description><![CDATA[Pista 30 · 51 m · 1 min a pie]]></description>
+<LineString><tessellate>1</tessellate><coordinates>-75.545822,10.420862,0 -75.545479,10.420734,0 -75.545482,10.420701,0 -75.545492,10.420648,0 -75.545495,10.420637,0</coordinates></LineString></Placemark>
 </Folder>
 </Document></kml>

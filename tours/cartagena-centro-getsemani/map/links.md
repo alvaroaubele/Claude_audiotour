@@ -14,4 +14,4 @@
 - **Tramo 11** → Camellón de los Mártires y Parque Centenario (373 m, 6 min): https://www.google.com/maps/dir/?api=1&origin=10.42216%2C-75.54882&destination=10.4225%2C-75.548&travelmode=walking
 - **Tramo 12** → Calle del Guerrero: el Getsemaní popular (396 m, 6 min): https://www.google.com/maps/dir/?api=1&origin=10.4225%2C-75.548&destination=10.42148%2C-75.54539&travelmode=walking
 - **Tramo 13** → Callejón Angosto y Calle de San Juan: el arte urbano (266 m, 4 min): https://www.google.com/maps/dir/?api=1&origin=10.42148%2C-75.54539&destination=10.41947%2C-75.54512&travelmode=walking
-- **Tramo 14** → Iglesia y Plaza de la Santísima Trinidad (212 m, 3 min): https://www.google.com/maps/dir/?api=1&origin=10.41947%2C-75.54512&destination=10.42061%2C-75.5454&travelmode=walking
+- **Tramo 14** → Iglesia y Plaza de la Santísima Trinidad (51 m, 1 min): https://www.google.com/maps/dir/?api=1&origin=10.41947%2C-75.54512&destination=10.42061%2C-75.5454&travelmode=walking

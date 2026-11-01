@@ -1,0 +1,7 @@
+Resumen: casi ningún guion pasa a la primera; la segunda ronda siempre encuentra algo nuevo, y la regla de que el líder resuelva tras dos rondas es la que permite cerrar.
+
+- Tour de Cartagena (15 paradas): 0 de 15 pasaron el primer fact-check. La media fue de unos 5 hallazgos por parada (entre 1 y 11). Lo más frecuente: atribuciones a la fuente equivocada, citas cortadas, cifras disputadas presentadas como seguras, «hoy» heredado de una fuente antigua e indicaciones visuales imposibles desde el punto del oyente.
+- En la segunda ronda, 12 de 13 paradas volvieron a fallar, pero con hallazgos menores (entre 1 y 6) y casi siempre introducidos por la propia corrección o por la propuesta del verificador anterior. Ejemplo: en S12, «la caída ronda la mitad» venía del veredicto de la primera ronda.
+- La resolución del líder funciona si se aplica literalmente la corrección propuesta por el verificador, sin añadir afirmaciones, y queda constancia en tres sitios: en el veredicto (`resolved_by: lead`, `round2_findings`), en una sección final del dossier y en el resumen al usuario.
+- Los verificadores también se equivocan. En S08, el autor tenía razón sobre lo que dice Página/12. Cuando el autor discrepa con argumentos, la segunda ronda debe decidir con la cita literal.
+- Los fact-checkers que comprueban la geometría con OSM detectan errores de orientación que ningún otro paso ve. Mantener esa instrucción en el brief.
