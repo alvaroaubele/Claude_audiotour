@@ -1,0 +1,37 @@
+{
+  "status": "fail",
+  "checked_claims": 78,
+  "findings": [
+    {
+      "claim": "De punta a punta no llega a cien metros.",
+      "problem": "Cifra incorrecta. La geometría de OSM del Callejón Angosto (vía 25841708, de 10.4196534,-75.5455635 a 10.4192857,-75.5446696) mide unos 106 metros. El propio dossier, en el hecho 1, dice «unos 100 metros», no «menos de cien».",
+      "evidence": "Nominatim/OSM, https://nominatim.openstreetmap.org/search?q=Callej%C3%B3n%20Angosto&polygon_text=1 : LINESTRING(-75.5455635 10.4196534,-75.5446696 10.4192857). La distancia haversine entre los dos extremos es de 106 m. Desde el punto del oyente hasta Lomba hay 53 m, así que «a unos cincuenta metros» sí es correcto.",
+      "fix": "«De punta a punta mide unos cien metros.»"
+    },
+    {
+      "claim": "Su hermano había visto en internet una calle de Portugal que se recuperó así después de una operación antidroga.",
+      "problem": "Una versión de segunda mano se cuenta como hecho. En El Universal es el relato de Marco Vargas sobre lo que vio su hermano, pero el guion lo narra con voz propia, como dato. Además, la calle portuguesa de paraguas conocida, la de Águeda con el Umbrella Sky Project, no nació tras una operación antidroga: fue una instalación del festival de arte AgitÁgueda, de 2011 o 2012, pensada para dar sombra. No encontré ninguna fuente de una calle portuguesa recuperada con paraguas después de una redada.",
+      "evidence": "El Universal, 18 jun 2021, https://www.eluniversal.com.co/cartagena/2021/06/18/la-calle-de-los-paraguitas-se-esta-quedando-sin-paraguas/ : «Según Marco, la idea surgió por su hermano, quien vio en internet una calle muy similar al callejón, pero ubicada en Portugal. Allí habían tenido problemas con las drogas pero tras un operativo…». Project for Public Spaces, https://www.pps.org/places/umbrella-sky-project : el Umbrella Sky Project empezó en 2011 como parte del festival Ágitagueda, de Sextafeira, para dar sombra en verano. No menciona drogas ni policía.",
+      "fix": "Atribuirlo y no avalarlo, por ejemplo: «Según Vargas, a su hermano le llamó la atención en internet una calle de Portugal que, contaban, había salido así de una historia de droga.» O bien: «La idea vino de su hermano, que vio en internet una calle de Portugal cubierta de paraguas.»"
+    },
+    {
+      "claim": "Lo seguro es que en diciembre de 2013 se celebró aquí el primer festival internacional de arte urbano, Ciudad Mural. Según una de las crónicas, fueron los vecinos quienes invitaron a artistas colombianos y extranjeros, con una única condición: inspirarse en la gente y la historia del barrio.",
+      "problem": "Omisión que engaña. La fecha está bien, pero la crónica de agencia de la época atribuye la iniciativa Ciudad Mural a la empresa Vértigo Graffiti, y no a los vecinos. La comunidad aportó sus problemas e historias como temas. El guion solo cita la versión de un blog, la de «los vecinos invitaron», sin decir que otra fuente la contradice. Ese origen vecinal sostiene después la oposición del cierre entre lo que hacen los vecinos para ellos y lo comercial. Además, «aquí» sugiere la calle de la Sierpe, cuando el festival se hizo en el conjunto de Getsemaní.",
+      "evidence": "Noticel, 9 dic 2013, https://noticel.com/?p=44980 : la iniciativa «conocida como Ciudad Mural» la impulsó «la empresa Vértigo Graffiti, creada en 2009 para promover el arte urbano». Su director creativo, Camilo Fidel López, dice: «la comunidad nos comentó todos sus problemas». No Maps or Foot Tracks, https://nomapsorfoottracks.com/blog/street-art-getsemani , es la fuente de «the community of Getsemaní invited street artists». Turtles Travel, https://turtlestravel.com/street-art-in-cartagena/ , confirma diciembre de 2013.",
+      "fix": "«En diciembre de 2013 se celebró en Getsemaní el primer festival internacional de arte urbano, Ciudad Mural, impulsado por la empresa de grafiti Vértigo Graffiti. Los vecinos contaron a los artistas sus problemas y su historia, y de ahí salieron los temas de los murales.»"
+    },
+    {
+      "claim": "Vamos ahora a ver murales con nombre y autor. Son unos ciento setenta metros, dos minutos y medio a pie.",
+      "problem": "La distancia y el tiempo no cuadran con el recorrido que el propio guion indica. La ruta va de la mitad del Angosto a la calle del Pozo, recorre el Pozo hasta la plaza de la Trinidad, cruza la plaza y avanza 40 metros por la Sierpe. Sobre la geometría de OSM suma unos 233 metros. Las cifras parciales del guion ya superan los 170 metros: unos cincuenta de callejón, «unos cien» de Pozo, la plaza y «unos cuarenta» de Sierpe. A 4 km/h, la velocidad de meta.walking_speed_kmh, son unos tres minutos y medio. El dossier da 212 metros para L14 entre el Angosto y la Trinidad, sin contar los 40 de la Sierpe, lo que confirma el error.",
+      "evidence": "Nominatim/OSM: Callejón Angosto, vía 25841708. Calle del Pozo, vía 123809492, de 10.4196534,-75.5455635 a 10.4205737,-75.5452403, unos 108 m. Calle de la Sierpe, vía 25841703, de 10.4207342,-75.5454787 a 10.4208623,-75.5458223, unos 40 m. Tramos medidos con haversine: 53 + 47 + 61 + 32 + 40, unos 233 m. plan.json, L13: el tramo del Pozo, de la plaza al Angosto, mide 108 m.",
+      "fix": "«Son unos doscientos treinta metros, unos tres minutos y medio a pie.» Conviene revisar también el tiempo de marcha que esta parada suma en plan.json."
+    },
+    {
+      "claim": "La fotografía que lo inspiró está en Los Carpinteros, el taller de la familia Gaviria en el Callejón Ancho, el gemelo del que acaba de dejar.",
+      "problem": "Un dato incierto se cuenta en presente, como seguro. La única fuente es un blog de viajes publicado en mayo de 2020, y no hay ninguna fuente actual de que la foto siga allí. La propia Ruta El Legado cuenta que la carpintería de los Gaviria pasó apuros porque dejó de dar ingresos. Para el resto del arte de esta parada, el guion ya advierte de que puede haber cambiado; aquí no lo hace.",
+      "evidence": "No Maps or Foot Tracks, https://nomapsorfoottracks.com/blog/street-art-getsemani , con datePublished 2020-05-14: «Wander into Los Carpinteros on Callejón Ancho … you'll actually find the original photo». https://legadogetsemanicense.com/callejonancho/ : Los Carpinteros, de la familia Gaviria, atravesó un momento difícil cuando la carpintería dejó de generar ingresos suficientes.",
+      "fix": "«Según un blog de viajes de 2020, la fotografía que lo inspiró se exhibía en Los Carpinteros, el taller de la familia Gaviria en el Callejón Ancho.»"
+    }
+  ],
+  "script_sha": "2c8a779348ddb5f7"
+}
