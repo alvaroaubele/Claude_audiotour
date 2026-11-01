@@ -40,8 +40,8 @@
       "interior_min": 0,
       "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
       "script": "scripts/S01.md",
-      "narration_min": 17.2,
-      "words_target": 2880
+      "narration_min": 17.3,
+      "words_target": 2890
     },
     {
       "id": "S02",
@@ -55,8 +55,8 @@
       "interior_min": 0,
       "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
       "script": "scripts/S02.md",
-      "narration_min": 21.5,
-      "words_target": 3590
+      "narration_min": 21.7,
+      "words_target": 3630
     },
     {
       "id": "S03",
@@ -70,8 +70,8 @@
       "interior_min": 0,
       "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
       "script": "scripts/S03.md",
-      "narration_min": 12.9,
-      "words_target": 2160
+      "narration_min": 13.0,
+      "words_target": 2170
     },
     {
       "id": "S04",
@@ -85,8 +85,8 @@
       "interior_min": 0,
       "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
       "script": "scripts/S04.md",
-      "narration_min": 17.2,
-      "words_target": 2880
+      "narration_min": 17.3,
+      "words_target": 2890
     },
     {
       "id": "S05",
@@ -100,8 +100,8 @@
       "interior_min": 0,
       "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
       "script": "scripts/S05.md",
-      "narration_min": 21.5,
-      "words_target": 3590
+      "narration_min": 21.7,
+      "words_target": 3630
     },
     {
       "id": "S06",
@@ -115,8 +115,8 @@
       "interior_min": 0,
       "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
       "script": "scripts/S06.md",
-      "narration_min": 12.9,
-      "words_target": 2160
+      "narration_min": 13.0,
+      "words_target": 2170
     },
     {
       "id": "S07",
@@ -130,8 +130,8 @@
       "interior_min": 0,
       "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
       "script": "scripts/S07.md",
-      "narration_min": 17.2,
-      "words_target": 2880,
+      "narration_min": 17.3,
+      "words_target": 2890,
       "via": [
         [
           10.42262,
@@ -151,8 +151,8 @@
       "interior_min": 0,
       "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
       "script": "scripts/S08.md",
-      "narration_min": 17.2,
-      "words_target": 2880,
+      "narration_min": 17.3,
+      "words_target": 2890,
       "via": [
         [
           10.425,
@@ -172,8 +172,12 @@
       "interior_min": 0,
       "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
       "script": "scripts/S09.md",
-      "narration_min": 17.2,
-      "words_target": 2880
+      "narration_min": 17.3,
+      "words_target": 2890,
+      "end": [
+        10.42811,
+        -75.54758
+      ]
     },
     {
       "id": "S10",
@@ -187,8 +191,8 @@
       "interior_min": 0,
       "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
       "script": "scripts/S10.md",
-      "narration_min": 12.9,
-      "words_target": 2160
+      "narration_min": 13.0,
+      "words_target": 2170
     },
     {
       "id": "S11",
@@ -202,8 +206,8 @@
       "interior_min": 0,
       "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
       "script": "scripts/S11.md",
-      "narration_min": 12.9,
-      "words_target": 2160
+      "narration_min": 13.0,
+      "words_target": 2170
     },
     {
       "id": "S12",
@@ -217,8 +221,8 @@
       "interior_min": 0,
       "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
       "script": "scripts/S12.md",
-      "narration_min": 17.2,
-      "words_target": 2880
+      "narration_min": 17.3,
+      "words_target": 2890
     },
     {
       "id": "S13",
@@ -232,8 +236,8 @@
       "interior_min": 0,
       "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
       "script": "scripts/S13.md",
-      "narration_min": 12.9,
-      "words_target": 2160
+      "narration_min": 13.0,
+      "words_target": 2170
     },
     {
       "id": "S14",
@@ -247,8 +251,12 @@
       "interior_min": 0,
       "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
       "script": "scripts/S14.md",
-      "narration_min": 12.9,
-      "words_target": 2160
+      "narration_min": 13.0,
+      "words_target": 2170,
+      "end": [
+        10.42086,
+        -75.54582
+      ]
     },
     {
       "id": "S15",
@@ -262,8 +270,8 @@
       "interior_min": 0,
       "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
       "script": "scripts/S15.md",
-      "narration_min": 21.5,
-      "words_target": 3590
+      "narration_min": 21.7,
+      "words_target": 3630
     }
   ],
   "legs": [
@@ -1832,8 +1840,8 @@
         ]
       ],
       "script": "scripts/L10.md",
-      "words_target": 1070,
-      "nav_fill": 0.35
+      "nav_fill": 0.35,
+      "words_target": 1070
     },
     {
       "id": "L11",
@@ -2334,63 +2342,35 @@
       "id": "L14",
       "from": "S14",
       "to": "S15",
-      "distance_m": 212,
-      "time_s": 198,
+      "distance_m": 51,
+      "time_s": 47,
       "maneuvers": [
         {
-          "instruction": "Camine hacia el oeste por Callejón Angosto.",
-          "verbal": "Camine hacia el oeste por Callejón Angosto. Después Gire a la derecha hacia Calle del Pozo.",
+          "instruction": "Camine hacia el este por Calle de la Sierpe.",
+          "verbal": "Camine hacia el este por Calle de la Sierpe. Después Gire a la derecha hacia Carrera 10.",
           "streets": [
-            "Callejón Angosto"
+            "Calle de la Sierpe"
           ],
-          "length_m": 52,
-          "time_s": 57,
+          "length_m": 40,
+          "time_s": 36,
           "type": 1,
           "at": [
-            10.419471,
-            -75.54512
+            10.420862,
+            -75.545822
           ]
         },
         {
-          "instruction": "Gire a la derecha hacia Calle del Pozo.",
-          "verbal": "Gire a la derecha hacia Calle del Pozo.",
-          "streets": [
-            "Calle del Pozo"
-          ],
-          "length_m": 108,
-          "time_s": 97,
-          "type": 10,
-          "at": [
-            10.419653,
-            -75.545564
-          ]
-        },
-        {
-          "instruction": "Siga por la izquierda en dirección a Calle del Carretero.",
-          "verbal": "Siga por la izquierda en dirección a Calle del Carretero.",
-          "streets": [
-            "Calle del Carretero"
-          ],
-          "length_m": 22,
-          "time_s": 18,
-          "type": 16,
-          "at": [
-            10.420574,
-            -75.54524
-          ]
-        },
-        {
-          "instruction": "Gire completamente a la izquierda hacia Carrera 10.",
-          "verbal": "Gire completamente a la izquierda hacia Carrera 10.",
+          "instruction": "Gire a la derecha hacia Carrera 10.",
+          "verbal": "Gire a la derecha hacia Carrera 10. Después Su destino estará a la izquierda.",
           "streets": [
             "Carrera 10"
           ],
-          "length_m": 29,
-          "time_s": 26,
-          "type": 14,
+          "length_m": 11,
+          "time_s": 11,
+          "type": 10,
           "at": [
-            10.420735,
-            -75.54532
+            10.420734,
+            -75.545479
           ]
         },
         {
@@ -2408,40 +2388,8 @@
       ],
       "shape": [
         [
-          10.419471,
-          -75.54512
-        ],
-        [
-          10.419653,
-          -75.545564
-        ],
-        [
-          10.420055,
-          -75.545425
-        ],
-        [
-          10.420574,
-          -75.54524
-        ],
-        [
-          10.420623,
-          -75.545236
-        ],
-        [
-          10.42067,
-          -75.545244
-        ],
-        [
-          10.420699,
-          -75.54527
-        ],
-        [
-          10.420735,
-          -75.54532
-        ],
-        [
-          10.420744,
-          -75.545421
+          10.420862,
+          -75.545822
         ],
         [
           10.420734,
@@ -2461,7 +2409,7 @@
         ]
       ],
       "script": "scripts/L14.md",
-      "words_target": 220
+      "words_target": 60
     }
   ]
 }

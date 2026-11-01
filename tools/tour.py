@@ -313,7 +313,8 @@ def cmd_route(a):
             **({"nav_fill": old["nav_fill"]} if "nav_fill" in old else {}),
             "words_target": old.get("words_target"),
         })
-        prev_id, prev = s["id"], cur
+        # optional stop["end"]: [lat, lon] where a walking stop finishes; the next leg starts there
+        prev_id, prev = s["id"], tuple(s["end"]) if s.get("end") else cur
     plan["legs"] = legs
     save_json(d / "plan.json", plan)
     tot_m = sum(l["distance_m"] for l in legs)
