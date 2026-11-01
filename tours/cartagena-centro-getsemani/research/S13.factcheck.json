@@ -1,0 +1,13 @@
+{
+  "status": "fail",
+  "checked_claims": 96,
+  "findings": [
+    {
+      "claim": "Germán Espinosa la convirtió en novela en 1991.",
+      "problem": "«Orika de los palenques» no es una novela, sino un cuento o relato breve. Lo recoge el volumen de Cuentos completos de Espinosa. La fuente del dossier, Wikipedia «Benkos Biohó», dice «La novela», pero el estudio académico dedicado a esa obra la trata siempre como cuento.",
+      "evidence": "Camilo Herrera, «“Orika de los palenques” de Germán Espinosa: una mirada a la historia y la leyenda del cimarrón en el siglo xvii», Estudios de Literatura Colombiana 45 (2019), pp. 67-84, https://dialnet.unirioja.es/descarga/articulo/7003377.pdf. El resumen habla de «el cuento del escritor cartagenero» y el texto dice «“Orika”, escrita en 1991». La bibliografía la cita así: «Espinosa, G. (2007). Orika de los palenques. En: Cuentos completos. Bogotá: Alfaguara». Wikipedia, https://es.wikipedia.org/wiki/Benkos_Bioh%C3%B3, la llama «La novela Orika de los palenques (1991)» sin ninguna fuente.",
+      "fix": "«Germán Espinosa la convirtió en cuento en 1991.» También vale «la reescribió en un relato en 1991». Hay que corregir además el hecho 45 del dossier."
+    }
+  ],
+  "script_sha": "c21bda976c251888"
+}
