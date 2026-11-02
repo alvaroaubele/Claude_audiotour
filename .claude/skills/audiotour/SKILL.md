@@ -52,7 +52,7 @@ Cuando un `stop-writer` devuelve `done`, lanza un `fact-checker` para esa parada
 3. `python3 tools/tour.py assemble <slug>`, luego `python3 tools/tour.py check <slug>` hasta `PENDING=0`.
 4. Registra en `docs/lessons/` lo que aprendiste que sirva al siguiente tour (una lección por archivo).
 5. Commitea `tours/<slug>/` (sin `audio/` ni `dist/`, que ignora `.gitignore`) y `docs/lessons/`, y empuja la rama de trabajo.
-6. Entrega: envía al usuario `dist/<slug>.m4b`, `dist/tour.kmz` y `dist/tour.gpx` con la herramienta de envío de archivos de la sesión si existe (y las MP3 por pista si las pide); si no existe, da las rutas absolutas. Cierra con un resumen que se sostenga solo: duración real del audio, distancia, paradas, voz, la salida de `check`, lo que quedó sin verificar, y la importación del mapa como pasos numerados (abajo).
+6. Entrega: envía al usuario `dist/<slug>.m4b`, `dist/indice.html`, `dist/transcripcion.vtt`, `dist/tour.kmz` y `dist/tour.gpx` con la herramienta de envío de archivos de la sesión si existe (y las MP3 por pista si las pide); si no existe, da las rutas absolutas. Cierra con un resumen que se sostenga solo: duración real del audio, distancia, paradas, voz, la salida de `check`, lo que quedó sin verificar, y la importación del mapa como pasos numerados (abajo).
 
 ### Importar el mapa (pasos para el usuario)
 

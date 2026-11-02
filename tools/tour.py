@@ -158,7 +158,7 @@ def cmd_init(a):
             "date": a.date or "", "start_time": a.start_time or "",
             "register": "", "labels": {},
             "walking_speed_kmh": 4.0, "buffer_min_per_stop": 2.0,
-            "tts": {"backend": a.tts, "voice": a.voice or "", "length_scale": 1.1},
+            "tts": {"backend": a.tts, "voice": a.voice or "", "speed": 1.0, "length_scale": 1.1},
             "wpm": None,
         },
         "stops": [],
@@ -382,10 +382,11 @@ def cmd_budget(a):
 LABELS = {
     "es": {"intro": "Introducción", "to": "Camino a", "outro": "Cierre", "track": "Pista", "start": "Inicio",
            "stops": "Paradas", "route": "Ruta a pie", "leg": "Tramo", "walk": "a pie", "nav": "Cómo llegar a pie",
-           "narr": "Narración", "hours": "Horario"},
+           "narr": "Narración", "hours": "Horario", "book": "Empieza en el audiolibro", "eta": "hora prevista"},
     "en": {"intro": "Introduction", "to": "Walk to", "outro": "Farewell", "track": "Track", "start": "Start",
            "stops": "Stops", "route": "Walking route", "leg": "Leg", "walk": "walk", "nav": "Walking directions",
-           "narr": "Narration", "hours": "Opening hours"},
+           "narr": "Narration", "hours": "Opening hours", "book": "Starts in the audiobook at",
+           "eta": "planned time"},
     "fr": {"intro": "Introduction", "to": "Vers", "outro": "Conclusion", "track": "Piste", "start": "Départ",
            "stops": "Étapes", "route": "Itinéraire à pied", "leg": "Tronçon", "walk": "à pied",
            "nav": "Itinéraire à pied", "narr": "Narration", "hours": "Horaires"},
@@ -402,7 +403,8 @@ LABELS = {
 
 
 def L(meta, key):
-    return (meta.get("labels") or {}).get(key) or LABELS.get(meta["language"][:2], LABELS["en"])[key]
+    return ((meta.get("labels") or {}).get(key) or LABELS.get(meta["language"][:2], LABELS["en"]).get(key)
+            or LABELS["en"][key])
 
 
 # -------------------------------------------------------------------------- map
@@ -433,6 +435,8 @@ def cmd_map(a):
     plan = load_json(d / "plan.json")
     meta, stops, legs = plan["meta"], plan["stops"], plan["legs"]
     tracks = {t["id"]: t for t in _track_order(plan)}
+    tl_p = d / "map" / "timeline.json"
+    tl = {t["id"]: t for t in load_json(tl_p)["tracks"]} if tl_p.exists() else {}
     start = (meta["start"]["lat"], meta["start"]["lon"])
     title = meta.get("title") or f"Audiotour {meta['city']}"
     e = html.escape
@@ -440,10 +444,16 @@ def cmd_map(a):
     def desc_stop(s, prev):
         t = tracks.get(s["id"], {})
         parts = [f"<b>{L(meta, 'track')} {t.get('n','?'):02}</b> · {e(s.get('kind',''))}"]
+        if s["id"] in tl:
+            c = tl[s["id"]]["clock"]
+            parts.append(f"{L(meta, 'book')}: {_hms(tl[s['id']]['start'])} · {L(meta, 'eta')} "
+                         f"{int(c // 3600) % 24:02d}:{int(c % 3600 // 60):02d}")
         if s.get("summary"):
             parts.append(e(s["summary"]))
         if s.get("narration_min"):
             parts.append(f"{L(meta, 'narr')} ≈ {s['narration_min']:.0f} min")
+        if s.get("hold_note"):
+            parts.append("<b>" + e(s["hold_note"]) + "</b>")
         if s.get("hours_note"):
             parts.append(L(meta, "hours") + ": " + e(s["hours_note"]))
         if s.get("wikipedia"):
@@ -690,12 +700,77 @@ class EdgeBackend:
         tmp.unlink()
 
 
+class KokoroBackend:
+    """Kokoro-82M through kokoro-onnx (Apache-2.0): offline neural TTS, markedly more natural
+    prosody than Piper, ~3x faster than real time on 4 CPU cores. `voice` is a Kokoro voice id
+    or a weighted blend such as "em_alex:0.7,em_santa:0.3". `speed` > 1 speaks faster."""
+    limit = 400  # chars per call; keeps each call under Kokoro's 510-token phoneme window
+    URL = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/"
+    LANGS = {"es": "es", "en": "en-us", "fr": "fr-fr", "it": "it", "pt": "pt-br", "hi": "hi", "ja": "ja",
+             "zh": "cmn"}
+    DEFAULT_VOICE = {"es": "em_alex", "en": "bm_george", "fr": "ff_siwis", "it": "im_nicola",
+                     "pt": "pm_alex", "hi": "hm_omega", "ja": "jm_kumo", "zh": "zm_yunjian"}
+
+    def __init__(self, locale, voice, speed=1.0, **_):
+        import numpy as np
+        import espeakng_loader
+        from kokoro_onnx import Kokoro
+        kdir = CACHE / "kokoro"
+        kdir.mkdir(parents=True, exist_ok=True)
+        for f in ("kokoro-v1.0.onnx", "voices-v1.0.bin"):
+            dst = kdir / f
+            if not dst.exists():
+                print(f"downloading kokoro {f} …", file=sys.stderr)
+                with requests.get(self.URL + f, headers={"User-Agent": UA}, stream=True, timeout=600) as r:
+                    r.raise_for_status()
+                    part = dst.with_name(f + ".part")
+                    with open(part, "wb") as fh:
+                        for block in r.iter_content(1 << 20):
+                            fh.write(block)
+                part.replace(dst)
+        # espeakng-loader wheels are built with their CI path compiled in, and espeak-ng falls back
+        # to it during phonemization even when a data path is configured. Point that path at the
+        # wheel's own data directory (see docs/lessons/2026-11-02-voz-kokoro.md).
+        baked = Path("/home/runner/work/espeakng-loader/espeakng-loader/espeak-ng/_dynamic/share/espeak-ng-data")
+        if not baked.exists():
+            try:
+                baked.parent.mkdir(parents=True, exist_ok=True)
+                baked.symlink_to(espeakng_loader.get_data_path())
+            except OSError as e:
+                die(f"cannot create espeak-ng data link {baked}: {e}")
+        self.k = Kokoro(str(kdir / "kokoro-v1.0.onnx"), str(kdir / "voices-v1.0.bin"))
+        fam = locale[:2]
+        self.lang = self.LANGS.get(fam) or die(f"kokoro has no language for {locale}")
+        spec = voice or self.DEFAULT_VOICE[fam]
+        if ":" in spec or "," in spec:
+            parts = [(v.split(":")[0].strip(), float(v.split(":")[1]) if ":" in v else 1.0) for v in spec.split(",")]
+            tot = sum(w for _, w in parts)
+            self.voice = sum(self.k.get_voice_style(v) * (w / tot) for v, w in parts)
+        else:
+            self.voice = spec
+        self.key = spec
+        self.speed = float(speed)
+        self.np = np
+
+    def synth(self, text, out: Path):
+        samples, sr = self.k.create(text, voice=self.voice, speed=self.speed, lang=self.lang)
+        pcm = (self.np.clip(samples, -1, 1) * 32767).astype(self.np.int16)
+        tmp = out.with_suffix(".k.wav")
+        with wave.open(str(tmp), "wb") as w:
+            w.setnchannels(1); w.setsampwidth(2); w.setframerate(sr); w.writeframes(pcm.tobytes())
+        _to_wav(tmp, out)
+        tmp.unlink()
+
+
 def make_backend(meta):
     t = meta.get("tts", {})
     name = t.get("backend", "piper")
     loc = meta["language"]
+    speed = float(t.get("speed", 1.0))
     if name == "piper":
-        return PiperBackend(loc, t.get("voice", ""), float(t.get("length_scale", 1.1)))
+        return PiperBackend(loc, t.get("voice", ""), float(t.get("length_scale", 1.1)) / speed)
+    if name == "kokoro":
+        return KokoroBackend(loc, t.get("voice", ""), speed=speed)
     return {"elevenlabs": ElevenLabsBackend, "openai": OpenAIBackend, "edge": EdgeBackend}[name](loc, t.get("voice", ""))
 
 
@@ -704,7 +779,7 @@ def render_script(backend, script: Path, out_wav: Path):
     work = out_wav.parent / (out_wav.stem + ".parts")
     shutil.rmtree(work, ignore_errors=True)
     work.mkdir(parents=True)
-    parts, n = [], 0
+    parts, n, texts = [], 0, {}
     limit = getattr(backend, "limit", 100000)
     for kind, val in segs:
         n += 1
@@ -717,11 +792,21 @@ def render_script(backend, script: Path, out_wav: Path):
                 p = work / f"{n:05d}.wav"
                 backend.synth(c, p)
                 parts.append(p)
+                texts[p] = c
                 n += 1
     lst = work / "list.txt"
     lst.write_text("".join(f"file '{p.name}'\n" for p in parts))
     subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(lst),
                     "-c", "copy", str(out_wav)], check=True, cwd=work)
+    # timing of every spoken chunk inside this track, for the index, subtitles and LRC files
+    timeline, t = [], 0.0
+    for p in parts:
+        with wave.open(str(p), "rb") as w:
+            dur = w.getnframes() / w.getframerate()
+        if p in texts:
+            timeline.append({"start": round(t, 3), "end": round(t + dur, 3), "text": texts[p]})
+        t += dur
+    save_json(out_wav.with_suffix(".segments.json"), {"duration": round(t, 3), "segments": timeline})
     shutil.rmtree(work)
 
 
@@ -792,7 +877,7 @@ def cmd_assemble(a):
     total = len(tracks)
     norm = d / "audio" / "norm"
     norm.mkdir(exist_ok=True)
-    m3u, chapters, t_ms = ["#EXTM3U"], [], 0
+    m3u, chapters, t_ms, timeline = ["#EXTM3U"], [], 0, []
     for t in tracks:
         nwav = norm / f"{t['id']}.wav"
         subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(raw / f"{t['id']}.wav"),
@@ -807,6 +892,13 @@ def cmd_assemble(a):
         m3u.append(f"#EXTINF:{int(dur)},{t['n']:02d} · {t['title']}")
         m3u.append(f"mp3/{fname}")
         chapters.append((t_ms, t_ms + int(dur * 1000), f"{t['n']:02d} · {t['title']}"))
+        segp = raw / f"{t['id']}.segments.json"
+        segs = []
+        if segp.exists():
+            sj = load_json(segp)
+            k = dur / sj["duration"] if sj.get("duration") else 1.0  # loudnorm/encoding drift
+            segs = [{"start": x["start"] * k, "end": x["end"] * k, "text": x["text"]} for x in sj["segments"]]
+        timeline.append({**t, "file": fname, "start": t_ms / 1000, "duration": dur, "segments": segs})
         t_ms += int(dur * 1000)
     (dist / "playlist.m3u").write_text("\n".join(m3u) + "\n", encoding="utf-8")
     # single-file audiobook with chapters
@@ -820,10 +912,112 @@ def cmd_assemble(a):
     subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0", "-i", "list.txt",
                     "-i", "chapters.txt", "-map_metadata", "1", "-map_chapters", "1", "-c:a", "aac", "-b:a", "64k",
                     "-movflags", "+faststart", str(book)], check=True, cwd=norm)
+    write_timeline(d, plan, timeline, dist)
+    cmd_map(a)  # re-run so each placemark carries its chapter start time in the audiobook
     for f in ("tour.kmz", "tour.gpx", "links.md"):
         if (d / "map" / f).exists():
             shutil.copy(d / "map" / f, dist / f)
-    print(f"dist: {total} MP3 tracks, {book.name} ({t_ms/60000:.0f} min, {len(chapters)} chapters), playlist.m3u")
+    print(f"dist: {total} MP3 tracks (+ .lrc), {book.name} ({t_ms/60000:.0f} min, {len(chapters)} chapters), "
+          f"playlist.m3u, indice.html, indice.md, transcripcion.vtt/.srt")
+
+
+def _hms(sec: float, ms: bool = False, sep: str = ".") -> str:
+    sec = max(0.0, sec)
+    h, rem = divmod(int(sec), 3600)
+    m, s_ = divmod(rem, 60)
+    base = f"{h:02d}:{m:02d}:{s_:02d}"
+    return base + (f"{sep}{int(round((sec - int(sec)) * 1000)) % 1000:03d}" if ms else "")
+
+
+def write_timeline(d: Path, plan, timeline, dist: Path):
+    """Time index for finding your place while walking: audiobook position and planned clock
+    time of every track, paragraph-level subtitles for the whole book, and an LRC per MP3."""
+    meta = plan["meta"]
+    legs = {l["id"]: l for l in plan["legs"]}
+    buf = float(meta.get("buffer_min_per_stop", 2)) * 60
+    hh, mm = (int(x) for x in (meta.get("start_time") or "00:00").split(":"))
+    clock = hh * 3600 + mm * 60
+    stops_by_id = {s["id"]: s for s in plan["stops"]}
+    for t in timeline:  # planned wall-clock start: legs take max(walk, audio); stops add a buffer
+        hold = float(stops_by_id.get(t["id"], {}).get("hold_min", 0)) * 60 if t["kind"] == "stop" else 0
+        t["hold"] = hold  # deliberate wait before starting this track (e.g. to meet the sunset)
+        clock += hold
+        t["clock"] = clock
+        if t["kind"] == "leg":
+            clock += max(legs[t["id"]]["time_s"], t["duration"])
+        elif t["kind"] == "stop":
+            clock += t["duration"] + buf + float(next(s for s in plan["stops"] if s["id"] == t["id"]).get(
+                "interior_min", 0)) * 60
+        else:
+            clock += t["duration"]
+    save_json(dist / "timeline.json", {"title": meta.get("title"), "tracks": timeline})
+    save_json(d / "map" / "timeline.json", {"tracks": [{k: t[k] for k in ("id", "n", "start", "clock")}
+                                                        for t in timeline]})
+    # subtitles over the whole audiobook
+    vtt, srt, i = ["WEBVTT", ""], [], 0
+    for t in timeline:
+        for sg in t["segments"]:
+            i += 1
+            a0, a1 = t["start"] + sg["start"], t["start"] + sg["end"]
+            cue = f"[{t['n']:02d}] {sg['text']}"
+            vtt += [f"{_hms(a0, True)} --> {_hms(a1, True)}", cue, ""]
+            srt += [str(i), f"{_hms(a0, True, ',')} --> {_hms(a1, True, ',')}", cue, ""]
+        # per-track LRC next to its MP3 (shown as synced lyrics by most phone players)
+        lrc = [f"[ti:{t['n']:02d} · {t['title']}]", f"[al:{meta.get('title','')}]"]
+        for sg in t["segments"]:
+            m_, s_ = divmod(sg["start"], 60)
+            lrc.append(f"[{int(m_):02d}:{s_:05.2f}]{sg['text']}")
+        (dist / "mp3" / (Path(t["file"]).stem + ".lrc")).write_text("\n".join(lrc) + "\n", encoding="utf-8")
+    (dist / "transcripcion.vtt").write_text("\n".join(vtt), encoding="utf-8")
+    (dist / "transcripcion.srt").write_text("\n".join(srt), encoding="utf-8")
+    # human index (Markdown + standalone HTML)
+    kind_lbl = {"intro": "Inicio", "leg": "Camino", "stop": "Parada", "outro": "Cierre"}
+    clock_s = lambda c: f"{int(c // 3600) % 24:02d}:{int(c % 3600 // 60):02d}"
+    md = [f"# {meta.get('title','')} — índice horario", "",
+          f"Audiolibro: `{meta['slug']}.m4b` (un capítulo por pista). Hora prevista desde las "
+          f"{meta.get('start_time','')}, contando la marcha y un margen de {buf/60:.0f} min por parada.", "",
+          "| Pista | Tipo | Título | Empieza en el audiolibro | Duración | Hora prevista | Archivo MP3 |",
+          "|---|---|---|---|---|---|---|"]
+    for t in timeline:
+        wait = f" (espere {t['hold']/60:.0f} min antes de empezarla)" if t.get("hold") else ""
+        md.append(f"| {t['n']:02d} | {kind_lbl.get(t['kind'], t['kind'])} | {t['title']}{wait} | {_hms(t['start'])} | "
+                  f"{_hms(t['duration'])[3:]} | {clock_s(t['clock'])} | {t['file']} |")
+    md += ["", "## Dentro de cada pista", "",
+           "Cada línea indica el minuto dentro de la pista y dentro del audiolibro.", ""]
+    for t in timeline:
+        md.append(f"### {t['n']:02d} · {t['title']}")
+        for sg in t["segments"]:
+            first = " ".join(sg["text"].split()[:12])
+            md.append(f"- `{_hms(sg['start'])[3:]}` · libro `{_hms(t['start'] + sg['start'])}` — {first}…")
+        md.append("")
+    (dist / "indice.md").write_text("\n".join(md) + "\n", encoding="utf-8")
+    e = html.escape
+    rows = "".join(
+        f"<tr><td>{t['n']:02d}</td><td>{kind_lbl.get(t['kind'], '')}</td><td>{e(t['title'])}"
+        f"{'<br><small>espere ' + format(t['hold'] / 60, '.0f') + ' min antes de empezarla</small>' if t.get('hold') else ''}</td>"
+        f"<td>{_hms(t['start'])}</td><td>{_hms(t['duration'])[3:]}</td><td>{clock_s(t['clock'])}</td></tr>"
+        for t in timeline)
+    det = "".join(
+        f"<details><summary><b>{t['n']:02d}</b> · {e(t['title'])} <span>{_hms(t['start'])}</span></summary><ol>"
+        + "".join(f"<li><code>{_hms(sg['start'])[3:]}</code> <small>libro {_hms(t['start'] + sg['start'])}"
+                  f"</small> {e(sg['text'])}</li>" for sg in t["segments"]) + "</ol></details>"
+        for t in timeline)
+    page = f"""<!doctype html><html lang="{e(meta['language'])}"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Índice horario</title><style>
+:root{{--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a66;--line:#e2dfd7;--acc:#8a4b14}}
+@media (prefers-color-scheme:dark){{:root{{--bg:#151513;--fg:#ecebe6;--mut:#a3a19a;--line:#33322e;--acc:#e0a25e}}}}
+body{{margin:0;padding:16px;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,sans-serif;max-width:860px;margin-inline:auto}}
+h1{{font-size:1.35rem;line-height:1.25}} p{{color:var(--mut)}} table{{width:100%;border-collapse:collapse;font-size:.92rem}}
+th,td{{text-align:left;padding:6px 4px;border-bottom:1px solid var(--line);vertical-align:top}} th{{color:var(--mut);font-weight:600}}
+td:nth-child(4),td:nth-child(5),td:nth-child(6){{font-variant-numeric:tabular-nums;white-space:nowrap}}
+details{{border-bottom:1px solid var(--line);padding:8px 0}} summary{{cursor:pointer}} summary span{{color:var(--acc);font-variant-numeric:tabular-nums;float:right}}
+li{{margin:6px 0}} code{{color:var(--acc)}} small{{color:var(--mut)}}
+</style></head><body><h1>{e(meta.get('title',''))}</h1>
+<p>Índice horario del audiolibro <code>{e(meta['slug'])}.m4b</code>. «Libro» es la posición en el audiolibro completo;
+el primer tiempo de cada línea es la posición dentro de la pista (MP3). Hora prevista desde las {e(meta.get('start_time',''))}.</p>
+<table><thead><tr><th>Pista</th><th>Tipo</th><th>Título</th><th>Libro</th><th>Dura</th><th>Hora</th></tr></thead><tbody>{rows}</tbody></table>
+<h2>Dentro de cada pista</h2>{det}</body></html>"""
+    (dist / "indice.html").write_text(page, encoding="utf-8")
 
 
 # ------------------------------------------------------------------------ check
@@ -896,12 +1090,19 @@ def cmd_check(a):
             nch = len(json.loads(r.stdout or "{}").get("chapters", []))
             need(nch == len(order), f"dist: m4b has {nch} chapters, expected {len(order)}")
             need(len(list((d / "dist" / "mp3").glob("*.mp3"))) == len(order), "dist: mp3 count != tracks")
+            need(len(list((d / "dist" / "mp3").glob("*.lrc"))) == len(order), "dist: lrc count != tracks")
+            for f in ("indice.html", "indice.md", "transcripcion.vtt", "transcripcion.srt", "timeline.json"):
+                need((d / "dist" / f).exists(), f"dist: {f} missing (run `assemble`)")
+            tl = d / "dist" / "timeline.json"
+            if tl.exists():
+                empty = [t["id"] for t in load_json(tl)["tracks"] if not t.get("segments")]
+                need(not empty, f"dist: tracks without timing segments {empty} (re-render with `tts --force`)")
     if legs and meta.get("wpm"):
         walk = sum(l["time_s"] for l in legs) / 60
         listen = sum(count_words(d / t["script"]) for t in order if t["kind"] in ("stop", "intro", "outro")
                      and (d / t["script"]).exists()) / float(meta["wpm"])
         total = walk + listen + float(meta.get("buffer_min_per_stop", 2)) * len(stops) + \
-            sum(float(s.get("interior_min", 0)) for s in stops)
+            sum(float(s.get("interior_min", 0)) + float(s.get("hold_min", 0)) for s in stops)
         dev = total / float(meta["duration_min"]) - 1
         print(f"# time: walk {walk:.0f} + listen {listen:.0f} + buffers/interiors → {total:.0f} min "
               f"vs {meta['duration_min']} ({dev:+.0%})")
@@ -924,8 +1125,8 @@ def main():
                                                                            help="BCP-47, e.g. es-ES, en-GB")
     p.add_argument("--focus"); p.add_argument("--date"); p.add_argument("--start-time")
     p.add_argument("--title"); p.add_argument("--slug")
-    p.add_argument("--tts", default=os.environ.get("AUDIOTOUR_TTS", "piper"),
-                   choices=["piper", "elevenlabs", "openai", "edge"])
+    p.add_argument("--tts", default=os.environ.get("AUDIOTOUR_TTS", "kokoro"),
+                   choices=["kokoro", "piper", "elevenlabs", "openai", "edge"])
     p.add_argument("--voice"); p.add_argument("--force", action="store_true")
     p.set_defaults(f=cmd_init)
 

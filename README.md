@@ -36,7 +36,8 @@ Añadir `auto` a los argumentos del paso 4 salta la revisión del paso 5.
 
 ## Voz
 
-- `tts=piper` (por defecto): voz neuronal offline; el pipeline elige la de mayor calidad del catálogo Piper para el locale (por ejemplo `es_ES-davefx-medium`, `es_MX-claude-high`, `en_US-ryan-high`, `de_DE-thorsten-high`). Probada en este repositorio.
+- `tts=kokoro` (por defecto): Kokoro-82M offline, la voz más natural de las que se probaron en CPU (ver `docs/lessons/2026-11-02-voz-kokoro.md`). Voces en español: `ef_dora` (femenina, la mejor puntuada), `em_alex` y `em_santa` (masculinas). Admite mezclas como `em_alex:0.7,em_santa:0.3`. Probada en este repositorio.
+- `tts=piper`: voz neuronal offline de respaldo; el pipeline elige la de mayor calidad del catálogo Piper para el locale. Suena más sintética.
 - `tts=elevenlabs voz=<voice_id>`: máxima naturalidad; requiere `ELEVENLABS_API_KEY` en el entorno. **No probada aquí** (sin clave).
 - `tts=openai voz=<onyx|…>`: `gpt-4o-mini-tts` con instrucciones de estilo; requiere `OPENAI_API_KEY`. **No probada aquí** (sin clave).
 - `tts=edge`: voces neuronales de Microsoft Edge; solo en máquina local (WebSocket bloqueado en el contenedor cloud).

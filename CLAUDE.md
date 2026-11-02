@@ -45,7 +45,9 @@ tours/<slug>/
   scripts/T00_intro.md  L00.md  S01.md  L01.md  …  T99_outro.md
   map/tour.kmz  tour.kml  tour.gpx  links.md
   audio/raw/<id>.wav              # no se versiona
-  dist/                           # entregables: mp3/ por pista, <slug>.m4b con capítulos, playlist.m3u, mapa — no se versiona
+  dist/                           # entregables, no se versiona: mp3/ por pista con su .lrc, <slug>.m4b con capítulos, playlist.m3u,
+                                  #   indice.html/.md (posición en el audiolibro y hora prevista de cada pista y párrafo),
+                                  #   transcripcion.vtt/.srt, timeline.json, mapa con la posición de cada parada en el audiolibro
 ```
 
 - Guiones: Markdown. La línea `# Título` y los comentarios `<!-- … -->` no se leen en voz alta; las fuentes y notas internas van en comentarios, nunca en el texto hablado.
@@ -56,7 +58,7 @@ tours/<slug>/
 ## Entorno
 
 - Red: Nominatim, Valhalla (`valhalla1.openstreetmap.de`), Wikidata SPARQL, Wikipedia y HuggingFace responden desde el contenedor cloud; Overpass no (conexión cortada por el proxy) y `edge-tts` tampoco (usa WebSocket). Wikipedia puede devolver «too many requests» o «too busy»: usa WebFetch/WebSearch o reintenta más tarde.
-- TTS: `piper` (offline, neuronal, elige la mejor voz del catálogo para el locale) funciona siempre; `elevenlabs` y `openai` dan más calidad si existe `ELEVENLABS_API_KEY` / `OPENAI_API_KEY` en el entorno; `edge` solo en una máquina local.
+- TTS: `kokoro` (Kokoro-82M offline, por defecto) es claramente más natural que `piper`. En la comparativa del 2026-11-02 sacó una naturalidad UTMOS de 2,98 frente a 1,92 y pronunció mejor; sintetiza unas tres veces más rápido que el tiempo real en 4 CPU. `piper` queda como respaldo. `elevenlabs` y `openai` funcionan si existe `ELEVENLABS_API_KEY` / `OPENAI_API_KEY`; `edge` solo en una máquina local. `meta.tts.speed` acelera la voz en el propio motor; calíbrala con `calibrate` (los silencios de pausa no se aceleran).
 - Dependencias: `pip install -r requirements.txt`; `ffmpeg` y `ffprobe` deben estar en el PATH.
 
 ## Entradas no confiables
