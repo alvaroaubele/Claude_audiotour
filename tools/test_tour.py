@@ -38,6 +38,30 @@ def test_track_order_and_labels():
     assert order[1]["title"] == "Walk to A" and order[-1]["n"] == 6
 
 
+
+def test_hms_and_timeline(tmp_path=None):
+    import tempfile, json
+    assert tour._hms(3725.5) == "01:02:05" and tour._hms(65.25, True) == "00:01:05.250"
+    d = Path(tempfile.mkdtemp())
+    (d / "map").mkdir(); dist = d / "dist"; (dist / "mp3").mkdir(parents=True)
+    plan = {"meta": {"slug": "t", "title": "T", "language": "es-ES", "start_time": "16:00", "buffer_min_per_stop": 2},
+            "stops": [{"id": "S01", "name": "A"}], "legs": [{"id": "L00", "time_s": 300}]}
+    tl = [{"id": "T00", "kind": "intro", "n": 1, "title": "Intro", "file": "01 - intro.mp3", "start": 0, "duration": 60,
+           "segments": [{"start": 0, "end": 5, "text": "Hola."}]},
+          {"id": "L00", "kind": "leg", "n": 2, "title": "Camino", "file": "02 - c.mp3", "start": 60, "duration": 120,
+           "segments": [{"start": 1, "end": 3, "text": "Gire."}]},
+          {"id": "S01", "kind": "stop", "n": 3, "title": "A", "file": "03 - a.mp3", "start": 180, "duration": 600,
+           "segments": []}]
+    tour.write_timeline(d, plan, tl, dist)
+    j = json.loads((dist / "timeline.json").read_text())
+    clocks = [t["clock"] for t in j["tracks"]]
+    assert clocks == [57600, 57660, 57960]  # 16:00, 16:01, then the leg takes max(walk 300 s, audio 120 s)
+    vtt = (dist / "transcripcion.vtt").read_text()
+    assert "00:01:01.000 --> 00:01:03.000" in vtt and "[02] Gire." in vtt
+    assert (dist / "mp3" / "02 - c.lrc").read_text().splitlines()[2] == "[00:01.00]Gire."
+    assert "16:06" in (dist / "indice.md").read_text()
+
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):
