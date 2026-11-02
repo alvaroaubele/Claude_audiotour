@@ -452,6 +452,8 @@ def cmd_map(a):
             parts.append(e(s["summary"]))
         if s.get("narration_min"):
             parts.append(f"{L(meta, 'narr')} ≈ {s['narration_min']:.0f} min")
+        if s.get("hold_note"):
+            parts.append("<b>" + e(s["hold_note"]) + "</b>")
         if s.get("hours_note"):
             parts.append(L(meta, "hours") + ": " + e(s["hours_note"]))
         if s.get("wikipedia"):
@@ -935,7 +937,11 @@ def write_timeline(d: Path, plan, timeline, dist: Path):
     buf = float(meta.get("buffer_min_per_stop", 2)) * 60
     hh, mm = (int(x) for x in (meta.get("start_time") or "00:00").split(":"))
     clock = hh * 3600 + mm * 60
+    stops_by_id = {s["id"]: s for s in plan["stops"]}
     for t in timeline:  # planned wall-clock start: legs take max(walk, audio); stops add a buffer
+        hold = float(stops_by_id.get(t["id"], {}).get("hold_min", 0)) * 60 if t["kind"] == "stop" else 0
+        t["hold"] = hold  # deliberate wait before starting this track (e.g. to meet the sunset)
+        clock += hold
         t["clock"] = clock
         if t["kind"] == "leg":
             clock += max(legs[t["id"]]["time_s"], t["duration"])
@@ -973,7 +979,8 @@ def write_timeline(d: Path, plan, timeline, dist: Path):
           "| Pista | Tipo | Título | Empieza en el audiolibro | Duración | Hora prevista | Archivo MP3 |",
           "|---|---|---|---|---|---|---|"]
     for t in timeline:
-        md.append(f"| {t['n']:02d} | {kind_lbl.get(t['kind'], t['kind'])} | {t['title']} | {_hms(t['start'])} | "
+        wait = f" (espere {t['hold']/60:.0f} min antes de empezarla)" if t.get("hold") else ""
+        md.append(f"| {t['n']:02d} | {kind_lbl.get(t['kind'], t['kind'])} | {t['title']}{wait} | {_hms(t['start'])} | "
                   f"{_hms(t['duration'])[3:]} | {clock_s(t['clock'])} | {t['file']} |")
     md += ["", "## Dentro de cada pista", "",
            "Cada línea indica el minuto dentro de la pista y dentro del audiolibro.", ""]
@@ -986,7 +993,8 @@ def write_timeline(d: Path, plan, timeline, dist: Path):
     (dist / "indice.md").write_text("\n".join(md) + "\n", encoding="utf-8")
     e = html.escape
     rows = "".join(
-        f"<tr><td>{t['n']:02d}</td><td>{kind_lbl.get(t['kind'], '')}</td><td>{e(t['title'])}</td>"
+        f"<tr><td>{t['n']:02d}</td><td>{kind_lbl.get(t['kind'], '')}</td><td>{e(t['title'])}"
+        f"{'<br><small>espere ' + format(t['hold'] / 60, '.0f') + ' min antes de empezarla</small>' if t.get('hold') else ''}</td>"
         f"<td>{_hms(t['start'])}</td><td>{_hms(t['duration'])[3:]}</td><td>{clock_s(t['clock'])}</td></tr>"
         for t in timeline)
     det = "".join(
@@ -1094,7 +1102,7 @@ def cmd_check(a):
         listen = sum(count_words(d / t["script"]) for t in order if t["kind"] in ("stop", "intro", "outro")
                      and (d / t["script"]).exists()) / float(meta["wpm"])
         total = walk + listen + float(meta.get("buffer_min_per_stop", 2)) * len(stops) + \
-            sum(float(s.get("interior_min", 0)) for s in stops)
+            sum(float(s.get("interior_min", 0)) + float(s.get("hold_min", 0)) for s in stops)
         dev = total / float(meta["duration_min"]) - 1
         print(f"# time: walk {walk:.0f} + listen {listen:.0f} + buffers/interiors → {total:.0f} min "
               f"vs {meta['duration_min']} ({dev:+.0%})")

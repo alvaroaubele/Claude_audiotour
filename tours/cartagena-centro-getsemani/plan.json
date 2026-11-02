@@ -86,7 +86,9 @@
       "hours_note": "Domingo 1 nov 2026: visita exterior; interior no incluido (horario por confirmar)",
       "script": "scripts/S04.md",
       "narration_min": 17.3,
-      "words_target": 2890
+      "words_target": 2890,
+      "hold_min": 8,
+      "hold_note": "La narración termina a cinco minutos de la puesta de sol (17:38): si llega antes de las 17:18, disfrute del baluarte y empiece la pista a esa hora."
     },
     {
       "id": "S05",
